@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://github.com/XYTK0x0/"/>
-  <updated>2019-10-06T08:20:33.077Z</updated>
+  <updated>2019-10-06T09:10:01.982Z</updated>
   <id>https://github.com/XYTK0x0/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://github.com/XYTK0x0/2019/10/06/%E7%AC%AC%E4%B8%80%E7%AF%87blog/"/>
     <id>https://github.com/XYTK0x0/2019/10/06/第一篇blog/</id>
     <published>2019-10-06T06:58:22.000Z</published>
-    <updated>2019-10-06T08:20:33.077Z</updated>
+    <updated>2019-10-06T09:10:01.982Z</updated>
     
     <content type="html"><![CDATA[<h2 id="第一篇blog"><a href="#第一篇blog" class="headerlink" title="第一篇blog"></a>第一篇blog</h2><h3 id="还是挺有意思的"><a href="#还是挺有意思的" class="headerlink" title="还是挺有意思的"></a>还是挺有意思的</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">alert(&apos;Hello World!&apos;);</span><br></pre></td></tr></table></figure>]]></content>
     
@@ -37,8 +37,6 @@
     
       <category term="日常生活的乱七八糟" scheme="https://github.com/XYTK0x0/categories/%E6%97%A5%E5%B8%B8%E7%94%9F%E6%B4%BB%E7%9A%84%E4%B9%B1%E4%B8%83%E5%85%AB%E7%B3%9F/"/>
     
-    
-      <category term="日常" scheme="https://github.com/XYTK0x0/tags/%E6%97%A5%E5%B8%B8/"/>
     
       <category term="Blog里的胡言乱语" scheme="https://github.com/XYTK0x0/tags/Blog%E9%87%8C%E7%9A%84%E8%83%A1%E8%A8%80%E4%B9%B1%E8%AF%AD/"/>
     
