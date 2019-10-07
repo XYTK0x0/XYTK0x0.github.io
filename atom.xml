@@ -5,9 +5,9 @@
   
   <link href="/atom.xml" rel="self"/>
   
-  <link href="https://github.com/XYTK0x0/"/>
-  <updated>2019-10-07T01:38:54.203Z</updated>
-  <id>https://github.com/XYTK0x0/</id>
+  <link href="https://xytk0x0.github.io/"/>
+  <updated>2019-10-07T02:53:07.978Z</updated>
+  <id>https://xytk0x0.github.io/</id>
   
   <author>
     <name>XYTK</name>
@@ -18,12 +18,12 @@
   
   <entry>
     <title>第一篇blog</title>
-    <link href="https://github.com/XYTK0x0/2019/10/06/%E7%AC%AC%E4%B8%80%E7%AF%87blog/"/>
-    <id>https://github.com/XYTK0x0/2019/10/06/第一篇blog/</id>
+    <link href="https://xytk0x0.github.io/2019/10/06/%E7%AC%AC%E4%B8%80%E7%AF%87blog/"/>
+    <id>https://xytk0x0.github.io/2019/10/06/第一篇blog/</id>
     <published>2019-10-06T06:58:22.000Z</published>
-    <updated>2019-10-07T01:38:54.203Z</updated>
+    <updated>2019-10-07T02:53:07.978Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="第一篇blog"><a href="#第一篇blog" class="headerlink" title="第一篇blog"></a>第一篇blog</h2><p>最近在学习新姿势的时候看了很多师傅的博客，觉得有一个地方能写点东西挺好的。趁着这次国庆假期，自己也搭了一个博客。  </p><h3 id="博客内容："><a href="#博客内容：" class="headerlink" title="博客内容："></a>博客内容：</h3><p>1、之前学习的零碎东西大多都在我的ipad里面，之后学习的一部分内容会发布到博客上面。  </p><p>2、之前感觉每天都过得特别快，所以会以日记的形式零散的记录一些生活感悟、梦境和小故事等，之后也会发一些到博客上面。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">print(&quot;Hello My Blog!&quot;)</span><br></pre></td></tr></table></figure>]]></content>
+    <content type="html"><![CDATA[<h2 id="第一篇blog"><a href="#第一篇blog" class="headerlink" title="第一篇blog"></a>第一篇blog</h2><p>最近在学习新姿势的时候看了很多师傅的博客，觉得有一个地方能写点东西挺好的。趁着这次国庆假期，自己也搭了一个博客。  </p><h3 id="博客内容："><a href="#博客内容：" class="headerlink" title="博客内容："></a>博客内容：</h3><p>1、之前学习的零碎东西大多都在我的ipad里面，之后学习的一部分内容会发布到博客上面。  </p><p>2、之前感觉每天都过得特别快，所以会以日记的形式零散的记录一些生活感悟、梦境和小故事等，之后也会发一些到博客上面。</p><pre><code>print(&quot;Hello My Blog!&quot;)</code></pre><img src="/2019/10/06/第一篇blog/boy_bg.jpg" title="This is an example image">]]></content>
     
     <summary type="html">
     
@@ -35,10 +35,10 @@
     </summary>
     
     
-      <category term="日常生活的乱七八糟" scheme="https://github.com/XYTK0x0/categories/%E6%97%A5%E5%B8%B8%E7%94%9F%E6%B4%BB%E7%9A%84%E4%B9%B1%E4%B8%83%E5%85%AB%E7%B3%9F/"/>
+      <category term="日常生活的乱七八糟" scheme="https://xytk0x0.github.io/categories/%E6%97%A5%E5%B8%B8%E7%94%9F%E6%B4%BB%E7%9A%84%E4%B9%B1%E4%B8%83%E5%85%AB%E7%B3%9F/"/>
     
     
-      <category term="Blog里的胡言乱语" scheme="https://github.com/XYTK0x0/tags/Blog%E9%87%8C%E7%9A%84%E8%83%A1%E8%A8%80%E4%B9%B1%E8%AF%AD/"/>
+      <category term="Blog里的胡言乱语" scheme="https://xytk0x0.github.io/tags/Blog%E9%87%8C%E7%9A%84%E8%83%A1%E8%A8%80%E4%B9%B1%E8%AF%AD/"/>
     
   </entry>
   
