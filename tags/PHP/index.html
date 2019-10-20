@@ -346,28 +346,26 @@
     
     
     <article class="index-post">
-        <a class="abstract-title" href = "/2019/10/07/Python实现SPN加解密/" >
+        <a class="abstract-title" href = "/2019/10/20/PHP无参数实现RCE/" >
             
-                <span>【转载】Python实现SPN加解密</span>
+                <span>PHP无参数实现RCE</span>
         </a>
         <div class="abstract-content">
-            前言原文地址：https://gooong.cn/post/cryptography-part1/
-SPN网络难道不是要介绍AES吗，怎么会变成SPN网络，这是啥？可以吃吗？  
-AES、DES等很多现代对称加密方法的核心就是SPN网络，它是代换-置换网络（Substitution-Permutation Network）的缩写,是现代对称加密方法设计的蓝本。可以说，了解SPN网络，就基本了解了AES。  
-很巧的是，这个网络正好是容易理解的。SPN网络的思想很简单：既然加密一次不够安全，那我就加密多次，把第一次加密产生的密文再进行加密，解密的时候我连续进行两次解密就可以了，这样是不是就...
+            前言一叶飘零师傅的博客： https://skysec.top/2019/03/29/PHP-Parametric-Function-RCE/
+123if(&apos;;&apos; === preg_replace(&apos;/[^\W]+\((?R)?\)/&apos;, &apos;&apos;, $_GET[&apos;code&apos;])) &#123;        eval($_GET[&apos;code&apos;]);&#125;
+
+其中，[^\W]包含所有的数字，字母以及下划线，而(?R)则是 DEELX 正则表达式扩展语法中的递归表达式，表示递归引用整个模式...
         </div>
         <div class="abstract-post-meta">
             <!-- date  -->
             <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/10/07</span>
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/10/20</span>
             </div>
             <!-- tags  -->
             
             <div class= abstract-tags >
     
-        <a class="post-tag" href="javascript:void(0);" data-tags = "python">python</a>
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "Crypto">Crypto</a>
+        <a class="post-tag" href="javascript:void(0);" data-tags = "PHP">PHP</a>
     
 </div>
             

