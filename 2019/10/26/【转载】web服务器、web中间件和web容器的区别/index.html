@@ -22,7 +22,7 @@
     <meta name="description" content>
     <meta http-equiv="Cache-control" content="no-cache">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>XYTK&#39;s Blog</title>
+    <title>【转载】web服务器、web中间件和web容器的区别 · XYTK&#39;s Blog</title>
     <style type="text/css">
     @font-face {
         font-family: 'Oswald-Regular';
@@ -203,12 +203,23 @@
 </head>
 
     
+        <body class="post-body">
+    
     
 <header class="header">
 
     <div class="read-progress"></div>
     <div class="header-sidebar-menu">&#xe775;</div>
     <!-- post页的toggle banner  -->
+    
+    <div class="banner">
+            <div class="blog-title">
+                <a href="/" >XYTK&#39;s Blog</a>
+            </div>
+            <div class="post-title">
+                <a href="#" class="post-name">【转载】web服务器、web中间件和web容器的区别</a>
+            </div>
+    </div>
     
     <a class="home-link" href=/>XYTK's Blog</a>
 </header>
@@ -220,24 +231,76 @@
 
 
 
+
+height:50vh;
 ">
     
     <!-- 主页  -->
+    
+    
+    <!-- 404页  -->
             
     <div class="site-intro-placeholder"></div>
-    <div class="site-intro-img" style="background-image: url(/)"></div>
+    <div class="site-intro-img" style="background-image: url(/intro/post-bg.jpg)"></div>
     <div class="site-intro-meta">
         <!-- 标题  -->
         <h1 class="intro-title">
             <!-- 主页  -->
+            
+            【转载】web服务器、web中间件和web容器的区别
+            <!-- 404 -->
             
         </h1>
         <!-- 副标题 -->
         <p class="intro-subtitle">
             <!-- 主页副标题  -->
             
+            
+            <!-- 404 -->
+            
         </p>
         <!-- 文章页meta -->
+        
+            <div class="post-intros">
+                <!-- 文章页标签  -->
+                
+                    <div class= post-intro-tags >
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags = "web">web</a>
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags = "Java web">Java web</a>
+    
+</div>
+                
+                
+                    <div class="post-intro-read">
+                        <span>Word count: <span class="post-count word-count">1.7k</span>Reading time: <span class="post-count reading-time">6 min</span></span>
+                    </div>
+                
+                <div class="post-intro-meta">
+                    <span class="post-intro-calander iconfont-archer">&#xe676;</span>
+                    <span class="post-intro-time">2019/10/26</span>
+                    
+                    <span id="busuanzi_container_page_pv" class="busuanzi-pv">
+                        <span class="iconfont-archer">&#xe602;</span>
+                        <span id="busuanzi_value_page_pv"></span>
+                    </span>
+                    
+                    <span class="shareWrapper">
+                        <span class="iconfont-archer shareIcon">&#xe71d;</span>
+                        <span class="shareText">Share</span>
+                        <ul class="shareList">
+                            <li class="iconfont-archer share-qr" data-type="qr">&#xe75b;
+                                <div class="share-qrcode"></div>
+                            </li>
+                            <li class="iconfont-archer" data-type="weibo">&#xe619;</li>
+                            <li class="iconfont-archer" data-type="qzone">&#xe62e;</li>
+                            <li class="iconfont-archer" data-type="twitter">&#xe634;</li>
+                            <li class="iconfont-archer" data-type="facebook">&#xe67a;</li>
+                        </ul>
+                    </span>
+                </div>
+            </div>
         
     </div>
 </div>
@@ -338,174 +401,68 @@
 </script>        
         <img class="loading" src="/assets/loading.svg" style="display: block; margin: 6rem auto 0 auto; width: 6rem; height: 6rem;" />
         <div class="container container-unloaded">
-            <main class="main index-page">
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2019/10/20/PHP无参数实现RCE/" >
-            
-                <span>PHP无参数实现RCE</span>
-        </a>
-        <div class="abstract-content">
-            前言一叶飘零师傅的博客： https://skysec.top/2019/03/29/PHP-Parametric-Function-RCE/
-123if(&apos;;&apos; === preg_replace(&apos;/[^\W]+\((?R)?\)/&apos;, &apos;&apos;, $_GET[&apos;code&apos;])) &#123;        eval($_GET[&apos;code&apos;]);&#125;
+            <main class="main post-page">
+    <article class="article-entry">
+        <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>看web方向的东西也挺长时间了，这些概念还是区分不清，正好看见一篇博客具体介绍了这些概念。</p>
+<p>原文链接： </p>
+<p><a href="https://blog.csdn.net/qq_36119192/article/details/84501439" target="_blank" rel="noopener">https://blog.csdn.net/qq_36119192/article/details/84501439</a></p>
+<p><a href="https://blog.csdn.net/qq_36119192/article/details/84261392" target="_blank" rel="noopener">https://blog.csdn.net/qq_36119192/article/details/84261392</a></p>
+<hr>
+<h1 id="web服务器"><a href="#web服务器" class="headerlink" title="web服务器"></a>web服务器</h1><p><strong>广义的web服务器（Web Server）：</strong>提供web服务的软件或主机，即Web服务器软件或装有Web服务器软件的计算机。例如：IIS、apache、nginx等。Web服务器可以处理 HTTP 协议，响应针对静态页面或图片的请求，进行页面跳转，或者把动态请求委托其它程序（它的扩展、某种语言的解释引擎(php)、Web容器）。</p>
+<p>所以，我们可以把 IIS、Apache、Nginx、Tomcat等都称为Web服务器，因为他们都提供了web服务。</p>
+<hr>
+<h1 id="中间件"><a href="#中间件" class="headerlink" title="中间件"></a>中间件</h1><p><strong>中间件（Middleware）</strong>是提供系统软件和应用软件之间连接的软件，以便于软件各部件之间的沟通。中间件处在操作系统和更高一级应用程序之间。他充当的功能是：将应用程序运行环境与操作系统隔离，从而实现应用程序开发者不必为更多系统问题忧虑，而直接关注该应用程序在解决问题上的能力 。容器就是中间件的一种。</p>
+<p>而<strong>Web中间件</strong>就是提供web应用软件和系统软件连接的软件的一个总称。</p>
+<h2 id="Java-web中间件"><a href="#Java-web中间件" class="headerlink" title="Java web中间件"></a>Java web中间件</h2><img src="/2019/10/26/【转载】web服务器、web中间件和web容器的区别/0.png" title="XYTK">
 
-其中，[^\W]包含所有的数字，字母以及下划线，而(?R)则是 DEELX 正则表达式扩展语法中的递归表达式，表示递归引用整个模式...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/10/20</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "web">web</a>
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "CTF">CTF</a>
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "PHP">PHP</a>
-    
-</div>
-            
-        </div>
+<h3 id="Tomcat"><a href="#Tomcat" class="headerlink" title="Tomcat"></a>Tomcat</h3><p>Tomcat 是Apache 软件基金会（Apache Software Foundation）的Jakarta 项目中的一个核心项目，由Apache、Sun 和其他一些公司及个人共同开发而成。因为Tomcat 技术先进、性能稳定，而且免费，因而深受Java 爱好者的喜爱并得到了部分软件开发商的认可，成为目前比较流行的Java Web 应用服务器(Servlet 容器)。实际上Tomcat 部分是Apache 服务器的扩展，但它是独立运行的，所以当你运行tomcat 时，它实际上作为一个与Apache 独立的进程单独运行的。Tomcat 服务器是一个免费的开放源代码的Web 应用服务器，属于轻量级应用服务器，在中小型系统和并发访问用户不是很多的场合下被普遍使用，是开发和调试JSP 程序的首选。Tomcat默认使用 8080 号端口</p>
+<h3 id="Weblogic"><a href="#Weblogic" class="headerlink" title="Weblogic"></a>Weblogic</h3><p>WebLogic 是美国Oracle公司出品的一个application server，确切的说是一个基于JAVAEE架构的中间件，WebLogic是用于开发、集成、部署和管理大型分布式Web应用、网络应用和数据库应用的Java应用服务器。将Java的动态功能和Java Enterprise标准的安全性引入大型网络应用的开发、集成、部署和管理之中。Weblogic默认端口是 7001。</p>
+<h3 id="Jboss"><a href="#Jboss" class="headerlink" title="Jboss"></a>Jboss</h3><p>Jboss 是一个基于Java EE的开放源代码的应用服务器。 它不但是Servlet容器，而且也是EJB容器，从而受到企业级开发人员的欢迎，从而弥补了Tomcat只是一个Servlet容器的缺憾。JBoss是一个管理EJB的容器和服务器。但JBoss核心服务不包括支持 servlet/JSP 的WEB容器，一般与 Tomcat 或 Jetty 绑定使用。Jboss默认端口号是8080。</p>
+<h3 id="Jetty"><a href="#Jetty" class="headerlink" title="Jetty"></a>Jetty</h3><p>Jetty 是一个开源的servlet容器，它为基于Java的web容器，例如JSP和servlet提供运行环境。Jetty是使用JAVA编写的，它的API以一组JAR包的形式发布。开发人员可以将Jetty容器实例化成一个对象，可以迅速为一些独立运行（stand-alone）的Java应用提供网络和web连接。</p>
+<h3 id="Webshere"><a href="#Webshere" class="headerlink" title="Webshere"></a>Webshere</h3><p>WebShere 是 IBM 的软件平台。它包含了编写、运行和监视全天候的工业强度的随需应变 Web 应用程序和跨平台、跨产品解决方案所需要的整个中间件基础设施，如服务器、服务和工具。WebSphere 提供了可靠、灵活和健壮的软件。WebSphere 是一个模块化的平台，基于业界支持的开放标准。可以通过受信任和持久的接口，将现有资产插入 WebSphere，可以继续扩展环境。WebSphere 可以在许多平台上运行，包括 Intel、Linux 和 z/OS。Webshere默认端口号是 9080。</p>
+<h3 id="Glasshfish"><a href="#Glasshfish" class="headerlink" title="Glasshfish"></a>Glasshfish</h3><p>GlassFish 是一款强健的商业兼容应用服务器，达到产品级质量，可免费用于开发、部署和重新分发。开发者可以免费获得源代码，还可以对代码进行更改</p>
+<hr>
+<h1 id="容器"><a href="#容器" class="headerlink" title="容器"></a>容器</h1><p><strong>容器：</strong>容器是中间件的一种，作为操作系统和应用程序之间的桥梁，给处于其中的应用程序组件提供一个环境，使应用程序直接跟容器中的环境变量交互，而不必关注其它系统问题。例如：tomcat（servlet容器），Jboss(EJB容器)。这些容器提供的接口严格遵守J2EE规范中的web application 标准。</p>
+<p><strong>web容器：</strong>我们把遵守J2EE规范标准的web服务器就叫做J2EE中的web容器。处理 web服务的容器，例如tomcat（servlet容器），IIS(asp容器)。web容器用于给处于其中的应用程序组件（ASP、JSP）提供一个环境，是中间件的一个组成部分，它实现了对动态语言的解析。比如tomcat可以解析jsp，是因为其内部有一个servlet容器。</p>
+<p><strong>EJB容器(Enterprise java bean )：</strong>更具有行业领域特色。他提供给运行在其中的组件EJB各种管理功能。只要满足J2EE规范的EJB放入该容器，马上就会被容器进行高效率的管理。并且可以通过现成的接口来获得系统级别的服务。例如邮件服务、事务管理。</p>
+<p>WEB容器和EJB容器在原理上是大体相同的，更多的区别是被隔离的外界环境。WEB容器更多的是跟基于HTTP的请求打交道。而 EJB容器不是。它是更多的跟数据库、其它服务打交道。但他们都是把与外界的交互实现从而减轻应用程序的负担。例如servlet不用关心http的细 节，直接引用环境变量session,request,response就行、EJB不用关心数据库连接速度、各种事务控制，直接由容器来完成。</p>
+<p>所以说，我们也可以把 IIS(asp容器)、Tomcat(servlet容器)、Jboss(EJB容器)等叫做Web容器</p>
+<hr>
+<h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>其实，对于这些名词，也并没有一个十分清楚的概念说这个就是属于这个，而不能属于那个。他们之间很多是包含关系。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">web服务器：IIS、Apache、Nginx、Tomcat、Jboss、Jetty、Weblogic、Webshere、Glasshfish、Lighttpd等</span><br><span class="line">web中间件：Tomcat、Jboss、Jetty、Weblogic、Webshere、Glasshfish等</span><br><span class="line">web容器：IIS(asp容器)、Tomcat(servlet容器)、Jboss(EJB容器)</span><br></pre></td></tr></table></figure>
+
+
     </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2019/10/19/【wp】bugku-login4-CBC字节翻转攻击/" >
-            
-                <span>【wp】bugku-login4&amp;CBC字节翻转攻击</span>
-        </a>
-        <div class="abstract-content">
-            前言题目中遇到了CBC字节翻转攻击，借此机会系统的学习一下。
-CBC字节翻转攻击的精髓在于损坏密文来改变明文。
-资料链接：https://blog.csdn.net/csu_vc/article/details/79619309
-https://skysec.top/2017/06/16/CBC%E5%AD%97%E8%8A%82%E7%BF%BB%E8%BD%AC%E6%94%BB%E5%87%BB/
-
-CBC字节翻转攻击原理加密原理图：
-
-1、Plaintext：待加密的数据。
-2、IV：用于随机化加密的比特块，保证即使对相同明文多次加密，也可以得到不同的密文。
-3、Cipherte...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/10/19</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "web">web</a>
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "CTF">CTF</a>
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "wp">wp</a>
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "Crypto">Crypto</a>
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "CBC字节翻转攻击">CBC字节翻转攻击</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2019/10/18/【wp】-RoarCTF-2019-Easy-Calc/" >
-            
-                <span>【wp】[RoarCTF 2019]Easy Calc</span>
-        </a>
-        <div class="abstract-content">
-            前言代码审计、Bypass
-比赛的时候稍微有点懵，我还是太菜了。
-题目链接： https://buuoj.cn/challenges
-参考链接： 
-利用PHP的字符串解析特性Bypass： https://www.freebuf.com/articles/web/213359.html
-PHP去参数实现RCE：
-https://skysec.top/2019/03/29/PHP-Parametric-Function-RCE/#%E6%B3%95%E4%BA%94%EF%BC%9Adirname-amp-chdir
-https://www.guildhab.top/?p=1024
-
-Ro...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/10/18</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "web">web</a>
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "CTF">CTF</a>
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "wp">wp</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2019/10/13/【wp】攻防世界web进阶-web-php-include/" >
-            
-                <span>【wp】攻防世界web进阶-web php include</span>
-        </a>
-        <div class="abstract-content">
-            总述打开题目是一段PHP代码：
-123456789&lt;?php  show_source(__FILE__);  echo $_GET[&apos;hello&apos;];  $page=$_GET[&apos;page&apos;];  while (strstr($page, &quot;php://&quot;)) &#123;      $page=str_replace(&quot;php://&quot;, &quot;&quot;, $page);  &#125;  include($page);?&gt;
-
-猜测是绕过strstr( )函数，结合php伪协议进行命令...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/10/13</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "web">web</a>
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "CTF">CTF</a>
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "wp">wp</a>
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "文件包含">文件包含</a>
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "攻防世界">攻防世界</a>
-    
-</div>
-            
-        </div>
-    </article>
+    <!-- license  -->
     
     <!-- paginator  -->
+    <ul class="post-paginator">
+        <li class="next">
+            
+        </li>
+        <li class="previous">
+            
+                <div class="prevSlogan">Previous Post</div>
+                <a href= "/2019/10/20/blog的意义/" title= "blog的意义">
+                    <div class="prevTitle">blog的意义</div>
+                </a>
+            
+        </li>
+    </ul>
+    <!-- 评论插件 -->
+    <!-- 来必力City版安装代码 -->
+
+<!-- City版安装代码已完成 -->
     
+    
+    <!-- partial('_partial/comment/changyan') -->
+    <!--PC版-->
+
+
+    
+    
+
+    <!-- 评论 -->
 </main>
             <!-- profile -->
             
@@ -601,6 +558,24 @@ Ro...
 </footer>
     </div>
     <!-- toc -->
+    
+    <div class="toc-wrapper" style=
+    
+
+
+
+
+
+
+
+top:50vh;
+
+    >
+        <div class="toc-catalog">
+            <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
+        </div>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#前言"><span class="toc-number">1.</span> <span class="toc-text">前言</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#web服务器"><span class="toc-number">2.</span> <span class="toc-text">web服务器</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#中间件"><span class="toc-number">3.</span> <span class="toc-text">中间件</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Java-web中间件"><span class="toc-number">3.1.</span> <span class="toc-text">Java web中间件</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Tomcat"><span class="toc-number">3.1.1.</span> <span class="toc-text">Tomcat</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Weblogic"><span class="toc-number">3.1.2.</span> <span class="toc-text">Weblogic</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Jboss"><span class="toc-number">3.1.3.</span> <span class="toc-text">Jboss</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Jetty"><span class="toc-number">3.1.4.</span> <span class="toc-text">Jetty</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Webshere"><span class="toc-number">3.1.5.</span> <span class="toc-text">Webshere</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Glasshfish"><span class="toc-number">3.1.6.</span> <span class="toc-text">Glasshfish</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#容器"><span class="toc-number">4.</span> <span class="toc-text">容器</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#总结"><span class="toc-number">5.</span> <span class="toc-text">总结</span></a></li></ol>
+    </div>
     
     <div class="back-top iconfont-archer">&#xe639;</div>
     <div class="sidebar sidebar-hide">
@@ -906,6 +881,8 @@ jsonContent:
     
     </div>
     <!-- async load share.js -->
+    
+        <script src="/scripts/share.js" async></script>    
      
     </body>
 </html>
