@@ -22,7 +22,7 @@
     <meta name="description" content>
     <meta http-equiv="Cache-control" content="no-cache">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>XYTK&#39;s Blog</title>
+    <title>没有真正的感同身受 · XYTK&#39;s Blog</title>
     <style type="text/css">
     @font-face {
         font-family: 'Oswald-Regular';
@@ -203,12 +203,23 @@
 </head>
 
     
+        <body class="post-body">
+    
     
 <header class="header">
 
     <div class="read-progress"></div>
     <div class="header-sidebar-menu">&#xe775;</div>
     <!-- post页的toggle banner  -->
+    
+    <div class="banner">
+            <div class="blog-title">
+                <a href="/" >XYTK&#39;s Blog</a>
+            </div>
+            <div class="post-title">
+                <a href="#" class="post-name">没有真正的感同身受</a>
+            </div>
+    </div>
     
     <a class="home-link" href=/>XYTK's Blog</a>
 </header>
@@ -220,24 +231,74 @@
 
 
 
+
+height:50vh;
 ">
     
     <!-- 主页  -->
+    
+    
+    <!-- 404页  -->
             
     <div class="site-intro-placeholder"></div>
-    <div class="site-intro-img" style="background-image: url(/)"></div>
+    <div class="site-intro-img" style="background-image: url(/intro/post-bg.jpg)"></div>
     <div class="site-intro-meta">
         <!-- 标题  -->
         <h1 class="intro-title">
             <!-- 主页  -->
+            
+            没有真正的感同身受
+            <!-- 404 -->
             
         </h1>
         <!-- 副标题 -->
         <p class="intro-subtitle">
             <!-- 主页副标题  -->
             
+            
+            <!-- 404 -->
+            
         </p>
         <!-- 文章页meta -->
+        
+            <div class="post-intros">
+                <!-- 文章页标签  -->
+                
+                    <div class= post-intro-tags >
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags = "Blog里的胡言乱语">Blog里的胡言乱语</a>
+    
+</div>
+                
+                
+                    <div class="post-intro-read">
+                        <span>Word count: <span class="post-count word-count">5</span>Reading time: <span class="post-count reading-time">1 min</span></span>
+                    </div>
+                
+                <div class="post-intro-meta">
+                    <span class="post-intro-calander iconfont-archer">&#xe676;</span>
+                    <span class="post-intro-time">2019/10/27</span>
+                    
+                    <span id="busuanzi_container_page_pv" class="busuanzi-pv">
+                        <span class="iconfont-archer">&#xe602;</span>
+                        <span id="busuanzi_value_page_pv"></span>
+                    </span>
+                    
+                    <span class="shareWrapper">
+                        <span class="iconfont-archer shareIcon">&#xe71d;</span>
+                        <span class="shareText">Share</span>
+                        <ul class="shareList">
+                            <li class="iconfont-archer share-qr" data-type="qr">&#xe75b;
+                                <div class="share-qrcode"></div>
+                            </li>
+                            <li class="iconfont-archer" data-type="weibo">&#xe619;</li>
+                            <li class="iconfont-archer" data-type="qzone">&#xe62e;</li>
+                            <li class="iconfont-archer" data-type="twitter">&#xe634;</li>
+                            <li class="iconfont-archer" data-type="facebook">&#xe67a;</li>
+                        </ul>
+                    </span>
+                </div>
+            </div>
         
     </div>
 </div>
@@ -338,50 +399,48 @@
 </script>        
         <img class="loading" src="/assets/loading.svg" style="display: block; margin: 6rem auto 0 auto; width: 6rem; height: 6rem;" />
         <div class="container container-unloaded">
-            <main class="main index-page">
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2019/10/13/【wp】攻防世界web进阶-web-php-include/" >
-            
-                <span>【wp】攻防世界web进阶-web php include</span>
-        </a>
-        <div class="abstract-content">
-            总述打开题目是一段PHP代码：
-123456789&lt;?php  show_source(__FILE__);  echo $_GET[&apos;hello&apos;];  $page=$_GET[&apos;page&apos;];  while (strstr($page, &quot;php://&quot;)) &#123;      $page=str_replace(&quot;php://&quot;, &quot;&quot;, $page);  &#125;  include($page);?&gt;
-
-猜测是绕过strstr( )函数，结合php伪协议进行命令...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/10/13</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "web">web</a>
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "wp">wp</a>
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "CTF">CTF</a>
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "文件包含">文件包含</a>
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "攻防世界">攻防世界</a>
-    
+            <main class="main post-page">
+    <article class="article-entry">
+        <div id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
+  <div class="hbe-input-container">
+  <input type="password" id="hbePass" placeholder="输入密码：" />
+    <label for="hbePass">输入密码：</label>
+    <div class="bottom-line"></div>
+  </div>
+  <script id="hbeData" type="hbeData" data-hmacdigest="dc624f33d5143fc966a1601986553e47df3c3e0af80227d6672ee4cdf31521fe">3d302d0de0f80df32e3a9c0d0e845b8fa7949a29398db63ea618eac018989c08c600f06b5ba8221b1e54b37c389fe019c8edd1e5bce8dfdacfdc0330b9769642ea029592a3d5b7ff41640d6e901a7ece07816998cf413c89805df844b059c611a94c1c75f8cfb16c8e43680085ca2799b0f2e44a83ccaaf325c8a65ce2cd5b8ea3bcc350b8d952853b90287821c431983b36909bf21eae3a3f506995ae46da9375a606ab8e39caf0760838e24aef5f4a057cf3d31d3c3cf0deb92662bed6eb49c8737ecaf95d8d1ee527cf68c34360f1dda0762beed02b7d375e4c363be41121fffb30812aafdbf44ec08887c95c2374e66402ea4e253dbd16b7564d44de9e148f88893e8b5a98218f0295bdf54e7a41ff6877985734c6dda031383abe58e78f1029667edd61fabe5b8d426ca507476f377ea9a1eea55335c66492ed598e34b4fed05e491965f5c7d3b36448c07d8200a0cd17c36a38ce0d6abcc80300b6eabf32b0afd783eb7e7382c0ec95995344c56ae9f1610940d6dc0fcea03d4241b477e8a1e8dca9b6f9fb92dbf935f1f40a25b5d2f15237d3ce4f992142af99b366147160afef9965495d0f7065db35e42c69b8e23bfea297201088e13a8f96b1ea52f6a04f00296ed2372dc713c4c1fbfd4527214604ce7f22ac96b20c83b208aeb6580d68e2b9b31d61cfe04705655fec3ae0ce9bdeb62be42b23c2183038aaaa962ddd4c4139f47756bdd65b902efda4722f2fe6493dca863077d1f5c64e88e2a7797d1f7da2e3aef229d8640d38cfd6e61d3b2a0a55aadb481e68898544ae2654512f157981f48d2ec6449b156439a98f990ee9b86f9af1037be83de029eb860c96de0075e4deaf4cc92b671c29c42641ed8ca8fd825d20ad549d1cedb3a9ed1ce66b13afbe12c6706eff9ced8d958bd70125692f7979cd8bddc3af9ca1ae8c830f521dda384dd03fee4c7d18a30e51196c867d898376ac7159fb9654a2b87125ff9b061db64adee29cc65d81b51c4b022ad4c1816bfcf8c8770b40a64bf417b4fa07211a56bbb43aa6c72c555f7e5a0f948bfc017a00be9615954468305f3d33e3930df20efe416723070087e6020f44874d7513c27312861bb6a4248aa08a040e85e24bab5633de06ada2828195744ae312e769a5e8ab8db0f517b04ec611565c0f02448071c13e337272916bc8b78670bdcd6b666d7b47d30b565e9eaf255e339e495f9c6513975d485e823c454fe92facc997d15826964b71cbe7046b48a6a42381321bb576195181fef3b6327739f4e17daef59f6d9e388365f539e649d22ddffcb3777364ff1851be5ca2550fd6f5d007b877c0fff416c2b21107968fdd7523b243661e0e1d9065ce32aa0707adae2ab874840d4abeaa1b19f74e50cc7a69552ac9413ce66834ff0210c44dba6502b607a2485c062aeb19a76e188b535dc993277da20c56d225a82e29315d821e477c21d0db5463783ba38790e13c02883bf6bcbd1e0f81495bd7bb2c933cd5f97a891ed850959d929d7fd6f937831fd3c5da99bed62370c4615c529dfb3b48ad39b806a9e6a6b597551ea89209ee4bab0865d0936f11c46a571b5319f217c5fad6aff87059bfdad953df02bae37a29967481878338ed3d28822754c6af6d0d38452fee70851643021a58d4ab7af8b20d5989e3c434a8c930863cae5c7ecc6997bece0d4c78c442d363561ced0b4f4591a99d3d019feb7cd1a8a497ed7b62479800bfe249ed75cb83074c44d00e63ec1c4bc6c84d965563e04339b98174cd65a0d01a5e14baeccd17023077e6e7d484d3b60eb9a3147b342db205cd3932916aa2482e4740435624d764573bfe4cd751dab25eed18825bd14f2c5b4ed8f45cad98763be951624326d349122bae5735514a8fff13c5c743764f0d6d1a071bc8c331174f31413e3725e4af54c14df690baeae8b1b6b507c50c307fe52a49f019e90126750388f266f991b38a57f560e0ff7077fa4d34483bd914c4ce0dad0f41307892e7ac07ee315560201f10f470021e58cea870468e193f60c3444d58828c8aa7fda0470a3634b534f3a607b6a4ea4285a4979a247e90c5d4f1ad2c2deff68949865b04a738310e28fff571be6d2871802e52456e2edca6161ca4459ce3c383e38ca6b8ab63432beb88a547c2dfab74f52f1df29b463fcb7e35d574e7fffe34d3a50424459e35ea52cac43f27c38d2ab5aaa10c1152411b05e754012c1dcbf97695d609b77510d133c27838e63b7a729b4769c142a739282bfe7a2910b6d3780706a48e98711fdce60d320e59edaa865c5fd1b17d551cb60d5c1fee47e04400be3d9e097182f2fa9d8dd5c9782c90c6144cc29382fe620f0877a61ae88af10e2832e950cc51dc446d20def16ab7f79e4328eb82d664efaee50b4374c91806cec3137ff33152664b86a4aceb6f007946c17eab81b520c4adf9abe3491de038277be9eed9a217f45da6ba8b9b377a2b9a69a8fa8589ec0d62052affcede485f589ed5c3dc5fb9a67193c5830cc1507c042501f108cd855ca4c8340672e3cac84976664369e559925a6599e7189b93f61d01f956d84dbc7b13c92df4638c37ac5c9c5b921008f2cfee2232de8aa8e31edb76934fcd8f5405041edac3f8dbeaaea41929384a53fdd41a0955ebff574e17244b4ce6509e5f7bb715fc90044cbfe20883b2a0a20caef5bc8a035ffbd95d3a962f6aeb00523d57d726ac4d4ed7e54966f0251a5c976a25d7b84eee74c43aaecced6b010b677fc9f29fefe154f69226aed62883670a2deafddbc9889763e67efc27ecda22160e1833085972d5040738f9ff98e187495fc24024cbd5ab9082be52e71f0188a6a911eff84b0d6c633227aaeb692894cb97c729c96dd6a2f482fe791349c0f9aab464d0ceb9ad0d8eb980813d222cba3cef96b498877f49f6eee25951c16e17f974d1d692cc3e832d6c9e38bacb7bffc940b3b500e417cccbde7f777ac62133baa9b575890923061eb70453e63609b4bc426ef5463b9e12b3cbc3930a1fbc3a721e90a3618636440bd5372e5dab8cb9d88a825d79d914822bd82b1c0ea7e71f157452200d210738a0a4bd1cc64f747f6a3857685e8e5c2a0376db02722427e7ca911bc975a5ca2ef7a97f52a1e0e9a0bb987274395199f6778a7f2fb53915bd29b76db5c9f5a9bdb20bc462a03eada51ad3aff164ecbf173bf79a44dfb4573eb01ad9ece6b320a6934ddd4eb523f315c953e1c0de66e2dd40285e585a5083b892cd19eff95d701b263b8536644b6548d7fa5043e5d1308803fe3a517de33323973dbaf86261c78b5ca60ba0b417b101433d20b13338acacca18d96e88be58f0fbaab312ae36e085c90034402cc303dd1f2d8497d307c354aa8771e9caa895ba8261dcc1bef36b145824179ef6d0a504088bace4238f3336cb2d1cca2917a2c180714bc8c02530bf8795f1141599ce1c3ea24ec4faacf2d4bbd25039a8e6fd0f5e7d3dbf11d2c6091bcaaaeaf57850b74e7d6b815d311daf2ed3ea5602880eef5e3f1f58170f617e4e884d2cf7f0c73b50740b5632a61261dc922573c96d26ad71cec3d7b02f360dbaa72ec642904db374590c19beffac462d09fa46fb9ef7e84681cc69932ed38aad8410c44da172042de065fd94761d64278ca17db17d1b2fc1cb586fd3277df8518e69e44e232865060092473e27e59068a8230cb46e7f71af4dff98394d41c28a98e9aa897f376fdadb71c73a5f80209d82af4b31ae75677655a00ec7fab033ef71a6679f930f9a0df240d6d1ca6ee8d382ca3b9be1078d8ae700709595110ca960eee544cd86129ed85f97c8e03214ac46ef9735898b4dd81ed44de85354d9565cf6327939a24125f6e5a7bece22934eadf4e92849e0b5e693e894cd0efee071883b3f61f35d36c457b5ff911a30c31f83b70543853911f150eab4ef54ef4846b042457162b45f4c664f486b160f7cf3b9b53ec02c3a2f4a733f512ef5e7bf47a573ff3934c6c9f3cb117d830fb4a3153b12138f06ac798f8a04b1c357e1741a48ebb19ee6722426898aec46ed75f46985a9b4352f42ef35d159c8f5c3fda35af0d9d684549c58c40c20c4ff51053f263d1e220a85766b019758317429d7937791e5ec68f064d051f30022931434927733d00fcf7ea74d5e3f238ec3182ec2712b446d6195a8fe21cbefd8adaf1922e2a73d25d59e3fac1e9cbd54abb1a9a6dc3d83696b16e1b7ee7e322fa569fb5f396e86d15bbad3f16dc949afd803d873be787d6e8956fd9a2f42980795c623622228825f81ec754342073cf16ca3d0f2c971b1808a2c65cb11393f6000a81849fffd5220bf0c21b6b43ab6cb89e6c8e422fcca9bcb5383dcf5d2fb0e80813bb7829efaef178dd7332e5cc98da11f58f510c4a0bba74385330450ed8dc6af0db44dce17fa61846cf18b944b570a6032519412de10c254685b48cb0b8ee7371318da89cfe8aecd01fe5df92b6c430846a209bc2612311aec946b5291db93be225c2384b6b11670d7ea7a2d7367cdb720f31885322500996b32b3868df23f61b7dcba7a2f9275e2946c027b082f7d79275fc34ef714c17357d80d40954a4b9070aff883b6361176c8a7313df32aeff1db49c5d232549967d1ebe044fffe595c3b74baf214e73310ba4fc1f3f51a720878614e4fa4be6e3a657db45babb8fc5d1436b80c8d6ba43908396a98a3371e31207bda031037385bf0678d06ed13efdb4857a4ba2ce2a12a9ad7f630eefcbd3b636c12d69c9e6f4aca9f397cebda2a9efe3fd9e1c0041df8c8a733f834813f0b40513337c2a545e13b53804d77fd4d8adda66fdd929c8a2e9d2a3914a9c9b4909184f797cd22ba486e938c09c55f76841077b67980eddddb92d54ed80e13e5d65fc7c3c137e9ec8adce451bf848437a6161653dfc7a8e3fff9656db9a988d63e07adc7af5c9f801435dc9a5b75d3da7b34090554397943692f76f23ee28d4d03e581bba49d96b65bd71ffc3a444dab201097111f2681af9ad8db1a1341d67abb343be9a6a836f934a77dbf2276277a0c9a1b3715287f17b64505494d316c4b186dd6a7f77a6f1f9b0f7a66b03d3efacc2a7a2acd09ee2b850d143940d1fe79455ef25f7c4259b151b8025bf427f357ab89226aab66241770f4a18c89c781318c0b754594a1aec62e8df06bbd977841aacb52a85dc0ee5385a4268b1f824182cbaae675285daa6270e8d197981b91cc22be568674763f85c17e2126f39acd3a904857edfa454c5e31ba78f05c9bd425d93a2f7745f87f32d08eec10fc41271043cbe27246d4fb72d7c0c19f383c00c8e9b463a07d7b2300f961ee07876ef2ac591829f51cf8d7cf9d52f73692af1301e99600a3f7c6ec93305c64fa5969c02455cfc58f0c2ef77476dfa5c88d92b119c971b1e5943579ea28a6ac2711ebdc4bf11c736b0ee38396bac8384297ac8ed3e0e1ad876923b2a61cf92880794ed38bfc0ed93fc9b25e023af84edc1bc47970a6231f56bf78e06ac8a2f4c735d96c4858dd3beacb8cbbccf2601bdc74f1315d7a5a3245ebb3e02091f55abc41686fb4c0d97f448beac4d6199275c7488ca9175dc225d9c593c3703f7c1d09ddbcd6733fe44421c32d63af29f5d4262de7edb165785470fc5de721dfd591af30a6b6fa5794077f5f5cd384d88eb9798cce3b4bc140135ec2cd7f5200c0640aa9c76d668768cd5b0d4f3e26afb4e003963dfadf354f6e36c7e4bd183822d38cabd709a521afdc9d95c2140540968e446bb82f3cf3077542f05c0c990bbb92e63b1957476c549541d5a63d7554d0fb894c89245cce5673d7ba47eebe13027ad7b8d2594a21e2bb4a68e3d6391d332089d2520e18a8deb4187e99b3bb7388f6b47001bde0f16e541a6bb422e02dec884b0151bce57afaf51d15df3abf91ec4769b573cd426dab1201993a66b68ccfb7c848508e06ab61abb04074e7397ad231a7cf96b38b01de4bc2c0043263feb37b69393491dcb271f54f2626b73aa9f90db738cedd7759541e8c09df30d6f1d193969efeeff122685e5741f3c90e</script>
 </div>
-            
-        </div>
+<script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">
     </article>
+    <!-- license  -->
     
     <!-- paginator  -->
+    <ul class="post-paginator">
+        <li class="next">
+            
+        </li>
+        <li class="previous">
+            
+                <div class="prevSlogan">Previous Post</div>
+                <a href= "/2019/10/27/DOM文档对象模型/" title= "DOM文档对象模型">
+                    <div class="prevTitle">DOM文档对象模型</div>
+                </a>
+            
+        </li>
+    </ul>
+    <!-- 评论插件 -->
+    <!-- 来必力City版安装代码 -->
+
+<!-- City版安装代码已完成 -->
     
+    
+    <!-- partial('_partial/comment/changyan') -->
+    <!--PC版-->
+
+
+    
+    
+
+    <!-- 评论 -->
 </main>
             <!-- profile -->
             
@@ -477,6 +536,24 @@
 </footer>
     </div>
     <!-- toc -->
+    
+    <div class="toc-wrapper" style=
+    
+
+
+
+
+
+
+
+top:50vh;
+
+    >
+        <div class="toc-catalog">
+            <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
+        </div>
+        
+    </div>
     
     <div class="back-top iconfont-archer">&#xe639;</div>
     <div class="sidebar sidebar-hide">
@@ -848,6 +925,8 @@ jsonContent:
     
     </div>
     <!-- async load share.js -->
+    
+        <script src="/scripts/share.js" async></script>    
      
     </body>
 </html>
