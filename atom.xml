@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://xytk0x0.github.io/"/>
-  <updated>2019-10-27T13:58:38.884Z</updated>
+  <updated>2019-10-30T08:14:44.648Z</updated>
   <id>https://xytk0x0.github.io/</id>
   
   <author>
@@ -15,6 +15,84 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>SSI注入</title>
+    <link href="https://xytk0x0.github.io/2019/10/30/SSI%E6%B3%A8%E5%85%A5/"/>
+    <id>https://xytk0x0.github.io/2019/10/30/SSI注入/</id>
+    <published>2019-10-30T08:09:07.000Z</published>
+    <updated>2019-10-30T08:14:44.648Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>整理一下SSII(Server-Side-Includes Injection , 服务器端包含注入)</p><h1 id="SSII"><a href="#SSII" class="headerlink" title="SSII"></a>SSII</h1>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;整理一下SSII(Server-Side-Includes Injection , 服务器端包含注入)&lt;/p&gt;
+&lt;h1 id=&quot;SSII&quot;&gt;
+      
+    
+    </summary>
+    
+    
+      <category term="web" scheme="https://xytk0x0.github.io/categories/web/"/>
+    
+    
+      <category term="web" scheme="https://xytk0x0.github.io/tags/web/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>阿弟的情诗</title>
+    <link href="https://xytk0x0.github.io/2019/10/30/%E9%98%BF%E5%BC%9F%E7%9A%84%E6%83%85%E8%AF%97/"/>
+    <id>https://xytk0x0.github.io/2019/10/30/阿弟的情诗/</id>
+    <published>2019-10-30T07:40:39.000Z</published>
+    <updated>2019-10-30T07:44:20.496Z</updated>
+    
+    <content type="html"><![CDATA[<div id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">  <div class="hbe-input-container">  <input type="password" id="hbePass" placeholder="输入密码：" />    <label for="hbePass">输入密码：</label>    <div class="bottom-line"></div>  </div>  <script id="hbeData" type="hbeData" data-hmacdigest="5c8f8c1e1ae10fd0257e905e3d3cca32de28497a6ea91474091b344b16d4b144">aca38bb186dac9dbfd316f1936b294e90d4f025628123339878afb313413e9d0d96a95d56bd4f565389adc379f68e5e8addb4f47c6a0361f821c8500a4d618568137078966260c1dea1f038ac06a8af1</script></div><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
+    
+    <summary type="html">
+    
+      这是一篇加密文章，内容可能是个人情感宣泄或者收费技术。如果你认识我的话，可以大胆猜一猜密码。
+    
+    </summary>
+    
+    
+      <category term="日常生活的乱七八糟" scheme="https://xytk0x0.github.io/categories/%E6%97%A5%E5%B8%B8%E7%94%9F%E6%B4%BB%E7%9A%84%E4%B9%B1%E4%B8%83%E5%85%AB%E7%B3%9F/"/>
+    
+    
+      <category term="Blog里的胡言乱语" scheme="https://xytk0x0.github.io/tags/Blog%E9%87%8C%E7%9A%84%E8%83%A1%E8%A8%80%E4%B9%B1%E8%AF%AD/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>网络安全协议复习</title>
+    <link href="https://xytk0x0.github.io/2019/10/28/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E5%8D%8F%E8%AE%AE%E5%A4%8D%E4%B9%A0/"/>
+    <id>https://xytk0x0.github.io/2019/10/28/网络安全协议复习/</id>
+    <published>2019-10-28T07:02:47.000Z</published>
+    <updated>2019-10-30T12:30:45.348Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>最近这一周心态有点崩，基本上没看别的东西。要考试了，随便记录一下吧。</p><hr><h1 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h1><h2 id="网络安全需求"><a href="#网络安全需求" class="headerlink" title="网络安全需求"></a>网络安全需求</h2><p>1、机密性(防止数据的未授权公开)</p><p>2、完整性(防止数据被篡改)</p><p>3、可控性</p><p>限制对网络资源（硬件和软件）和数据（存储和通信）的访问，其目标是组织未授权使用资源、未授权公开或修改数据，其要素包括：标识和鉴别、授权、决策以及执行。</p><p>4、不可否认性 </p><p>通信实体需对自己的行为负责。包含两层含义，一是发送方不能否认自己发送数据的行为；二是接收方不能否认自己接收数据的行为。</p><p>5、可用性</p><p>合法用户能够正常获取服务。</p><h2 id="网络安全协议的定义"><a href="#网络安全协议的定义" class="headerlink" title="网络安全协议的定义"></a>网络安全协议的定义</h2><p>可定义为基于密码学的通信协议。该含义包括以下两层含义：</p><p>1、网络安全协议是以密码学为基础；</p><p>2、网络安全协议也是通信协议。</p><h2 id="构建网络安全协议的组件"><a href="#构建网络安全协议的组件" class="headerlink" title="构建网络安全协议的组件"></a>构建网络安全协议的组件</h2><p>包括加密与解密、消息摘要、消息验证码、数字签名、密钥管理</p><h3 id="加密与解密"><a href="#加密与解密" class="headerlink" title="加密与解密"></a>加密与解密</h3><p>对称加密算法：AES、三重数据加密标准(Triple DES,3DES)、RC2、RC4、国际数据加密算法(IDEA)</p><p>公钥加密算法：RSA、数字签名算法(DSA)、ElGamal、椭圆曲线密码(ECC)</p><h3 id="消息摘要"><a href="#消息摘要" class="headerlink" title="消息摘要"></a>消息摘要</h3><p>一段数据的摘要是表征该数据特征的字符串，获取数据摘要的功能通常由散列函数完成。</p><h4 id="散列函数的三个特性"><a href="#散列函数的三个特性" class="headerlink" title="散列函数的三个特性"></a>散列函数的三个特性</h4><p>1、映射分布均匀性和差分分布均匀性</p><p>实质是必须使输入中每一个比特信息，尽量均匀的反映到输出的每一个比特上面；输出中的每一个比特，都是输入中尽可能多比特的信息一起作用的结果。</p><p>2、单向性(不可伪造)</p><p>3、抗冲突性</p><p>在统计上无法产生两个散列值相同的预映射。</p><h2 id="假设需传输一个大尺寸的文件，且仅需要确保数据的机密性，设计一个满足此需求的网络安全协议。"><a href="#假设需传输一个大尺寸的文件，且仅需要确保数据的机密性，设计一个满足此需求的网络安全协议。" class="headerlink" title="假设需传输一个大尺寸的文件，且仅需要确保数据的机密性，设计一个满足此需求的网络安全协议。"></a>假设需传输一个大尺寸的文件，且仅需要确保数据的机密性，设计一个满足此需求的网络安全协议。</h2><hr><h1 id="IP层安全IPsec"><a href="#IP层安全IPsec" class="headerlink" title="IP层安全IPsec"></a>IP层安全IPsec</h1><p>IPsec标准包含多个协议。包括互联网安全关联与密钥管理协议(ISAKMP)和互联网密钥交换(IKE)这两个交换协议，以及数据封装处理协议的认证首部(AH)和封装安全载荷(ESP)这两个数据封装协议。</p><p>防止伪造IP</p><h2 id="协议组成："><a href="#协议组成：" class="headerlink" title="协议组成："></a>协议组成：</h2><p>IPsec由一系列安全协议组成。把IP通信过程分成协商和数据交互两个阶段。在协商阶段，通信双方互相认证对方的身份，并根据安全策略协商使用的加密、认证算法，生成共享的会话密钥；在数据交互阶段，通信双方利用协商好的算法和密钥对数据进行安全处理以实现IPsec的各种安全功能。</p><p>认证首部AH提供三类安全服务：数据完整性、数据源发认证和抗重放攻击</p><p>封装安全载荷ESP提供五类安全服务：数据完整性、数据源发认证、抗重放攻击、机密性和有限的传输流机密性</p><h2 id="典型应用"><a href="#典型应用" class="headerlink" title="典型应用"></a>典型应用</h2><p>1、端到端的安全</p><p>2、基本VPN支持</p><p>3、保护移动用户访问内部网</p><p>4、嵌套式隧道</p><hr><h1 id="传输层安全SSL和TLS"><a href="#传输层安全SSL和TLS" class="headerlink" title="传输层安全SSL和TLS"></a>传输层安全SSL和TLS</h1><p>SSL(Secure Sockets Layer 安全套接层),及其继任者传输层安全（Transport Layer Security，TLS）是为网络通信提供安全及数据完整性的一种安全协议。TLS与SSL在传输层与应用层之间对网络连接进行加密。</p><hr><h1 id="会话安全SSH"><a href="#会话安全SSH" class="headerlink" title="会话安全SSH"></a>会话安全SSH</h1><p>Secure Shell(SSH) 是由 IETF(The Internet Engineering Task Force) 制定的建立在应用层基础上的安全网络协议。它是专为远程登录会话(甚至可以用Windows远程登录Linux服务器进行文件互传)和其他网络服务提供安全性的协议，可有效弥补网络中的漏洞。通过SSH，可以把所有传输的数据进行加密，也能够防止DNS欺骗和IP欺骗。还有一个额外的好处就是传输的数据是经过压缩的，所以可以加快传输的速度。目前已经成为Linux系统的标准配置。</p><h2 id="功能"><a href="#功能" class="headerlink" title="功能"></a>功能</h2><p>传统的网络服务程序，如：ftp、pop和telnet在本质上都是不安全的，因为它们在网络上用明文传送口令和数据，别有用心的人非常容易就可以截获这些口令和数据。而且，这些服务程序的安全验证方式也是有其弱点的， 就是很容易受到“中间人”（man-in-the-middle）这种方式的攻击。所谓“中间人”的攻击方式， 就是“中间人”冒充真正的服务器接收你传给服务器的数据，然后再冒充你把数据传给真正的服务器。服务器和你之间的数据传送被“中间人”一转手做了手脚之后，就会出现很严重的问题。通过使用SSH，你可以把所有传输的数据进行加密，这样”中间人”这种攻击方式就不可能实现了，而且也能够防止DNS欺骗和IP欺骗。使用SSH，还有一个额外的好处就是传输的数据是经过压缩的，所以可以加快传输的速度。SSH有很多功能，它既可以代替Telnet，又可以为FTP、PoP、甚至为PPP提供一个安全的”通道”。</p><hr><h1 id="认证协议Kerberos"><a href="#认证协议Kerberos" class="headerlink" title="认证协议Kerberos"></a>认证协议Kerberos</h1>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;最近这一周心态有点崩，基本上没看别的东西。要考试了，随便记录一下吧。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&quot;概述&quot;&gt;&lt;a href=&quot;#概述&quot; 
+      
+    
+    </summary>
+    
+    
+      <category term="网络" scheme="https://xytk0x0.github.io/categories/%E7%BD%91%E7%BB%9C/"/>
+    
+    
+      <category term="网络" scheme="https://xytk0x0.github.io/tags/%E7%BD%91%E7%BB%9C/"/>
+    
+  </entry>
   
   <entry>
     <title>没有真正的感同身受</title>
