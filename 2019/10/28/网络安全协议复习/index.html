@@ -272,7 +272,7 @@ height:50vh;
                 
                 
                     <div class="post-intro-read">
-                        <span>Word count: <span class="post-count word-count">2k</span>Reading time: <span class="post-count reading-time">7 min</span></span>
+                        <span>Word count: <span class="post-count word-count">2k</span>Reading time: <span class="post-count reading-time">6 min</span></span>
                     </div>
                 
                 <div class="post-intro-meta">
@@ -423,12 +423,13 @@ height:50vh;
 <p>2、单向性(不可伪造)</p>
 <p>3、抗冲突性</p>
 <p>在统计上无法产生两个散列值相同的预映射。</p>
-<h2 id="假设需传输一个大尺寸的文件，且仅需要确保数据的机密性，设计一个满足此需求的网络安全协议。"><a href="#假设需传输一个大尺寸的文件，且仅需要确保数据的机密性，设计一个满足此需求的网络安全协议。" class="headerlink" title="假设需传输一个大尺寸的文件，且仅需要确保数据的机密性，设计一个满足此需求的网络安全协议。"></a>假设需传输一个大尺寸的文件，且仅需要确保数据的机密性，设计一个满足此需求的网络安全协议。</h2><hr>
+<hr>
 <h1 id="IP层安全IPsec"><a href="#IP层安全IPsec" class="headerlink" title="IP层安全IPsec"></a>IP层安全IPsec</h1><p>IPsec标准包含多个协议。包括互联网安全关联与密钥管理协议(ISAKMP)和互联网密钥交换(IKE)这两个交换协议，以及数据封装处理协议的认证首部(AH)和封装安全载荷(ESP)这两个数据封装协议。</p>
-<p>防止伪造IP</p>
 <h2 id="协议组成："><a href="#协议组成：" class="headerlink" title="协议组成："></a>协议组成：</h2><p>IPsec由一系列安全协议组成。把IP通信过程分成协商和数据交互两个阶段。在协商阶段，通信双方互相认证对方的身份，并根据安全策略协商使用的加密、认证算法，生成共享的会话密钥；在数据交互阶段，通信双方利用协商好的算法和密钥对数据进行安全处理以实现IPsec的各种安全功能。</p>
-<p>认证首部AH提供三类安全服务：数据完整性、数据源发认证和抗重放攻击</p>
-<p>封装安全载荷ESP提供五类安全服务：数据完整性、数据源发认证、抗重放攻击、机密性和有限的传输流机密性</p>
+<img src="/2019/10/28/网络安全协议复习/0.png" title="XYTK">
+
+<p><strong>认证首部AH</strong>提供三类安全服务：数据完整性、数据源发认证和抗重放攻击</p>
+<p><strong>封装安全载荷ESP</strong>提供五类安全服务：数据完整性、数据源发认证、抗重放攻击、机密性和有限的传输流机密性</p>
 <h2 id="典型应用"><a href="#典型应用" class="headerlink" title="典型应用"></a>典型应用</h2><p>1、端到端的安全</p>
 <p>2、基本VPN支持</p>
 <p>3、保护移动用户访问内部网</p>
@@ -588,7 +589,7 @@ top:50vh;
         <div class="toc-catalog">
             <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
         </div>
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#前言"><span class="toc-number">1.</span> <span class="toc-text">前言</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#概述"><span class="toc-number">2.</span> <span class="toc-text">概述</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#网络安全需求"><span class="toc-number">2.1.</span> <span class="toc-text">网络安全需求</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#网络安全协议的定义"><span class="toc-number">2.2.</span> <span class="toc-text">网络安全协议的定义</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#构建网络安全协议的组件"><span class="toc-number">2.3.</span> <span class="toc-text">构建网络安全协议的组件</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#加密与解密"><span class="toc-number">2.3.1.</span> <span class="toc-text">加密与解密</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#消息摘要"><span class="toc-number">2.3.2.</span> <span class="toc-text">消息摘要</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#散列函数的三个特性"><span class="toc-number">2.3.2.1.</span> <span class="toc-text">散列函数的三个特性</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#假设需传输一个大尺寸的文件，且仅需要确保数据的机密性，设计一个满足此需求的网络安全协议。"><span class="toc-number">2.4.</span> <span class="toc-text">假设需传输一个大尺寸的文件，且仅需要确保数据的机密性，设计一个满足此需求的网络安全协议。</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#IP层安全IPsec"><span class="toc-number">3.</span> <span class="toc-text">IP层安全IPsec</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#协议组成："><span class="toc-number">3.1.</span> <span class="toc-text">协议组成：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#典型应用"><span class="toc-number">3.2.</span> <span class="toc-text">典型应用</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#传输层安全SSL和TLS"><span class="toc-number">4.</span> <span class="toc-text">传输层安全SSL和TLS</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#会话安全SSH"><span class="toc-number">5.</span> <span class="toc-text">会话安全SSH</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#功能"><span class="toc-number">5.1.</span> <span class="toc-text">功能</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#认证协议Kerberos"><span class="toc-number">6.</span> <span class="toc-text">认证协议Kerberos</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#前言"><span class="toc-number">1.</span> <span class="toc-text">前言</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#概述"><span class="toc-number">2.</span> <span class="toc-text">概述</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#网络安全需求"><span class="toc-number">2.1.</span> <span class="toc-text">网络安全需求</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#网络安全协议的定义"><span class="toc-number">2.2.</span> <span class="toc-text">网络安全协议的定义</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#构建网络安全协议的组件"><span class="toc-number">2.3.</span> <span class="toc-text">构建网络安全协议的组件</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#加密与解密"><span class="toc-number">2.3.1.</span> <span class="toc-text">加密与解密</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#消息摘要"><span class="toc-number">2.3.2.</span> <span class="toc-text">消息摘要</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#散列函数的三个特性"><span class="toc-number">2.3.2.1.</span> <span class="toc-text">散列函数的三个特性</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#IP层安全IPsec"><span class="toc-number">3.</span> <span class="toc-text">IP层安全IPsec</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#协议组成："><span class="toc-number">3.1.</span> <span class="toc-text">协议组成：</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#典型应用"><span class="toc-number">3.2.</span> <span class="toc-text">典型应用</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#传输层安全SSL和TLS"><span class="toc-number">4.</span> <span class="toc-text">传输层安全SSL和TLS</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#会话安全SSH"><span class="toc-number">5.</span> <span class="toc-text">会话安全SSH</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#功能"><span class="toc-number">5.1.</span> <span class="toc-text">功能</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#认证协议Kerberos"><span class="toc-number">6.</span> <span class="toc-text">认证协议Kerberos</span></a></li></ol>
     </div>
     
     <div class="back-top iconfont-archer">&#xe639;</div>
@@ -601,6 +602,12 @@ top:50vh;
     <div class="sidebar-content sidebar-content-show-archive">
           <div class="sidebar-panel-archives">
     <!-- 在ejs中将archive按照时间排序 -->
+    
+    
+    
+    
+    
+    
     
     
     
@@ -880,10 +887,6 @@ top:50vh;
     
         <span class="sidebar-tag-name" data-tags="web"><span class="iconfont-archer">&#xe606;</span>web</span>
     
-        <span class="sidebar-tag-name" data-tags="PHP"><span class="iconfont-archer">&#xe606;</span>PHP</span>
-    
-        <span class="sidebar-tag-name" data-tags="CTF"><span class="iconfont-archer">&#xe606;</span>CTF</span>
-    
         <span class="sidebar-tag-name" data-tags="Blog里的胡言乱语"><span class="iconfont-archer">&#xe606;</span>Blog里的胡言乱语</span>
     
         <span class="sidebar-tag-name" data-tags="wp"><span class="iconfont-archer">&#xe606;</span>wp</span>
@@ -892,9 +895,13 @@ top:50vh;
     
         <span class="sidebar-tag-name" data-tags="攻防世界"><span class="iconfont-archer">&#xe606;</span>攻防世界</span>
     
-        <span class="sidebar-tag-name" data-tags="Java web"><span class="iconfont-archer">&#xe606;</span>Java web</span>
+        <span class="sidebar-tag-name" data-tags="CTF"><span class="iconfont-archer">&#xe606;</span>CTF</span>
+    
+        <span class="sidebar-tag-name" data-tags="PHP"><span class="iconfont-archer">&#xe606;</span>PHP</span>
     
         <span class="sidebar-tag-name" data-tags="tools"><span class="iconfont-archer">&#xe606;</span>tools</span>
+    
+        <span class="sidebar-tag-name" data-tags="Java web"><span class="iconfont-archer">&#xe606;</span>Java web</span>
     
         <span class="sidebar-tag-name" data-tags="网络"><span class="iconfont-archer">&#xe606;</span>网络</span>
     

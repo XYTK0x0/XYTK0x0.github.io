@@ -44,9 +44,9 @@
     <link href="https://xytk0x0.github.io/2019/10/28/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8%E5%8D%8F%E8%AE%AE%E5%A4%8D%E4%B9%A0/"/>
     <id>https://xytk0x0.github.io/2019/10/28/网络安全协议复习/</id>
     <published>2019-10-28T07:02:47.000Z</published>
-    <updated>2019-10-30T12:45:33.278Z</updated>
+    <updated>2019-10-31T10:27:04.641Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>最近这一周心态有点崩，基本上没看别的东西。要考试了，随便记录一下吧。</p><hr><h1 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h1><h2 id="网络安全需求"><a href="#网络安全需求" class="headerlink" title="网络安全需求"></a>网络安全需求</h2><p>1、机密性(防止数据的未授权公开)</p><p>2、完整性(防止数据被篡改)</p><p>3、可控性</p><p>限制对网络资源（硬件和软件）和数据（存储和通信）的访问，其目标是组织未授权使用资源、未授权公开或修改数据，其要素包括：标识和鉴别、授权、决策以及执行。</p><p>4、不可否认性 </p><p>通信实体需对自己的行为负责。包含两层含义，一是发送方不能否认自己发送数据的行为；二是接收方不能否认自己接收数据的行为。</p><p>5、可用性</p><p>合法用户能够正常获取服务。</p><h2 id="网络安全协议的定义"><a href="#网络安全协议的定义" class="headerlink" title="网络安全协议的定义"></a>网络安全协议的定义</h2><p>可定义为基于密码学的通信协议。该含义包括以下两层含义：</p><p>1、网络安全协议是以密码学为基础；</p><p>2、网络安全协议也是通信协议。</p><h2 id="构建网络安全协议的组件"><a href="#构建网络安全协议的组件" class="headerlink" title="构建网络安全协议的组件"></a>构建网络安全协议的组件</h2><p>包括加密与解密、消息摘要、消息验证码、数字签名、密钥管理</p><h3 id="加密与解密"><a href="#加密与解密" class="headerlink" title="加密与解密"></a>加密与解密</h3><p>对称加密算法：AES、三重数据加密标准(Triple DES,3DES)、RC2、RC4、国际数据加密算法(IDEA)</p><p>公钥加密算法：RSA、数字签名算法(DSA)、ElGamal、椭圆曲线密码(ECC)</p><h3 id="消息摘要"><a href="#消息摘要" class="headerlink" title="消息摘要"></a>消息摘要</h3><p>一段数据的摘要是表征该数据特征的字符串，获取数据摘要的功能通常由散列函数完成。</p><h4 id="散列函数的三个特性"><a href="#散列函数的三个特性" class="headerlink" title="散列函数的三个特性"></a>散列函数的三个特性</h4><p>1、映射分布均匀性和差分分布均匀性</p><p>实质是必须使输入中每一个比特信息，尽量均匀的反映到输出的每一个比特上面；输出中的每一个比特，都是输入中尽可能多比特的信息一起作用的结果。</p><p>2、单向性(不可伪造)</p><p>3、抗冲突性</p><p>在统计上无法产生两个散列值相同的预映射。</p><h2 id="假设需传输一个大尺寸的文件，且仅需要确保数据的机密性，设计一个满足此需求的网络安全协议。"><a href="#假设需传输一个大尺寸的文件，且仅需要确保数据的机密性，设计一个满足此需求的网络安全协议。" class="headerlink" title="假设需传输一个大尺寸的文件，且仅需要确保数据的机密性，设计一个满足此需求的网络安全协议。"></a>假设需传输一个大尺寸的文件，且仅需要确保数据的机密性，设计一个满足此需求的网络安全协议。</h2><hr><h1 id="IP层安全IPsec"><a href="#IP层安全IPsec" class="headerlink" title="IP层安全IPsec"></a>IP层安全IPsec</h1><p>IPsec标准包含多个协议。包括互联网安全关联与密钥管理协议(ISAKMP)和互联网密钥交换(IKE)这两个交换协议，以及数据封装处理协议的认证首部(AH)和封装安全载荷(ESP)这两个数据封装协议。</p><p>防止伪造IP</p><h2 id="协议组成："><a href="#协议组成：" class="headerlink" title="协议组成："></a>协议组成：</h2><p>IPsec由一系列安全协议组成。把IP通信过程分成协商和数据交互两个阶段。在协商阶段，通信双方互相认证对方的身份，并根据安全策略协商使用的加密、认证算法，生成共享的会话密钥；在数据交互阶段，通信双方利用协商好的算法和密钥对数据进行安全处理以实现IPsec的各种安全功能。</p><p>认证首部AH提供三类安全服务：数据完整性、数据源发认证和抗重放攻击</p><p>封装安全载荷ESP提供五类安全服务：数据完整性、数据源发认证、抗重放攻击、机密性和有限的传输流机密性</p><h2 id="典型应用"><a href="#典型应用" class="headerlink" title="典型应用"></a>典型应用</h2><p>1、端到端的安全</p><p>2、基本VPN支持</p><p>3、保护移动用户访问内部网</p><p>4、嵌套式隧道</p><hr><h1 id="传输层安全SSL和TLS"><a href="#传输层安全SSL和TLS" class="headerlink" title="传输层安全SSL和TLS"></a>传输层安全SSL和TLS</h1><p>SSL(Secure Sockets Layer 安全套接层),及其继任者传输层安全（Transport Layer Security，TLS）是为网络通信提供安全及数据完整性的一种安全协议。TLS与SSL在传输层与应用层之间对网络连接进行加密。</p><hr><h1 id="会话安全SSH"><a href="#会话安全SSH" class="headerlink" title="会话安全SSH"></a>会话安全SSH</h1><p>Secure Shell(SSH) 是由 IETF(The Internet Engineering Task Force) 制定的建立在应用层基础上的安全网络协议。它是专为远程登录会话(甚至可以用Windows远程登录Linux服务器进行文件互传)和其他网络服务提供安全性的协议，可有效弥补网络中的漏洞。目前已经成为Linux系统的标准配置。</p><h2 id="功能"><a href="#功能" class="headerlink" title="功能"></a>功能</h2><p>传统的网络服务程序，如：ftp、pop和telnet在本质上都是不安全的，因为它们在网络上用明文传送口令和数据，别有用心的人非常容易就可以截获这些口令和数据。而且，这些服务程序的安全验证方式也是有其弱点的， 就是很容易受到“中间人”（man-in-the-middle）这种方式的攻击。所谓“中间人”的攻击方式， 就是“中间人”冒充真正的服务器接收你传给服务器的数据，然后再冒充你把数据传给真正的服务器。服务器和你之间的数据传送被“中间人”一转手做了手脚之后，就会出现很严重的问题。通过使用SSH，你可以把所有传输的数据进行加密，这样”中间人”这种攻击方式就不可能实现了，而且也能够防止DNS欺骗和IP欺骗。使用SSH，还有一个额外的好处就是传输的数据是经过压缩的，所以可以加快传输的速度。SSH有很多功能，它既可以代替Telnet，又可以为FTP、PoP、甚至为PPP提供一个安全的”通道”。</p><hr><h1 id="认证协议Kerberos"><a href="#认证协议Kerberos" class="headerlink" title="认证协议Kerberos"></a>认证协议Kerberos</h1><p>Kerberos 是一种网络认证协议，其设计目标是通过密钥系统为客户机 / 服务器应用程序提供强大的认证服务。该认证过程的实现不依赖于主机操作系统的认证，无需基于主机地址的信任，不要求网络上所有主机的物理安全，并假定网络上传送的数据包可以被任意地读取、修改和插入数据。在以上情况下， Kerberos 作为一种可信任的第三方认证服务，是通过传统的密码技术（如：共享密钥）执行认证服务的。认证过程具体如下：客户机向认证服务器（AS）发送请求，要求得到某服务器的证书，然后 AS 的响应包含这些用客户端密钥加密的证书。证书的构成为： 1) 服务器 “ticket” ； 2) 一个临时加密密钥（又称为会话密钥 “session key”） 。客户机将 ticket （包括用服务器密钥加密的客户机身份和一份会话密钥的拷贝）传送到服务器上。会话密钥可以（现已经由客户机和服务器共享）用来认证客户机或认证服务器，也可用来为通信双方以后的通讯提供加密服务，或通过交换独立子会话密钥为通信双方提供进一步的通信加密服务。上述认证交换过程需要只读方式访问 Kerberos 数据库。但有时，数据库中的记录必须进行修改，如添加新的规则或改变规则密钥时。修改过程通过客户机和第三方 Kerberos 服务器（Kerberos 管理器 KADM）间的协议完成。有关管理协议在此不作介绍。另外也有一种协议用于维护多份 Kerberos 数据库的拷贝，这可以认为是执行过程中的细节问题，并且会不断改变以适应各种不同数据库技术。Kerberos又指麻省理工学院为这个协议开发的一套计算机网络安全系统。系统设计上采用客户端/服务器结构与DES加密技术，并且能够进行相互认证，即客户端和服务器端均可对对方进行身份认证。可以用于防止窃听、防止replay攻击、保护数据完整性等场合，是一种应用对称密钥体制进行密钥管理的系统。Kerberos的扩展产品也使用公开密钥加密方法进行认证。</p>]]></content>
+    <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>最近这一周心态有点崩，基本上没看别的东西。要考试了，随便记录一下吧。</p><hr><h1 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h1><h2 id="网络安全需求"><a href="#网络安全需求" class="headerlink" title="网络安全需求"></a>网络安全需求</h2><p>1、机密性(防止数据的未授权公开)</p><p>2、完整性(防止数据被篡改)</p><p>3、可控性</p><p>限制对网络资源（硬件和软件）和数据（存储和通信）的访问，其目标是组织未授权使用资源、未授权公开或修改数据，其要素包括：标识和鉴别、授权、决策以及执行。</p><p>4、不可否认性 </p><p>通信实体需对自己的行为负责。包含两层含义，一是发送方不能否认自己发送数据的行为；二是接收方不能否认自己接收数据的行为。</p><p>5、可用性</p><p>合法用户能够正常获取服务。</p><h2 id="网络安全协议的定义"><a href="#网络安全协议的定义" class="headerlink" title="网络安全协议的定义"></a>网络安全协议的定义</h2><p>可定义为基于密码学的通信协议。该含义包括以下两层含义：</p><p>1、网络安全协议是以密码学为基础；</p><p>2、网络安全协议也是通信协议。</p><h2 id="构建网络安全协议的组件"><a href="#构建网络安全协议的组件" class="headerlink" title="构建网络安全协议的组件"></a>构建网络安全协议的组件</h2><p>包括加密与解密、消息摘要、消息验证码、数字签名、密钥管理</p><h3 id="加密与解密"><a href="#加密与解密" class="headerlink" title="加密与解密"></a>加密与解密</h3><p>对称加密算法：AES、三重数据加密标准(Triple DES,3DES)、RC2、RC4、国际数据加密算法(IDEA)</p><p>公钥加密算法：RSA、数字签名算法(DSA)、ElGamal、椭圆曲线密码(ECC)</p><h3 id="消息摘要"><a href="#消息摘要" class="headerlink" title="消息摘要"></a>消息摘要</h3><p>一段数据的摘要是表征该数据特征的字符串，获取数据摘要的功能通常由散列函数完成。</p><h4 id="散列函数的三个特性"><a href="#散列函数的三个特性" class="headerlink" title="散列函数的三个特性"></a>散列函数的三个特性</h4><p>1、映射分布均匀性和差分分布均匀性</p><p>实质是必须使输入中每一个比特信息，尽量均匀的反映到输出的每一个比特上面；输出中的每一个比特，都是输入中尽可能多比特的信息一起作用的结果。</p><p>2、单向性(不可伪造)</p><p>3、抗冲突性</p><p>在统计上无法产生两个散列值相同的预映射。</p><hr><h1 id="IP层安全IPsec"><a href="#IP层安全IPsec" class="headerlink" title="IP层安全IPsec"></a>IP层安全IPsec</h1><p>IPsec标准包含多个协议。包括互联网安全关联与密钥管理协议(ISAKMP)和互联网密钥交换(IKE)这两个交换协议，以及数据封装处理协议的认证首部(AH)和封装安全载荷(ESP)这两个数据封装协议。</p><h2 id="协议组成："><a href="#协议组成：" class="headerlink" title="协议组成："></a>协议组成：</h2><p>IPsec由一系列安全协议组成。把IP通信过程分成协商和数据交互两个阶段。在协商阶段，通信双方互相认证对方的身份，并根据安全策略协商使用的加密、认证算法，生成共享的会话密钥；在数据交互阶段，通信双方利用协商好的算法和密钥对数据进行安全处理以实现IPsec的各种安全功能。</p><img src="/2019/10/28/网络安全协议复习/0.png" title="XYTK"><p><strong>认证首部AH</strong>提供三类安全服务：数据完整性、数据源发认证和抗重放攻击</p><p><strong>封装安全载荷ESP</strong>提供五类安全服务：数据完整性、数据源发认证、抗重放攻击、机密性和有限的传输流机密性</p><h2 id="典型应用"><a href="#典型应用" class="headerlink" title="典型应用"></a>典型应用</h2><p>1、端到端的安全</p><p>2、基本VPN支持</p><p>3、保护移动用户访问内部网</p><p>4、嵌套式隧道</p><hr><h1 id="传输层安全SSL和TLS"><a href="#传输层安全SSL和TLS" class="headerlink" title="传输层安全SSL和TLS"></a>传输层安全SSL和TLS</h1><p>SSL(Secure Sockets Layer 安全套接层),及其继任者传输层安全（Transport Layer Security，TLS）是为网络通信提供安全及数据完整性的一种安全协议。TLS与SSL在传输层与应用层之间对网络连接进行加密。</p><hr><h1 id="会话安全SSH"><a href="#会话安全SSH" class="headerlink" title="会话安全SSH"></a>会话安全SSH</h1><p>Secure Shell(SSH) 是由 IETF(The Internet Engineering Task Force) 制定的建立在应用层基础上的安全网络协议。它是专为远程登录会话(甚至可以用Windows远程登录Linux服务器进行文件互传)和其他网络服务提供安全性的协议，可有效弥补网络中的漏洞。目前已经成为Linux系统的标准配置。</p><h2 id="功能"><a href="#功能" class="headerlink" title="功能"></a>功能</h2><p>传统的网络服务程序，如：ftp、pop和telnet在本质上都是不安全的，因为它们在网络上用明文传送口令和数据，别有用心的人非常容易就可以截获这些口令和数据。而且，这些服务程序的安全验证方式也是有其弱点的， 就是很容易受到“中间人”（man-in-the-middle）这种方式的攻击。所谓“中间人”的攻击方式， 就是“中间人”冒充真正的服务器接收你传给服务器的数据，然后再冒充你把数据传给真正的服务器。服务器和你之间的数据传送被“中间人”一转手做了手脚之后，就会出现很严重的问题。通过使用SSH，你可以把所有传输的数据进行加密，这样”中间人”这种攻击方式就不可能实现了，而且也能够防止DNS欺骗和IP欺骗。使用SSH，还有一个额外的好处就是传输的数据是经过压缩的，所以可以加快传输的速度。SSH有很多功能，它既可以代替Telnet，又可以为FTP、PoP、甚至为PPP提供一个安全的”通道”。</p><hr><h1 id="认证协议Kerberos"><a href="#认证协议Kerberos" class="headerlink" title="认证协议Kerberos"></a>认证协议Kerberos</h1><p>Kerberos 是一种网络认证协议，其设计目标是通过密钥系统为客户机 / 服务器应用程序提供强大的认证服务。该认证过程的实现不依赖于主机操作系统的认证，无需基于主机地址的信任，不要求网络上所有主机的物理安全，并假定网络上传送的数据包可以被任意地读取、修改和插入数据。在以上情况下， Kerberos 作为一种可信任的第三方认证服务，是通过传统的密码技术（如：共享密钥）执行认证服务的。认证过程具体如下：客户机向认证服务器（AS）发送请求，要求得到某服务器的证书，然后 AS 的响应包含这些用客户端密钥加密的证书。证书的构成为： 1) 服务器 “ticket” ； 2) 一个临时加密密钥（又称为会话密钥 “session key”） 。客户机将 ticket （包括用服务器密钥加密的客户机身份和一份会话密钥的拷贝）传送到服务器上。会话密钥可以（现已经由客户机和服务器共享）用来认证客户机或认证服务器，也可用来为通信双方以后的通讯提供加密服务，或通过交换独立子会话密钥为通信双方提供进一步的通信加密服务。上述认证交换过程需要只读方式访问 Kerberos 数据库。但有时，数据库中的记录必须进行修改，如添加新的规则或改变规则密钥时。修改过程通过客户机和第三方 Kerberos 服务器（Kerberos 管理器 KADM）间的协议完成。有关管理协议在此不作介绍。另外也有一种协议用于维护多份 Kerberos 数据库的拷贝，这可以认为是执行过程中的细节问题，并且会不断改变以适应各种不同数据库技术。Kerberos又指麻省理工学院为这个协议开发的一套计算机网络安全系统。系统设计上采用客户端/服务器结构与DES加密技术，并且能够进行相互认证，即客户端和服务器端均可对对方进行身份认证。可以用于防止窃听、防止replay攻击、保护数据完整性等场合，是一种应用对称密钥体制进行密钥管理的系统。Kerberos的扩展产品也使用公开密钥加密方法进行认证。</p>]]></content>
     
     <summary type="html">
     
@@ -228,9 +228,9 @@
     
       <category term="web" scheme="https://xytk0x0.github.io/tags/web/"/>
     
-      <category term="PHP" scheme="https://xytk0x0.github.io/tags/PHP/"/>
-    
       <category term="CTF" scheme="https://xytk0x0.github.io/tags/CTF/"/>
+    
+      <category term="PHP" scheme="https://xytk0x0.github.io/tags/PHP/"/>
     
   </entry>
   
@@ -290,9 +290,9 @@
     
       <category term="web" scheme="https://xytk0x0.github.io/tags/web/"/>
     
-      <category term="CTF" scheme="https://xytk0x0.github.io/tags/CTF/"/>
-    
       <category term="wp" scheme="https://xytk0x0.github.io/tags/wp/"/>
+    
+      <category term="CTF" scheme="https://xytk0x0.github.io/tags/CTF/"/>
     
       <category term="Crypto" scheme="https://xytk0x0.github.io/tags/Crypto/"/>
     
@@ -326,9 +326,9 @@
     
       <category term="web" scheme="https://xytk0x0.github.io/tags/web/"/>
     
-      <category term="CTF" scheme="https://xytk0x0.github.io/tags/CTF/"/>
-    
       <category term="wp" scheme="https://xytk0x0.github.io/tags/wp/"/>
+    
+      <category term="CTF" scheme="https://xytk0x0.github.io/tags/CTF/"/>
     
   </entry>
   
@@ -379,13 +379,13 @@
     
       <category term="web" scheme="https://xytk0x0.github.io/tags/web/"/>
     
-      <category term="CTF" scheme="https://xytk0x0.github.io/tags/CTF/"/>
-    
       <category term="wp" scheme="https://xytk0x0.github.io/tags/wp/"/>
     
       <category term="文件包含" scheme="https://xytk0x0.github.io/tags/%E6%96%87%E4%BB%B6%E5%8C%85%E5%90%AB/"/>
     
       <category term="攻防世界" scheme="https://xytk0x0.github.io/tags/%E6%94%BB%E9%98%B2%E4%B8%96%E7%95%8C/"/>
+    
+      <category term="CTF" scheme="https://xytk0x0.github.io/tags/CTF/"/>
     
   </entry>
   
