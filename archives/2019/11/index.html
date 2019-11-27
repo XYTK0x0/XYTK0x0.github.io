@@ -22,7 +22,7 @@
     <meta name="description" content>
     <meta http-equiv="Cache-control" content="no-cache">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>DOM文档对象模型 · XYTK&#39;s Blog</title>
+    <title>XYTK&#39;s Blog</title>
     <style type="text/css">
     @font-face {
         font-family: 'Oswald-Regular';
@@ -203,23 +203,12 @@
 </head>
 
     
-        <body class="post-body">
-    
     
 <header class="header">
 
     <div class="read-progress"></div>
     <div class="header-sidebar-menu">&#xe775;</div>
     <!-- post页的toggle banner  -->
-    
-    <div class="banner">
-            <div class="blog-title">
-                <a href="/" >XYTK&#39;s Blog</a>
-            </div>
-            <div class="post-title">
-                <a href="#" class="post-name">DOM文档对象模型</a>
-            </div>
-    </div>
     
     <a class="home-link" href=/>XYTK's Blog</a>
 </header>
@@ -231,74 +220,24 @@
 
 
 
-
-height:50vh;
 ">
     
     <!-- 主页  -->
-    
-    
-    <!-- 404页  -->
             
     <div class="site-intro-placeholder"></div>
-    <div class="site-intro-img" style="background-image: url(/intro/post-bg.jpg)"></div>
+    <div class="site-intro-img" style="background-image: url(/)"></div>
     <div class="site-intro-meta">
         <!-- 标题  -->
         <h1 class="intro-title">
             <!-- 主页  -->
-            
-            DOM文档对象模型
-            <!-- 404 -->
             
         </h1>
         <!-- 副标题 -->
         <p class="intro-subtitle">
             <!-- 主页副标题  -->
             
-            
-            <!-- 404 -->
-            
         </p>
         <!-- 文章页meta -->
-        
-            <div class="post-intros">
-                <!-- 文章页标签  -->
-                
-                    <div class= post-intro-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "web">web</a>
-    
-</div>
-                
-                
-                    <div class="post-intro-read">
-                        <span>Word count: <span class="post-count word-count">360</span>Reading time: <span class="post-count reading-time">1 min</span></span>
-                    </div>
-                
-                <div class="post-intro-meta">
-                    <span class="post-intro-calander iconfont-archer">&#xe676;</span>
-                    <span class="post-intro-time">2019/10/27</span>
-                    
-                    <span id="busuanzi_container_page_pv" class="busuanzi-pv">
-                        <span class="iconfont-archer">&#xe602;</span>
-                        <span id="busuanzi_value_page_pv"></span>
-                    </span>
-                    
-                    <span class="shareWrapper">
-                        <span class="iconfont-archer shareIcon">&#xe71d;</span>
-                        <span class="shareText">Share</span>
-                        <ul class="shareList">
-                            <li class="iconfont-archer share-qr" data-type="qr">&#xe75b;
-                                <div class="share-qrcode"></div>
-                            </li>
-                            <li class="iconfont-archer" data-type="weibo">&#xe619;</li>
-                            <li class="iconfont-archer" data-type="qzone">&#xe62e;</li>
-                            <li class="iconfont-archer" data-type="twitter">&#xe634;</li>
-                            <li class="iconfont-archer" data-type="facebook">&#xe67a;</li>
-                        </ul>
-                    </span>
-                </div>
-            </div>
         
     </div>
 </div>
@@ -399,54 +338,256 @@ height:50vh;
 </script>        
         <img class="loading" src="/assets/loading.svg" style="display: block; margin: 6rem auto 0 auto; width: 6rem; height: 6rem;" />
         <div class="container container-unloaded">
-            <main class="main post-page">
-    <article class="article-entry">
-        <h1 id="DOM的概念"><a href="#DOM的概念" class="headerlink" title="DOM的概念"></a>DOM的概念</h1><p>DOM<strong>(Document Object Model)</strong>，是一个平台和语言都中立的接口，可以使程序和脚本能够动态访问和更新文档的内容、结构以及样式。</p>
-<p>在网站页面中有许多页面的元素，当页面到达浏览器时浏览器会为页面创建一个顶级的Document object文档对象，接着生成各个子文档对象，每个页面元素对应一个文档对象，每个文档对象包含属性、方法和事件。可以通过JS脚本对文档对象进行编辑从而修改页面的元素。也就是说，客户端的脚本程序可以通过DOM来动态修改页面内容，从客户端获取DOM中的数据并在本地执行。</p>
-<p>在 HTML DOM 中，所有事物都是节点。DOM 是被视为节点树的 HTML</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">整个文档是一个文档节点</span><br><span class="line">每个 HTML 元素是元素节点</span><br><span class="line">HTML 元素内的文本是文本节点</span><br><span class="line">每个 HTML 属性是属性节点</span><br><span class="line">注释是注释节点</span><br></pre></td></tr></table></figure>
+            <main class="main index-page">
+    
+    
+    
+    
+    
+    
+    <article class="index-post">
+        <a class="abstract-title" href = "/2019/11/18/Linux根目录结构/" >
+            
+                <span>Linux根目录结构</span>
+        </a>
+        <div class="abstract-content">
+            前言之前看过《鸟哥的Linux私房菜》这本书的大部分，但这些东西不常用就忘得差不多了，以后把用到的稍微整理一下。
+Linux根目录结构centos 7:
 
-<img src="/2019/10/27/DOM文档对象模型/0.png" title="XYTK">
 
-<h1 id="HTML-DOM-的方法和属性"><a href="#HTML-DOM-的方法和属性" class="headerlink" title="HTML DOM 的方法和属性"></a>HTML DOM 的方法和属性</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">HTML DOM 方法：</span><br><span class="line"></span><br><span class="line">getElementById(id) - 获取带有指定 id 的节点（元素）</span><br><span class="line">appendChild(node) - 插入新的子节点（元素）</span><br><span class="line">removeChild(node) - 删除子节点（元素）</span><br><span class="line"></span><br><span class="line">HTML DOM 属性：</span><br><span class="line"></span><br><span class="line">innerHTML - 节点（元素）的文本值</span><br><span class="line">parentNode - 节点（元素）的父节点</span><br><span class="line">childNodes - 节点（元素）的子节点</span><br><span class="line">attributes - 节点（元素）的属性节点</span><br></pre></td></tr></table></figure>
-
-
+bin目录此目录存放所有二进制命令（用户）
+boot目录Linux内核及引导系统程序所需的目录
+dev目录所有设备文件的目录（如声卡、磁盘、光驱）
+etc目录二进制安装包（yum，rpm）配置文件默认路径，服务启动命令存放目录
+home目录普通用户的家目录默认数据存放目录
+lib、lib64目录库文件存放目录
+media挂载可移动介质(media)，诸如CD、数码相机等用于挂载可移动设备的临时目录
+mnt目录用于临时挂载存储设备
+通...
+        </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/11/18</span>
+            </div>
+            <!-- tags  -->
+            
+            <div class= abstract-tags >
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags = "linux">linux</a>
+    
+</div>
+            
+        </div>
     </article>
-    <!-- license  -->
+    
+    
+    
+    
+    
+    
+    <article class="index-post">
+        <a class="abstract-title" href = "/2019/11/17/域名解析的记录类型/" >
+            
+                <span>域名解析的记录类型</span>
+        </a>
+        <div class="abstract-content">
+            域名解析概念用户将域名提供给浏览器，通过域名解析能够找到对应的IP地址，通过IP地址找到服务器并返回资源。当然，在现在的复杂网络中，步骤要比这多得多。
+域名解析指从域名到IP的解析过程。解析工作由DNS服务器完成。
+分类A记录、CNAME、MX记录、NS记录
+A记录是最普通常见的域名解析，是把某一主机名解析到服务器IP。
+AAAA：用来指定主机名（或域名）对应的IPv6地址。A记录对应的是IPV4地址。
+CNAME是主机名到主机名的映射，是把某一主机名解析到另一主机名。将空主机解析到别名aaaaa.com，访问该空主机的域名就会访问别名所解析到的IP。
+MX记录如果需要设置邮箱，让邮箱能...
+        </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/11/17</span>
+            </div>
+            <!-- tags  -->
+            
+            <div class= abstract-tags >
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags = "网络">网络</a>
+    
+</div>
+            
+        </div>
+    </article>
+    
+    
+    
+    
+    
+    
+    <article class="index-post">
+        <a class="abstract-title" href = "/2019/11/13/绕过CDN的方法/" >
+            
+                <span>绕过CDN的方法</span>
+        </a>
+        <div class="abstract-content">
+            前言相关链接： 
+https://www.jianshu.com/p/ce98fbff39ac
+https://zhuanlan.zhihu.com/p/33440472
+CDNCDN 全称是Content Delivery Network，即内容分发网络。
+CDN是一组分布在多个不同的地理位置的WEB服务器，用于更加有效的向用户发布内容，在优化性能时，会根据距离的远近来选择。
+CDN系统能实时的根据网络流量和各节点的连接，负载状况及用户的距离和响应时间等综合信息将用户的请求重新导向离用户最近的服务节点上，其目的是使用户能就近的获取请求数据，解决网络拥堵，提高访问速度，解决由于网络带宽小...
+        </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/11/13</span>
+            </div>
+            <!-- tags  -->
+            
+            <div class= abstract-tags >
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags = "内网渗透">内网渗透</a>
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags = "渗透测试">渗透测试</a>
+    
+</div>
+            
+        </div>
+    </article>
+    
+    
+    
+    
+    
+    
+    <article class="index-post">
+        <a class="abstract-title" href = "/2019/11/12/接受生活的不确定/" >
+            
+                <span>接受生活的不确定</span>
+        </a>
+        <div class="abstract-content">
+            这是一篇加密文章，内容可能是个人情感宣泄或者收费技术。如果你认识我的话，可以大胆猜一猜密码。
+        </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/11/12</span>
+            </div>
+            <!-- tags  -->
+            
+            <div class= abstract-tags >
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags = "Blog里的胡言乱语">Blog里的胡言乱语</a>
+    
+</div>
+            
+        </div>
+    </article>
+    
+    
+    
+    
+    
+    
+    <article class="index-post">
+        <a class="abstract-title" href = "/2019/11/12/软件框架与架构/" >
+            
+                <span>软件框架与架构</span>
+        </a>
+        <div class="abstract-content">
+            前言最近很迷~~
+
+
+本篇大多是记录整理网上找到的东西，并且，我没有大型的软件开发经历，所以本篇将会极其片面，甚至会有一些错误的理解。
+本篇将根据本人理解的变化持续更新。
+相关链接：
+https://blog.csdn.net/binggetong/article/details/51371601
+https://www.cnblogs.com/sunshine-1/p/7372934.html
+框架定义：框架（framework）是整个或部分系统的可重用设计，表现为一组抽象构件及构件实例间交互的方法，另一种定义为，框架是可被应用开发者定制的应用骨架，前者是从应用方面而后者是从墓地的方面...
+        </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/11/12</span>
+            </div>
+            <!-- tags  -->
+            
+            <div class= abstract-tags >
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags = "开发">开发</a>
+    
+</div>
+            
+        </div>
+    </article>
+    
+    
+    
+    
+    
+    
+    <article class="index-post">
+        <a class="abstract-title" href = "/2019/11/07/工具-Google-Shodan/" >
+            
+                <span>工具-Google&amp;&amp;Shodan</span>
+        </a>
+        <div class="abstract-content">
+            写在前面这两个都勉强算是工具吧。两个搜索引擎，一个能爬出网络中的大部分页面，一个能够获取大部分在线设备的信息。
+Google以前看的没有现在看的系统和详细。
+链接： https://blog.csdn.net/qq_36119192/article/details/84029809
+Google Hacking 是利用谷歌搜索的强大，来在浩瀚的互联网中搜索到我们需要的信息。轻量级的搜索可以搜素出一些遗留后门，不想被发现的后台入口，中量级的搜索出一些用户信息泄露，源代码泄露，未授权访问等等，重量级的则可能是mdb文件下载，CMS 未被锁定install页面，网站配置密码，php远程文件包含...
+        </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/11/07</span>
+            </div>
+            <!-- tags  -->
+            
+            <div class= abstract-tags >
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags = "渗透测试">渗透测试</a>
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags = "信息收集">信息收集</a>
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags = "tools">tools</a>
+    
+</div>
+            
+        </div>
+    </article>
+    
+    
+    
+    
+    
+    
+    <article class="index-post">
+        <a class="abstract-title" href = "/2019/11/06/渗透测试的完整流程/" >
+            
+                <span>渗透测试的完整流程(持续更新)</span>
+        </a>
+        <div class="abstract-content">
+            前言
+由于种种原因，我不完全是从浅到深、从点到面地学习安全知识的，导致我会的东西很杂。之前我就有看过相当一部分渗透测试方面的内容，为把自己会的东西捋一捋，也为了复习一下并多动动手，就把这些东西记录下来。
+
+完整流程信息收集漏洞挖掘漏洞利用内网渗透后渗透阶段渗透报告
+        </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/11/06</span>
+            </div>
+            <!-- tags  -->
+            
+            <div class= abstract-tags >
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags = "渗透测试">渗透测试</a>
+    
+</div>
+            
+        </div>
+    </article>
     
     <!-- paginator  -->
-    <ul class="post-paginator">
-        <li class="next">
-            
-                <div class="nextSlogan">Next Post</div>
-                <a href= "/2019/10/27/没有真正的感同身受/" title= "没有真正的感同身受">
-                    <div class="nextTitle">没有真正的感同身受</div>
-                </a>
-            
-        </li>
-        <li class="previous">
-            
-                <div class="prevSlogan">Previous Post</div>
-                <a href= "/2019/10/26/无字母数字的webshell/" title= "无字母数字的webshell">
-                    <div class="prevTitle">无字母数字的webshell</div>
-                </a>
-            
-        </li>
-    </ul>
-    <!-- 评论插件 -->
-    <!-- 来必力City版安装代码 -->
-
-<!-- City版安装代码已完成 -->
     
-    
-    <!-- partial('_partial/comment/changyan') -->
-    <!--PC版-->
-
-
-    
-    
-
-    <!-- 评论 -->
 </main>
             <!-- profile -->
             
@@ -542,24 +683,6 @@ height:50vh;
 </footer>
     </div>
     <!-- toc -->
-    
-    <div class="toc-wrapper" style=
-    
-
-
-
-
-
-
-
-top:50vh;
-
-    >
-        <div class="toc-catalog">
-            <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
-        </div>
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#DOM的概念"><span class="toc-number">1.</span> <span class="toc-text">DOM的概念</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#HTML-DOM-的方法和属性"><span class="toc-number">2.</span> <span class="toc-text">HTML DOM 的方法和属性</span></a></li></ol>
-    </div>
     
     <div class="back-top iconfont-archer">&#xe639;</div>
     <div class="sidebar sidebar-hide">
@@ -773,9 +896,104 @@ top:50vh;
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <div class="total-and-search">
         <div class="total-archive">
-        Total : 16
+        Total : 23
         </div>
         <!-- search  -->
         
@@ -791,6 +1009,46 @@ top:50vh;
     
     
         <li class="archive-post-item">
+            <span class="archive-post-date">11/18</span><a class="archive-post-title" href= "/2019/11/18/Linux根目录结构/" >Linux根目录结构</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">11/17</span><a class="archive-post-title" href= "/2019/11/17/域名解析的记录类型/" >域名解析的记录类型</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">11/13</span><a class="archive-post-title" href= "/2019/11/13/绕过CDN的方法/" >绕过CDN的方法</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">11/12</span><a class="archive-post-title" href= "/2019/11/12/接受生活的不确定/" >接受生活的不确定</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">11/12</span><a class="archive-post-title" href= "/2019/11/12/软件框架与架构/" >软件框架与架构</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">11/07</span><a class="archive-post-title" href= "/2019/11/07/工具-Google-Shodan/" >工具-Google&&Shodan</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">11/06</span><a class="archive-post-title" href= "/2019/11/06/渗透测试的完整流程/" >渗透测试的完整流程(持续更新)</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">10/30</span><a class="archive-post-title" href= "/2019/10/30/SSI注入/" >SSI注入</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
             <span class="archive-post-date">10/30</span><a class="archive-post-title" href= "/2019/10/30/阿弟的情诗/" >阿弟的情诗</a>
         </li>
     
@@ -802,11 +1060,6 @@ top:50vh;
     
         <li class="archive-post-item">
             <span class="archive-post-date">10/27</span><a class="archive-post-title" href= "/2019/10/27/没有真正的感同身受/" >没有真正的感同身受</a>
-        </li>
-    
-    
-        <li class="archive-post-item">
-            <span class="archive-post-date">10/27</span><a class="archive-post-title" href= "/2019/10/27/DOM文档对象模型/" >DOM文档对象模型</a>
         </li>
     
     
@@ -846,7 +1099,7 @@ top:50vh;
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">10/16</span><a class="archive-post-title" href= "/2019/10/16/推荐一些大佬的博客-持续更新/" >推荐一些大佬的博客(持续更新)</a>
+            <span class="archive-post-date">10/16</span><a class="archive-post-title" href= "/2019/10/16/推荐一些大佬的博客-持续更新/" >推荐一些学习的博客(持续更新)</a>
         </li>
     
     
@@ -874,7 +1127,13 @@ top:50vh;
         <div class="sidebar-panel-tags">
     <div class="sidebar-tags-name">
     
+        <span class="sidebar-tag-name" data-tags="c/cpp"><span class="iconfont-archer">&#xe606;</span>c/cpp</span>
+    
         <span class="sidebar-tag-name" data-tags="web"><span class="iconfont-archer">&#xe606;</span>web</span>
+    
+        <span class="sidebar-tag-name" data-tags="Java"><span class="iconfont-archer">&#xe606;</span>Java</span>
+    
+        <span class="sidebar-tag-name" data-tags="linux"><span class="iconfont-archer">&#xe606;</span>linux</span>
     
         <span class="sidebar-tag-name" data-tags="PHP"><span class="iconfont-archer">&#xe606;</span>PHP</span>
     
@@ -882,25 +1141,35 @@ top:50vh;
     
         <span class="sidebar-tag-name" data-tags="Blog里的胡言乱语"><span class="iconfont-archer">&#xe606;</span>Blog里的胡言乱语</span>
     
-        <span class="sidebar-tag-name" data-tags="Java web"><span class="iconfont-archer">&#xe606;</span>Java web</span>
+        <span class="sidebar-tag-name" data-tags="python"><span class="iconfont-archer">&#xe606;</span>python</span>
+    
+        <span class="sidebar-tag-name" data-tags="docker"><span class="iconfont-archer">&#xe606;</span>docker</span>
     
         <span class="sidebar-tag-name" data-tags="wp"><span class="iconfont-archer">&#xe606;</span>wp</span>
-    
-        <span class="sidebar-tag-name" data-tags="tools"><span class="iconfont-archer">&#xe606;</span>tools</span>
-    
-        <span class="sidebar-tag-name" data-tags="网络"><span class="iconfont-archer">&#xe606;</span>网络</span>
     
         <span class="sidebar-tag-name" data-tags="文件包含"><span class="iconfont-archer">&#xe606;</span>文件包含</span>
     
         <span class="sidebar-tag-name" data-tags="攻防世界"><span class="iconfont-archer">&#xe606;</span>攻防世界</span>
     
-        <span class="sidebar-tag-name" data-tags="python"><span class="iconfont-archer">&#xe606;</span>python</span>
+        <span class="sidebar-tag-name" data-tags="Java web"><span class="iconfont-archer">&#xe606;</span>Java web</span>
+    
+        <span class="sidebar-tag-name" data-tags="网络"><span class="iconfont-archer">&#xe606;</span>网络</span>
+    
+        <span class="sidebar-tag-name" data-tags="内网渗透"><span class="iconfont-archer">&#xe606;</span>内网渗透</span>
+    
+        <span class="sidebar-tag-name" data-tags="渗透测试"><span class="iconfont-archer">&#xe606;</span>渗透测试</span>
+    
+        <span class="sidebar-tag-name" data-tags="信息收集"><span class="iconfont-archer">&#xe606;</span>信息收集</span>
+    
+        <span class="sidebar-tag-name" data-tags="tools"><span class="iconfont-archer">&#xe606;</span>tools</span>
+    
+        <span class="sidebar-tag-name" data-tags="推荐"><span class="iconfont-archer">&#xe606;</span>推荐</span>
     
         <span class="sidebar-tag-name" data-tags="Crypto"><span class="iconfont-archer">&#xe606;</span>Crypto</span>
     
-        <span class="sidebar-tag-name" data-tags="CBC字节翻转攻击"><span class="iconfont-archer">&#xe606;</span>CBC字节翻转攻击</span>
-    
         <span class="sidebar-tag-name" data-tags="webshell"><span class="iconfont-archer">&#xe606;</span>webshell</span>
+    
+        <span class="sidebar-tag-name" data-tags="开发"><span class="iconfont-archer">&#xe606;</span>开发</span>
     
     </div>
     <div class="iconfont-archer sidebar-tags-empty">&#xe678;</div>
@@ -935,21 +1204,35 @@ jsonContent:
         <div class="sidebar-panel-categories">
     <div class="sidebar-categories-name">
     
+        <span class="sidebar-category-name" data-categories="c-cpp"><span class="iconfont-archer">&#xe60a;</span>c-cpp</span>
+    
         <span class="sidebar-category-name" data-categories="web"><span class="iconfont-archer">&#xe60a;</span>web</span>
     
-        <span class="sidebar-category-name" data-categories="日常生活的乱七八糟"><span class="iconfont-archer">&#xe60a;</span>日常生活的乱七八糟</span>
+        <span class="sidebar-category-name" data-categories="Java"><span class="iconfont-archer">&#xe60a;</span>Java</span>
+    
+        <span class="sidebar-category-name" data-categories="linux"><span class="iconfont-archer">&#xe60a;</span>linux</span>
     
         <span class="sidebar-category-name" data-categories="PHP"><span class="iconfont-archer">&#xe60a;</span>PHP</span>
     
-        <span class="sidebar-category-name" data-categories="渗透测试"><span class="iconfont-archer">&#xe60a;</span>渗透测试</span>
+        <span class="sidebar-category-name" data-categories="日常生活的乱七八糟"><span class="iconfont-archer">&#xe60a;</span>日常生活的乱七八糟</span>
+    
+        <span class="sidebar-category-name" data-categories="web/python"><span class="iconfont-archer">&#xe60a;</span>web/python</span>
+    
+        <span class="sidebar-category-name" data-categories="docker"><span class="iconfont-archer">&#xe60a;</span>docker</span>
+    
+        <span class="sidebar-category-name" data-categories="python"><span class="iconfont-archer">&#xe60a;</span>python</span>
     
         <span class="sidebar-category-name" data-categories="网络"><span class="iconfont-archer">&#xe60a;</span>网络</span>
+    
+        <span class="sidebar-category-name" data-categories="渗透测试"><span class="iconfont-archer">&#xe60a;</span>渗透测试</span>
+    
+        <span class="sidebar-category-name" data-categories="推荐"><span class="iconfont-archer">&#xe60a;</span>推荐</span>
     
         <span class="sidebar-category-name" data-categories="tools"><span class="iconfont-archer">&#xe60a;</span>tools</span>
     
         <span class="sidebar-category-name" data-categories="Crypto"><span class="iconfont-archer">&#xe60a;</span>Crypto</span>
     
-        <span class="sidebar-category-name" data-categories="python"><span class="iconfont-archer">&#xe60a;</span>python</span>
+        <span class="sidebar-category-name" data-categories="开发"><span class="iconfont-archer">&#xe60a;</span>开发</span>
     
     </div>
     <div class="iconfont-archer sidebar-categories-empty">&#xe678;</div>
@@ -983,8 +1266,6 @@ jsonContent:
     
     </div>
     <!-- async load share.js -->
-    
-        <script src="/scripts/share.js" async></script>    
      
     </body>
 </html>
