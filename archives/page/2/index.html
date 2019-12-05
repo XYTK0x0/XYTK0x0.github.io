@@ -346,6 +346,46 @@
     
     
     <article class="index-post">
+        <a class="abstract-title" href = "/2019/10/28/网络安全协议复习/" >
+            
+                <span>网络安全协议复习</span>
+        </a>
+        <div class="abstract-content">
+            前言最近这一周心态有点崩，基本上没看别的东西。要考试了，随便记录一下吧。
+
+概述网络安全需求1、机密性(防止数据的未授权公开)
+2、完整性(防止数据被篡改)
+3、可控性
+限制对网络资源（硬件和软件）和数据（存储和通信）的访问，其目标是组织未授权使用资源、未授权公开或修改数据，其要素包括：标识和鉴别、授权、决策以及执行。
+4、不可否认性 
+通信实体需对自己的行为负责。包含两层含义，一是发送方不能否认自己发送数据的行为；二是接收方不能否认自己接收数据的行为。
+5、可用性
+合法用户能够正常获取服务。
+网络安全协议的定义可定义为基于密码学的通信协议。该含义包括以下两层含义：
+1、网络安全协议是以...
+        </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/10/28</span>
+            </div>
+            <!-- tags  -->
+            
+            <div class= abstract-tags >
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags = "网络">网络</a>
+    
+</div>
+            
+        </div>
+    </article>
+    
+    
+    
+    
+    
+    
+    <article class="index-post">
         <a class="abstract-title" href = "/2019/10/27/没有真正的感同身受/" >
             
                 <span>没有真正的感同身受</span>
@@ -363,6 +403,37 @@
             <div class= abstract-tags >
     
         <a class="post-tag" href="javascript:void(0);" data-tags = "Blog里的胡言乱语">Blog里的胡言乱语</a>
+    
+</div>
+            
+        </div>
+    </article>
+    
+    
+    
+    
+    
+    
+    <article class="index-post">
+        <a class="abstract-title" href = "/2019/10/27/DOM文档对象模型/" >
+            
+                <span>DOM文档对象模型</span>
+        </a>
+        <div class="abstract-content">
+            DOM的概念DOM(Document Object Model)，是一个平台和语言都中立的接口，可以使程序和脚本能够动态访问和更新文档的内容、结构以及样式。
+在网站页面中有许多页面的元素，当页面到达浏览器时浏览器会为页面创建一个顶级的Document object文档对象，接着生成各个子文档对象，每个页面元素对应一个文档对象，每个文档对象包含属性、方法和事件。可以通过JS脚本对文档对象进行编辑从而修改页面的元素。也就是说，客户端的脚本程序可以通过DOM来动态修改页面内容，从客户端获取DOM中的数据并在本地执行。
+在 HTML DOM 中，所有事物都是节点。DOM 是被视为节点树的 HTM...
+        </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/10/27</span>
+            </div>
+            <!-- tags  -->
+            
+            <div class= abstract-tags >
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags = "web">web</a>
     
 </div>
             
@@ -623,81 +694,6 @@ Ro...
         <a class="post-tag" href="javascript:void(0);" data-tags = "CTF">CTF</a>
     
         <a class="post-tag" href="javascript:void(0);" data-tags = "wp">wp</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2019/10/16/推荐一些大佬的博客-持续更新/" >
-            
-                <span>推荐一些学习的博客(持续更新)</span>
-        </a>
-        <div class="abstract-content">
-            渗透测试：谢公子: https://blog.csdn.net/qq_36119192?t=1
-干货集中营: http://www.nmd5.com/test/index.php
-Micro8: https://micro8.gitbook.io/micro8/
-写代码：廖雪峰： https://www.liaoxuefeng.com/
-https://www.cnblogs.com/tuyile006/
-综合：Paper: https://paper.seebug.org/
-
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/10/16</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "推荐">推荐</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
-        <a class="abstract-title" href = "/2019/10/13/【wp】攻防世界web进阶-web-php-include/" >
-            
-                <span>【wp】攻防世界web进阶-web php include</span>
-        </a>
-        <div class="abstract-content">
-            总述打开题目是一段PHP代码：
-123456789&lt;?php  show_source(__FILE__);  echo $_GET[&apos;hello&apos;];  $page=$_GET[&apos;page&apos;];  while (strstr($page, &quot;php://&quot;)) &#123;      $page=str_replace(&quot;php://&quot;, &quot;&quot;, $page);  &#125;  include($page);?&gt;
-
-猜测是绕过strstr( )函数，结合php伪协议进行命令...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/10/13</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "web">web</a>
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "CTF">CTF</a>
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "wp">wp</a>
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "文件包含">文件包含</a>
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "攻防世界">攻防世界</a>
     
 </div>
             
@@ -1113,9 +1109,43 @@ https://www.cnblogs.com/tuyile006/
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <div class="total-and-search">
         <div class="total-archive">
-        Total : 23
+        Total : 25
         </div>
         <!-- search  -->
         
@@ -1128,6 +1158,11 @@ https://www.cnblogs.com/tuyile006/
     
     <div class="archive-year"> 2019 </div>
     <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">12/03</span><a class="archive-post-title" href= "/2019/12/03/docker的使用/" >docker的使用</a>
+        </li>
     
     
         <li class="archive-post-item">
@@ -1182,6 +1217,11 @@ https://www.cnblogs.com/tuyile006/
     
         <li class="archive-post-item">
             <span class="archive-post-date">10/27</span><a class="archive-post-title" href= "/2019/10/27/没有真正的感同身受/" >没有真正的感同身受</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">10/27</span><a class="archive-post-title" href= "/2019/10/27/DOM文档对象模型/" >DOM文档对象模型</a>
         </li>
     
     
@@ -1249,13 +1289,9 @@ https://www.cnblogs.com/tuyile006/
         <div class="sidebar-panel-tags">
     <div class="sidebar-tags-name">
     
-        <span class="sidebar-tag-name" data-tags="c/cpp"><span class="iconfont-archer">&#xe606;</span>c/cpp</span>
+        <span class="sidebar-tag-name" data-tags="linux"><span class="iconfont-archer">&#xe606;</span>linux</span>
     
         <span class="sidebar-tag-name" data-tags="web"><span class="iconfont-archer">&#xe606;</span>web</span>
-    
-        <span class="sidebar-tag-name" data-tags="Java"><span class="iconfont-archer">&#xe606;</span>Java</span>
-    
-        <span class="sidebar-tag-name" data-tags="linux"><span class="iconfont-archer">&#xe606;</span>linux</span>
     
         <span class="sidebar-tag-name" data-tags="PHP"><span class="iconfont-archer">&#xe606;</span>PHP</span>
     
@@ -1263,21 +1299,13 @@ https://www.cnblogs.com/tuyile006/
     
         <span class="sidebar-tag-name" data-tags="Blog里的胡言乱语"><span class="iconfont-archer">&#xe606;</span>Blog里的胡言乱语</span>
     
-        <span class="sidebar-tag-name" data-tags="python"><span class="iconfont-archer">&#xe606;</span>python</span>
-    
         <span class="sidebar-tag-name" data-tags="docker"><span class="iconfont-archer">&#xe606;</span>docker</span>
     
         <span class="sidebar-tag-name" data-tags="wp"><span class="iconfont-archer">&#xe606;</span>wp</span>
     
-        <span class="sidebar-tag-name" data-tags="文件包含"><span class="iconfont-archer">&#xe606;</span>文件包含</span>
-    
-        <span class="sidebar-tag-name" data-tags="攻防世界"><span class="iconfont-archer">&#xe606;</span>攻防世界</span>
-    
         <span class="sidebar-tag-name" data-tags="Java web"><span class="iconfont-archer">&#xe606;</span>Java web</span>
     
         <span class="sidebar-tag-name" data-tags="网络"><span class="iconfont-archer">&#xe606;</span>网络</span>
-    
-        <span class="sidebar-tag-name" data-tags="内网渗透"><span class="iconfont-archer">&#xe606;</span>内网渗透</span>
     
         <span class="sidebar-tag-name" data-tags="渗透测试"><span class="iconfont-archer">&#xe606;</span>渗透测试</span>
     
@@ -1286,6 +1314,14 @@ https://www.cnblogs.com/tuyile006/
         <span class="sidebar-tag-name" data-tags="tools"><span class="iconfont-archer">&#xe606;</span>tools</span>
     
         <span class="sidebar-tag-name" data-tags="推荐"><span class="iconfont-archer">&#xe606;</span>推荐</span>
+    
+        <span class="sidebar-tag-name" data-tags="内网渗透"><span class="iconfont-archer">&#xe606;</span>内网渗透</span>
+    
+        <span class="sidebar-tag-name" data-tags="文件包含"><span class="iconfont-archer">&#xe606;</span>文件包含</span>
+    
+        <span class="sidebar-tag-name" data-tags="攻防世界"><span class="iconfont-archer">&#xe606;</span>攻防世界</span>
+    
+        <span class="sidebar-tag-name" data-tags="python"><span class="iconfont-archer">&#xe606;</span>python</span>
     
         <span class="sidebar-tag-name" data-tags="Crypto"><span class="iconfont-archer">&#xe606;</span>Crypto</span>
     
@@ -1326,23 +1362,15 @@ jsonContent:
         <div class="sidebar-panel-categories">
     <div class="sidebar-categories-name">
     
-        <span class="sidebar-category-name" data-categories="c-cpp"><span class="iconfont-archer">&#xe60a;</span>c-cpp</span>
+        <span class="sidebar-category-name" data-categories="linux"><span class="iconfont-archer">&#xe60a;</span>linux</span>
     
         <span class="sidebar-category-name" data-categories="web"><span class="iconfont-archer">&#xe60a;</span>web</span>
     
-        <span class="sidebar-category-name" data-categories="Java"><span class="iconfont-archer">&#xe60a;</span>Java</span>
-    
-        <span class="sidebar-category-name" data-categories="linux"><span class="iconfont-archer">&#xe60a;</span>linux</span>
-    
-        <span class="sidebar-category-name" data-categories="PHP"><span class="iconfont-archer">&#xe60a;</span>PHP</span>
-    
         <span class="sidebar-category-name" data-categories="日常生活的乱七八糟"><span class="iconfont-archer">&#xe60a;</span>日常生活的乱七八糟</span>
-    
-        <span class="sidebar-category-name" data-categories="web/python"><span class="iconfont-archer">&#xe60a;</span>web/python</span>
     
         <span class="sidebar-category-name" data-categories="docker"><span class="iconfont-archer">&#xe60a;</span>docker</span>
     
-        <span class="sidebar-category-name" data-categories="python"><span class="iconfont-archer">&#xe60a;</span>python</span>
+        <span class="sidebar-category-name" data-categories="PHP"><span class="iconfont-archer">&#xe60a;</span>PHP</span>
     
         <span class="sidebar-category-name" data-categories="网络"><span class="iconfont-archer">&#xe60a;</span>网络</span>
     
@@ -1355,6 +1383,8 @@ jsonContent:
         <span class="sidebar-category-name" data-categories="Crypto"><span class="iconfont-archer">&#xe60a;</span>Crypto</span>
     
         <span class="sidebar-category-name" data-categories="开发"><span class="iconfont-archer">&#xe60a;</span>开发</span>
+    
+        <span class="sidebar-category-name" data-categories="python"><span class="iconfont-archer">&#xe60a;</span>python</span>
     
     </div>
     <div class="iconfont-archer sidebar-categories-empty">&#xe678;</div>
