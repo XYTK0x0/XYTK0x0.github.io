@@ -359,6 +359,119 @@ height:50vh;
     
     
     <article class="index-post">
+        <a class="abstract-title" href = "/2019/10/20/PHP无参数实现RCE/" >
+            
+                <span>PHP无参数实现RCE</span>
+        </a>
+        <div class="abstract-content">
+            前言一叶飘零师傅的博客： https://skysec.top/2019/03/29/PHP-Parametric-Function-RCE/
+123if(&apos;;&apos; === preg_replace(&apos;/[^\W]+\((?R)?\)/&apos;, &apos;&apos;, $_GET[&apos;code&apos;])) &#123;        eval($_GET[&apos;code&apos;]);&#125;
+
+其中，[^\W]包含所有的数字，字母以及下划线，而(?R)则是 DEELX 正则表达式扩展语法中的递归表达式，表示递归引用整个模式...
+        </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/10/20</span>
+            </div>
+            <!-- tags  -->
+            
+            <div class= abstract-tags >
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags = "web">web</a>
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags = "PHP">PHP</a>
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags = "CTF">CTF</a>
+    
+</div>
+            
+        </div>
+    </article>
+    
+    
+    
+    
+    
+    
+    <article class="index-post">
+        <a class="abstract-title" href = "/2019/10/19/工具-netcat/" >
+            
+                <span>工具-netcat</span>
+        </a>
+        <div class="abstract-content">
+            工具系列完整的渗透测试过程中，工具能够提供很多帮助，但一段时间不用之后就会忘记，用的时候又需要重新查，很麻烦。于是，就有了这个系列。
+
+NetcatNetcat 常称为 nc，拥有“瑞士军刀”的美誉。nc 小巧强悍，可以读写TCP或UDP网络连接，它被设计成一个可靠的后端工具，能被其它的程序或脚本直接驱动。同时，它又是一个功能丰富的网络调试和开发工具，因为它可以建立你可能用到的几乎任何类型的连接，以及一些非常有意思的内建功能，它基于socket协议工作。在渗透测试领域，我们通常利用它来反弹shell。
+常用参数
+-l： 开启监听-p：指定端口-t： 以telnet形式应答-e：程序重定向...
+        </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/10/19</span>
+            </div>
+            <!-- tags  -->
+            
+            <div class= abstract-tags >
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags = "tools">tools</a>
+    
+</div>
+            
+        </div>
+    </article>
+    
+    
+    
+    
+    
+    
+    <article class="index-post">
+        <a class="abstract-title" href = "/2019/10/19/【wp】bugku-login4-CBC字节翻转攻击/" >
+            
+                <span>【wp】bugku-login4&amp;CBC字节翻转攻击</span>
+        </a>
+        <div class="abstract-content">
+            前言题目中遇到了CBC字节翻转攻击，借此机会系统的学习一下。
+CBC字节翻转攻击的精髓在于损坏密文来改变明文。
+资料链接：https://blog.csdn.net/csu_vc/article/details/79619309
+https://skysec.top/2017/06/16/CBC%E5%AD%97%E8%8A%82%E7%BF%BB%E8%BD%AC%E6%94%BB%E5%87%BB/
+
+CBC字节翻转攻击原理加密原理图：
+
+1、Plaintext：待加密的数据。
+2、IV：用于随机化加密的比特块，保证即使对相同明文多次加密，也可以得到不同的密文。
+3、Cipherte...
+        </div>
+        <div class="abstract-post-meta">
+            <!-- date  -->
+            <div class="abstract-date">
+                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2019/10/19</span>
+            </div>
+            <!-- tags  -->
+            
+            <div class= abstract-tags >
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags = "web">web</a>
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags = "CTF">CTF</a>
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags = "wp">wp</a>
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags = "Crypto">Crypto</a>
+    
+</div>
+            
+        </div>
+    </article>
+    
+    
+    
+    
+    
+    
+    <article class="index-post">
         <a class="abstract-title" href = "/2019/10/18/【wp】-RoarCTF-2019-Easy-Calc/" >
             
                 <span>【wp】[RoarCTF 2019]Easy Calc</span>
@@ -1103,9 +1216,88 @@ print(&quot;Hello My Blog!&quot;)PS:我的博客图片还没选好（作为一�
     
     
     
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
     <div class="total-and-search">
         <div class="total-archive">
-        Total : 26
+        Total : 29
         </div>
         <!-- search  -->
         
@@ -1118,6 +1310,21 @@ print(&quot;Hello My Blog!&quot;)PS:我的博客图片还没选好（作为一�
     
     <div class="archive-year"> 2019 </div>
     <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">12/21</span><a class="archive-post-title" href= "/2019/12/21/hacker101-ctf-1/" >hacker101 ctf(1)</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">12/21</span><a class="archive-post-title" href= "/2019/12/21/Ubuntu-获取IP-换源-安装中文输入法/" >Ubuntu--获取IP&&换源&&安装中文输入法</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">12/18</span><a class="archive-post-title" href= "/2019/12/18/XSS小结/" >XSS小结</a>
+        </li>
     
     
         <li class="archive-post-item">
@@ -1262,15 +1469,15 @@ print(&quot;Hello My Blog!&quot;)PS:我的博客图片还没选好（作为一�
     
         <span class="sidebar-tag-name" data-tags="CTF"><span class="iconfont-archer">&#xe606;</span>CTF</span>
     
+        <span class="sidebar-tag-name" data-tags="环境安装或问题解决办法"><span class="iconfont-archer">&#xe606;</span>环境安装或问题解决办法</span>
+    
         <span class="sidebar-tag-name" data-tags="Blog里的胡言乱语"><span class="iconfont-archer">&#xe606;</span>Blog里的胡言乱语</span>
     
         <span class="sidebar-tag-name" data-tags="docker"><span class="iconfont-archer">&#xe606;</span>docker</span>
     
-        <span class="sidebar-tag-name" data-tags="python"><span class="iconfont-archer">&#xe606;</span>python</span>
-    
-        <span class="sidebar-tag-name" data-tags="环境安装或问题解决办法"><span class="iconfont-archer">&#xe606;</span>环境安装或问题解决办法</span>
-    
         <span class="sidebar-tag-name" data-tags="wp"><span class="iconfont-archer">&#xe606;</span>wp</span>
+    
+        <span class="sidebar-tag-name" data-tags="python"><span class="iconfont-archer">&#xe606;</span>python</span>
     
         <span class="sidebar-tag-name" data-tags="文件包含"><span class="iconfont-archer">&#xe606;</span>文件包含</span>
     
@@ -1333,21 +1540,21 @@ jsonContent:
     
         <span class="sidebar-category-name" data-categories="linux"><span class="iconfont-archer">&#xe60a;</span>linux</span>
     
-        <span class="sidebar-category-name" data-categories="日常生活的乱七八糟"><span class="iconfont-archer">&#xe60a;</span>日常生活的乱七八糟</span>
-    
         <span class="sidebar-category-name" data-categories="PHP"><span class="iconfont-archer">&#xe60a;</span>PHP</span>
+    
+        <span class="sidebar-category-name" data-categories="环境安装或问题解决办法"><span class="iconfont-archer">&#xe60a;</span>环境安装或问题解决办法</span>
+    
+        <span class="sidebar-category-name" data-categories="日常生活的乱七八糟"><span class="iconfont-archer">&#xe60a;</span>日常生活的乱七八糟</span>
     
         <span class="sidebar-category-name" data-categories="docker"><span class="iconfont-archer">&#xe60a;</span>docker</span>
     
-        <span class="sidebar-category-name" data-categories="环境安装或问题解决办法"><span class="iconfont-archer">&#xe60a;</span>环境安装或问题解决办法</span>
+        <span class="sidebar-category-name" data-categories="python"><span class="iconfont-archer">&#xe60a;</span>python</span>
     
         <span class="sidebar-category-name" data-categories="网络"><span class="iconfont-archer">&#xe60a;</span>网络</span>
     
         <span class="sidebar-category-name" data-categories="渗透测试"><span class="iconfont-archer">&#xe60a;</span>渗透测试</span>
     
         <span class="sidebar-category-name" data-categories="推荐"><span class="iconfont-archer">&#xe60a;</span>推荐</span>
-    
-        <span class="sidebar-category-name" data-categories="python"><span class="iconfont-archer">&#xe60a;</span>python</span>
     
         <span class="sidebar-category-name" data-categories="tools"><span class="iconfont-archer">&#xe60a;</span>tools</span>
     
