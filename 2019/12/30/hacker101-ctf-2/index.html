@@ -22,7 +22,7 @@
     <meta name="description" content>
     <meta http-equiv="Cache-control" content="no-cache">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>工具-Google&amp;&amp;Shodan · XYTK&#39;s Blog</title>
+    <title>hacker101 ctf(2) · XYTK&#39;s Blog</title>
     <style type="text/css">
     @font-face {
         font-family: 'Oswald-Regular';
@@ -217,7 +217,7 @@
                 <a href="/" >XYTK&#39;s Blog</a>
             </div>
             <div class="post-title">
-                <a href="#" class="post-name">工具-Google&&Shodan</a>
+                <a href="#" class="post-name">hacker101 ctf(2)</a>
             </div>
     </div>
     
@@ -247,7 +247,7 @@ height:50vh;
         <h1 class="intro-title">
             <!-- 主页  -->
             
-            工具-Google&&Shodan
+            hacker101 ctf(2)
             <!-- 404 -->
             
         </h1>
@@ -266,22 +266,20 @@ height:50vh;
                 
                     <div class= post-intro-tags >
     
-        <a class="post-tag" href="javascript:void(0);" data-tags = "渗透测试">渗透测试</a>
+        <a class="post-tag" href="javascript:void(0);" data-tags = "web">web</a>
     
-        <a class="post-tag" href="javascript:void(0);" data-tags = "信息收集">信息收集</a>
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "tools">tools</a>
+        <a class="post-tag" href="javascript:void(0);" data-tags = "wp">wp</a>
     
 </div>
                 
                 
                     <div class="post-intro-read">
-                        <span>Word count: <span class="post-count word-count">843</span>Reading time: <span class="post-count reading-time">3 min</span></span>
+                        <span>Word count: <span class="post-count word-count">5</span>Reading time: <span class="post-count reading-time">1 min</span></span>
                     </div>
                 
                 <div class="post-intro-meta">
                     <span class="post-intro-calander iconfont-archer">&#xe676;</span>
-                    <span class="post-intro-time">2019/11/07</span>
+                    <span class="post-intro-time">2019/12/30</span>
                     
                     <span id="busuanzi_container_page_pv" class="busuanzi-pv">
                         <span class="iconfont-archer">&#xe602;</span>
@@ -405,80 +403,15 @@ height:50vh;
         <div class="container container-unloaded">
             <main class="main post-page">
     <article class="article-entry">
-        <h1 id="写在前面"><a href="#写在前面" class="headerlink" title="写在前面"></a>写在前面</h1><p>这两个都勉强算是工具吧。两个搜索引擎，一个能爬出网络中的大部分页面，一个能够获取大部分在线设备的信息。</p>
-<h1 id="Google"><a href="#Google" class="headerlink" title="Google"></a>Google</h1><p>以前看的没有现在看的系统和详细。</p>
-<p>链接： <a href="https://blog.csdn.net/qq_36119192/article/details/84029809" target="_blank" rel="noopener">https://blog.csdn.net/qq_36119192/article/details/84029809</a></p>
-<p>Google Hacking 是利用谷歌搜索的强大，来在浩瀚的互联网中搜索到我们需要的信息。轻量级的搜索可以搜素出一些遗留后门，不想被发现的后台入口，中量级的搜索出一些用户信息泄露，源代码泄露，未授权访问等等，重量级的则可能是mdb文件下载，CMS 未被锁定install页面，网站配置密码，php远程文件包含漏洞等重要信息。</p>
-<p>利用Google搜索我们想要的信息，需要配合谷歌搜索引擎的一些语法：</p>
-<h2 id="基本搜索"><a href="#基本搜索" class="headerlink" title="基本搜索"></a>基本搜索</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">逻辑与：and</span><br><span class="line">逻辑或： or </span><br><span class="line">逻辑非： -</span><br><span class="line">完整匹配：&quot;关键词&quot; </span><br><span class="line">通配符：* ?</span><br></pre></td></tr></table></figure>
-
-<h2 id="高级搜索"><a href="#高级搜索" class="headerlink" title="高级搜索"></a>高级搜索</h2><h3 id="intext"><a href="#intext" class="headerlink" title="intext"></a>intext</h3><p>寻找<strong>正文</strong>中含有关键字的网页</p>
-<p>例：intext: 关键字</p>
-<img src="/2019/11/07/工具-Google-Shodan/g0.png" title="XYTK">
-
-<h3 id="intitle"><a href="#intitle" class="headerlink" title="intitle"></a>intitle</h3><p>寻找<strong>标题</strong>中含有关键字的网页</p>
-<img src="/2019/11/07/工具-Google-Shodan/g1.png" title="XYTK">
-
-<h3 id="allintitle"><a href="#allintitle" class="headerlink" title="allintitle"></a>allintitle</h3><p>用法与intitle相似，但可以指定多个词</p>
-<p>例：allintitle: 后台管理 admin</p>
-<img src="/2019/11/07/工具-Google-Shodan/g2.png" title="XYTK">
-
-<h3 id="inurl"><a href="#inurl" class="headerlink" title="inurl"></a>inurl</h3><p>url中有关键字</p>
-<p>例：inurl:login</p>
-<img src="/2019/11/07/工具-Google-Shodan/g3.png" title="XYTK">
-
-<h4 id="查找管理员登录页面"><a href="#查找管理员登录页面" class="headerlink" title="查找管理员登录页面"></a>查找管理员登录页面</h4><p>inurl:/admin/login.php</p>
-<h4 id="查找数据库管理页面"><a href="#查找数据库管理页面" class="headerlink" title="查找数据库管理页面"></a>查找数据库管理页面</h4><p>inurl:/phpmyadmin/index.php</p>
-<h3 id="allinurl"><a href="#allinurl" class="headerlink" title="allinurl"></a>allinurl</h3><p>与inurl类似，但可以指定多个词</p>
-<p>例：inurl:login admin</p>
-<h3 id="site"><a href="#site" class="headerlink" title="site"></a>site</h3><p>用于访问指定站点</p>
-<img src="/2019/11/07/工具-Google-Shodan/g4.png" title="XYTK">
-
-<h3 id="filetype"><a href="#filetype" class="headerlink" title="filetype"></a>filetype</h3><p>指定访问的文件类型</p>
-<img src="/2019/11/07/工具-Google-Shodan/g5.png" title="XYTK">
-
-<h3 id="link"><a href="#link" class="headerlink" title="link"></a>link</h3><p>指定链接的网页</p>
-<img src="/2019/11/07/工具-Google-Shodan/g6.png" title="XYTK">
-
-<h3 id="related"><a href="#related" class="headerlink" title="related"></a>related</h3><p>搜索相似类型的网页(相似指网页布局)</p>
-<h3 id="cache"><a href="#cache" class="headerlink" title="cache"></a>cache</h3><p>网页快照，谷歌将返回给你他存储下来的历史页面，如果你同时制定了其他查询词，将在搜索结果里以高亮显示，例如：cache:<a href="http://www.hackingspirits.com" target="_blank" rel="noopener">www.hackingspirits.com</a>  guest  ，将返回指定网站的缓存，并且正文中含有guest</p>
-<h3 id="info"><a href="#info" class="headerlink" title="info"></a>info</h3><p>返回页面信息</p>
-<h3 id="define"><a href="#define" class="headerlink" title="define"></a>define</h3><p>返回某个词语的定义</p>
-<h3 id="phonebook"><a href="#phonebook" class="headerlink" title="phonebook"></a>phonebook</h3><p>电话簿查询美国街道地址和电话号码信息。</p>
-<h2 id="几个例子"><a href="#几个例子" class="headerlink" title="几个例子"></a>几个例子</h2><h3 id="查找网站后台"><a href="#查找网站后台" class="headerlink" title="查找网站后台"></a>查找网站后台</h3><p>site:xx.com intext:管理</p>
-<p>site:xx.com inurl:login</p>
-<p>site:xx.com intitle:后台</p>
-<h3 id="查看服务器使用的程序"><a href="#查看服务器使用的程序" class="headerlink" title="查看服务器使用的程序"></a>查看服务器使用的程序</h3><p>site:xx.com filetype:asp</p>
-<p>site:xx.com filetype:php</p>
-<p>site:xx.com filetype:jsp</p>
-<p>site:xx.com filetype:aspx</p>
-<h3 id="查看上传漏洞"><a href="#查看上传漏洞" class="headerlink" title="查看上传漏洞"></a>查看上传漏洞</h3><p>site:xx.com inurl:file</p>
-<p>site:xx.com inurl:load</p>
-<h3 id="index-of"><a href="#index-of" class="headerlink" title="index of"></a>index of</h3><p>发现允许目录遍历的网站。</p>
-<p>index of /admin</p>
-<p>index of /passwd</p>
-<p>index of /password</p>
-<p>index of /mail</p>
-<p>“index of /“ +passwd</p>
-<p>“index of /“ +password.txt</p>
-<p>“index of /“ +.htaccess</p>
-<p>“index of /root”</p>
-<p>“index of /cgi-bin”</p>
-<p>“index of /logs”</p>
-<p>“index of /config”</p>
-<h1 id="Shodan"><a href="#Shodan" class="headerlink" title="Shodan"></a>Shodan</h1><p>链接： <a href="https://www.freebuf.com/sectool/121339.html" target="_blank" rel="noopener">https://www.freebuf.com/sectool/121339.html</a></p>
-<h2 id="搜索技巧"><a href="#搜索技巧" class="headerlink" title="搜索技巧"></a>搜索技巧</h2><p>hostname：搜索指定的主机或域名，例如 hostname:”google”</p>
-<p>port：搜索指定的端口或服务，例如 port:”21”</p>
-<p>country：搜索指定的国家，例如 country:”CN”</p>
-<p>city：搜索指定的城市，例如 city:”Hefei”</p>
-<p>org：搜索指定的组织或公司，例如 org:”google”</p>
-<p>isp：搜索指定的ISP供应商，例如 isp:”China Telecom”</p>
-<p>product：搜索指定的操作系统/软件/平台，例如 product:”Apache httpd”</p>
-<p>version：搜索指定的软件版本，例如 version:”1.6.2”</p>
-<p>geo：搜索指定的地理位置，参数为经纬度，例如 geo:”31.8639, 117.2808”</p>
-<p>before/after：搜索指定收录时间前后的数据，格式为 dd-mm-yy，例如 before:”11-11-15”</p>
-<p>net：搜索指定的IP地址或子网，例如 net:”210.45.240.0/24”</p>
-
+        <div id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
+  <div class="hbe-input-container">
+  <input type="password" id="hbePass" placeholder="输入密码：" />
+    <label for="hbePass">输入密码：</label>
+    <div class="bottom-line"></div>
+  </div>
+  <script id="hbeData" type="hbeData" data-hmacdigest="e323c7e273b1a3d77911150bb056425c47472ff6ac1aa7f5a401c6f789fb1fd2">7d20a29d971107e11d31bb9aa4fe20b3</script>
+</div>
+<script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">
     </article>
     <!-- license  -->
     
@@ -486,17 +419,12 @@ height:50vh;
     <ul class="post-paginator">
         <li class="next">
             
-                <div class="nextSlogan">Next Post</div>
-                <a href= "/2019/11/12/软件框架与架构/" title= "软件框架与架构">
-                    <div class="nextTitle">软件框架与架构</div>
-                </a>
-            
         </li>
         <li class="previous">
             
                 <div class="prevSlogan">Previous Post</div>
-                <a href= "/2019/11/06/渗透测试的完整流程/" title= "渗透测试的完整流程(持续更新)">
-                    <div class="prevTitle">渗透测试的完整流程(持续更新)</div>
+                <a href= "/2019/12/27/【转载】超详细SQLMap使用攻略及技巧分享/" title= "【转载】超详细SQLMap使用攻略及技巧分享">
+                    <div class="prevTitle">【转载】超详细SQLMap使用攻略及技巧分享</div>
                 </a>
             
         </li>
@@ -626,7 +554,7 @@ top:50vh;
         <div class="toc-catalog">
             <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
         </div>
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#写在前面"><span class="toc-number">1.</span> <span class="toc-text">写在前面</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Google"><span class="toc-number">2.</span> <span class="toc-text">Google</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#基本搜索"><span class="toc-number">2.1.</span> <span class="toc-text">基本搜索</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#高级搜索"><span class="toc-number">2.2.</span> <span class="toc-text">高级搜索</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#intext"><span class="toc-number">2.2.1.</span> <span class="toc-text">intext</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#intitle"><span class="toc-number">2.2.2.</span> <span class="toc-text">intitle</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#allintitle"><span class="toc-number">2.2.3.</span> <span class="toc-text">allintitle</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#inurl"><span class="toc-number">2.2.4.</span> <span class="toc-text">inurl</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#查找管理员登录页面"><span class="toc-number">2.2.4.1.</span> <span class="toc-text">查找管理员登录页面</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#查找数据库管理页面"><span class="toc-number">2.2.4.2.</span> <span class="toc-text">查找数据库管理页面</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#allinurl"><span class="toc-number">2.2.5.</span> <span class="toc-text">allinurl</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#site"><span class="toc-number">2.2.6.</span> <span class="toc-text">site</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#filetype"><span class="toc-number">2.2.7.</span> <span class="toc-text">filetype</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#link"><span class="toc-number">2.2.8.</span> <span class="toc-text">link</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#related"><span class="toc-number">2.2.9.</span> <span class="toc-text">related</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#cache"><span class="toc-number">2.2.10.</span> <span class="toc-text">cache</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#info"><span class="toc-number">2.2.11.</span> <span class="toc-text">info</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#define"><span class="toc-number">2.2.12.</span> <span class="toc-text">define</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#phonebook"><span class="toc-number">2.2.13.</span> <span class="toc-text">phonebook</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#几个例子"><span class="toc-number">2.3.</span> <span class="toc-text">几个例子</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#查找网站后台"><span class="toc-number">2.3.1.</span> <span class="toc-text">查找网站后台</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#查看服务器使用的程序"><span class="toc-number">2.3.2.</span> <span class="toc-text">查看服务器使用的程序</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#查看上传漏洞"><span class="toc-number">2.3.3.</span> <span class="toc-text">查看上传漏洞</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#index-of"><span class="toc-number">2.3.4.</span> <span class="toc-text">index of</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#Shodan"><span class="toc-number">3.</span> <span class="toc-text">Shodan</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#搜索技巧"><span class="toc-number">3.1.</span> <span class="toc-text">搜索技巧</span></a></li></ol></li></ol>
+        
     </div>
     
     <div class="back-top iconfont-archer">&#xe639;</div>
