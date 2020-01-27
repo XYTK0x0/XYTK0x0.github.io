@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://xytk0x0.github.io/"/>
-  <updated>2020-01-18T15:19:38.738Z</updated>
+  <updated>2020-01-27T11:07:27.020Z</updated>
   <id>https://xytk0x0.github.io/</id>
   
   <author>
@@ -15,6 +15,34 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>科比</title>
+    <link href="https://xytk0x0.github.io/2020/01/27/%E7%A7%91%E6%AF%94/"/>
+    <id>https://xytk0x0.github.io/2020/01/27/科比/</id>
+    <published>2020-01-27T10:52:57.000Z</published>
+    <updated>2020-01-27T11:07:27.020Z</updated>
+    
+    <content type="html"><![CDATA[<img src="/2020/01/27/科比/0.jpg" title="XYTK"><h1 id="终于到我们这一代人来感受越来越多的离别和苦难了"><a href="#终于到我们这一代人来感受越来越多的离别和苦难了" class="headerlink" title="终于到我们这一代人来感受越来越多的离别和苦难了"></a>终于到我们这一代人来感受越来越多的离别和苦难了</h1>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;img src=&quot;/2020/01/27/科比/0.jpg&quot; title=&quot;XYTK&quot;&gt;
+
+&lt;h1 id=&quot;终于到我们这一代人来感受越来越多的离别和苦难了&quot;&gt;&lt;a href=&quot;#终于到我们这一代人来感受越来越多的离别和苦难了&quot; class=&quot;headerlink&quot; title=
+      
+    
+    </summary>
+    
+    
+      <category term="日常生活的乱七八糟" scheme="https://xytk0x0.github.io/categories/%E6%97%A5%E5%B8%B8%E7%94%9F%E6%B4%BB%E7%9A%84%E4%B9%B1%E4%B8%83%E5%85%AB%E7%B3%9F/"/>
+    
+    
+      <category term="Blog里的胡言乱语" scheme="https://xytk0x0.github.io/tags/Blog%E9%87%8C%E7%9A%84%E8%83%A1%E8%A8%80%E4%B9%B1%E8%AF%AD/"/>
+    
+  </entry>
   
   <entry>
     <title>hacker101 ctf(2)</title>
@@ -518,32 +546,6 @@
     
     
       <category term="Blog里的胡言乱语" scheme="https://xytk0x0.github.io/tags/Blog%E9%87%8C%E7%9A%84%E8%83%A1%E8%A8%80%E4%B9%B1%E8%AF%AD/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>DOM文档对象模型</title>
-    <link href="https://xytk0x0.github.io/2019/10/27/DOM%E6%96%87%E6%A1%A3%E5%AF%B9%E8%B1%A1%E6%A8%A1%E5%9E%8B/"/>
-    <id>https://xytk0x0.github.io/2019/10/27/DOM文档对象模型/</id>
-    <published>2019-10-27T01:56:56.000Z</published>
-    <updated>2019-10-27T02:17:09.756Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="DOM的概念"><a href="#DOM的概念" class="headerlink" title="DOM的概念"></a>DOM的概念</h1><p>DOM<strong>(Document Object Model)</strong>，是一个平台和语言都中立的接口，可以使程序和脚本能够动态访问和更新文档的内容、结构以及样式。</p><p>在网站页面中有许多页面的元素，当页面到达浏览器时浏览器会为页面创建一个顶级的Document object文档对象，接着生成各个子文档对象，每个页面元素对应一个文档对象，每个文档对象包含属性、方法和事件。可以通过JS脚本对文档对象进行编辑从而修改页面的元素。也就是说，客户端的脚本程序可以通过DOM来动态修改页面内容，从客户端获取DOM中的数据并在本地执行。</p><p>在 HTML DOM 中，所有事物都是节点。DOM 是被视为节点树的 HTML</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">整个文档是一个文档节点</span><br><span class="line">每个 HTML 元素是元素节点</span><br><span class="line">HTML 元素内的文本是文本节点</span><br><span class="line">每个 HTML 属性是属性节点</span><br><span class="line">注释是注释节点</span><br></pre></td></tr></table></figure><img src="/2019/10/27/DOM文档对象模型/0.png" title="XYTK"><h1 id="HTML-DOM-的方法和属性"><a href="#HTML-DOM-的方法和属性" class="headerlink" title="HTML DOM 的方法和属性"></a>HTML DOM 的方法和属性</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">HTML DOM 方法：</span><br><span class="line"></span><br><span class="line">getElementById(id) - 获取带有指定 id 的节点（元素）</span><br><span class="line">appendChild(node) - 插入新的子节点（元素）</span><br><span class="line">removeChild(node) - 删除子节点（元素）</span><br><span class="line"></span><br><span class="line">HTML DOM 属性：</span><br><span class="line"></span><br><span class="line">innerHTML - 节点（元素）的文本值</span><br><span class="line">parentNode - 节点（元素）的父节点</span><br><span class="line">childNodes - 节点（元素）的子节点</span><br><span class="line">attributes - 节点（元素）的属性节点</span><br></pre></td></tr></table></figure>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;h1 id=&quot;DOM的概念&quot;&gt;&lt;a href=&quot;#DOM的概念&quot; class=&quot;headerlink&quot; title=&quot;DOM的概念&quot;&gt;&lt;/a&gt;DOM的概念&lt;/h1&gt;&lt;p&gt;DOM&lt;strong&gt;(Document Object Model)&lt;/strong&gt;，是一个平台和语言都中
-      
-    
-    </summary>
-    
-    
-      <category term="web" scheme="https://xytk0x0.github.io/categories/web/"/>
-    
-    
-      <category term="web" scheme="https://xytk0x0.github.io/tags/web/"/>
     
   </entry>
   
