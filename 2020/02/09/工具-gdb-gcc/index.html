@@ -272,7 +272,7 @@ height:50vh;
                 
                 
                     <div class="post-intro-read">
-                        <span>Word count: <span class="post-count word-count">369</span>Reading time: <span class="post-count reading-time">1 min</span></span>
+                        <span>Word count: <span class="post-count word-count">5</span>Reading time: <span class="post-count reading-time">1 min</span></span>
                     </div>
                 
                 <div class="post-intro-meta">
@@ -401,38 +401,15 @@ height:50vh;
         <div class="container container-unloaded">
             <main class="main post-page">
     <article class="article-entry">
-        <h1 id="gdb-反汇编"><a href="#gdb-反汇编" class="headerlink" title="gdb  反汇编"></a>gdb  反汇编</h1><h2 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h2><blockquote>
-<p>gdb 文件名<br>disassemble main(对main函数反汇编)<br>set disassemably-flavor intel  调整汇编的语法格式<br>break *main 在主函数处设置断点<br>run 运行程序至断点处<br>continue 运行至下一个断点<br>si 进入函数调用<br>ni 应该是一步执行，不需要进入具体函数<br>info reg  显示寄存器的值<br>set $rax 0  可以更改寄存器的值<br>bt/backtrace 显示栈中的所有信息    可以表示函数调用信息<br>info f / frame  更为详细的栈层信息<br>info functions 查看函数名<br>vmmap  查看各段的权限</p>
-</blockquote>
-<p>这个命令会打印出更为详细的当前栈层的信息，只不过，大多数都是运行时的内内地址。比如：函数地址，调用函数的地址，被调用<br>函数的地址，目前的函数是由什么样的程序语言写成的、函数参数地址及值、局部变量的地址等等。</p>
-<blockquote>
-<p>x/ 显示内存中的值</p>
-</blockquote>
-<h1 id="gcc"><a href="#gcc" class="headerlink" title="gcc"></a>gcc</h1><h2 id="编译过程"><a href="#编译过程" class="headerlink" title="编译过程"></a>编译过程</h2><h3 id="一步编译"><a href="#一步编译" class="headerlink" title="一步编译"></a>一步编译</h3><blockquote>
-<p>gcc 源文件 -o 可执行文件</p>
-</blockquote>
-<blockquote>
-<p>gcc 源文件     生成文件默认为a.out</p>
-</blockquote>
-<h3 id="分步编译"><a href="#分步编译" class="headerlink" title="分步编译"></a>分步编译</h3><p>源文件生成linux下可执行文件经过四步，分别是预处理、编译、汇编、链接。</p>
-<p><strong>预处理</strong></p>
-<p>使用-E选项保留a.i文件</p>
-<blockquote>
-<p>gcc -E a.c -o a.i</p>
-</blockquote>
-<p><strong>编译</strong></p>
-<blockquote>
-<p>gcc a.i -o a.s </p>
-</blockquote>
-<p><strong>汇编</strong></p>
-<blockquote>
-<p>gcc a.s -o a.o </p>
-</blockquote>
-<p><strong>链接</strong></p>
-<blockquote>
-<p>gcc a.o -o a</p>
-</blockquote>
-<h2 id="特殊编译选项"><a href="#特殊编译选项" class="headerlink" title="特殊编译选项"></a>特殊编译选项</h2>
+        <div id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
+  <div class="hbe-input-container">
+  <input type="password" id="hbePass" placeholder="输入密码：" />
+    <label for="hbePass">输入密码：</label>
+    <div class="bottom-line"></div>
+  </div>
+  <script id="hbeData" type="hbeData" data-hmacdigest="17cca4a4d6338c9f30234749f1c15e20bf212242e56cafaf38452beddb6d6a0a">6bb913e7bf98cc4d24fd52ce8dfed0ccae620172fdae34c55d08b1250696fc9fc287af7a9d964641ac489752fd0719a860b561dcf821da2a4c4211d45b7fecfdeb1d9ff6a738a19d26d01dfdcda6688e7647fba5a7fda505eda0ebc4b812f9550dd266fe2efc362400e3bbbc68b3ac9553ec88735de6ea2f5fd09a3eeac07fbff64f14d62312bc8100be08e9fa9604207f635587df94c8d63166ece17571f468d0cf821ba37f33c606959ebde1758edd51e5c139bcf057bf00570dde193784637858411ba37498b1e72ee2deb599923ce069756b4da062e1faa1f62ad06cc5782be9d973627f89e31f99930ebbd9f93e4949195d8fcae810de3aefc3ae5aef4b00283919372bfffeefc19b344cae2692a37973e0fb369527a607464c35c2479d0b8ed48038728a12c928ab7a6ce4dfd471c80a0ae7a6d7244a6f8d0d655cbb4a5446a6c350424cab55e79a69a0e4455cb1f9fda50f0ae4ea10a2c429de3d73ad5970901271a8afa7c5a224bbd117a1b3a5226f19e43910897a1b688ffd276e791a0df1b0590f73534f062ed7ac7edf4d0c38582914973aadc77c11930d9639874ef83b30f14751c280fa574b0900d3c60e9154ce6f27dd79f0c6719836ccbe9baf26b7ed7b850483dd5d7fe542877f4f27064ba899dab87dcda9427c819f017a9d4fbdaa628e02c548489e310d257ac439dde6ec7a00f307a04ccf504df063d4823d979f27ad27dce554152a7fdd42e89b872023462c0c227956702ea474b5c7cd3fa7236db5cf6d99001a167de9a8bc33d930e124ebab3220df14b289164cc3970728d8cdab0fef66deee837d02860020af09fa0d1d850faf33e875cc56d16ac51a5fc20d17832ec6a7b48237cbdc865c1a99c4aea6d62097c0736646274bc45943b00b52d11a9811246e33ea302b81ddb39bad9aed2fa993045c236ab45a436c3245dd3ca969c9b5e50882b70254fc65bf7739661f56efd3b343243109071227682d79db63d7476ee2d9c8666714cfdda3195ebd86eb5a0eb47010500245e2d2e4db4cd694a2fed6816cca2ea1b89ec91c934688d25d23e43ec97cb7650b763520df227bed52a4586009f5455890a18d2ae13cf2e8690445e1dc6dfdd085204cdfa82181539e16d0c01f58f23179dfc57d9101a03270923e47687996e06fea2d3647fef9535e9f15d628416c3aa58538589182e28d61e1635c25766d13bb04f229eb36ec9501bc58d25ac9f7a30d8af6c2fa427a03c1d847c6c6fb9cca4c891451c7bce60696c887bf86cf8d93207bc7a8a6348831dd209526e6ec715271adf4d38cbbd7c00543e071a404099fda798a8b43cb37f42bc3c4db65a6e04b7424b3f2743a66fbf68ff8549a72f62199fc3613507e3ddc4039c5adb659f55eb3f227bcc864746b857286739b9190793361681c5340315dfdd7004e9e788db5486c3541e49d19496298e27269a4d18cff9bbcb25a89546fc20cb74963199110bed6bf7b22b1996df77cde1cee0446618684c674e4e1ce7efa351e57b8a4c342a7b13e24b32ec0b5918468d6ec080f2e5d8729f0aa2be6c1d29a1a19fc9fa18d0a3c3b4ff12da7b60425b7f58a51492be79fa4bb91c7c170e8320a7e24fa4aa9a54ff0d616eae4c1a71575c3950c198b6e9c0f793ccb8335809dbc721c3137239997b30a1a95c4707f0aaf32d3ed362ea38db858e2291c174ec86482d259f2bf9116555cdae7162332d1a8353b34550a6b8dd292a38b41332e93c0964e7f2e7bd6368f1252c60e65f4caa1986d10dbbc19523dab065ae36dc185701338eab3a0d0e99719a22485859596a38d7835d9e5ba201e48345de8dfe0454c1c89667408f1a1c6f1f1e6a36528b8af7486f00eb74a917d97fda0a204b6f3713b0ca256cc31aef8565285cd915fd536e3cc032ce03065eaabc620891eb12b280126858243af794b9990834cde46a27c0bc1d9a4affa5f6456811115190e8d72817b5ab6a4a20baf4c54b7f79138172234b6afb5cb9c2ca27bb99179723d832fa17020a32c7443011aa9713f02f4b9668108197d172aefa7d5901c2744928134927766f738ca4b58056b7b4730c006fd317ba354fe151f025a1420f78fdc8b03bf26caaa6d6f6678d69d088dfe6a226e54e5daa88f167f0429dbe0191109e6fffde6ed7f6a77ac08198d8178e17e295f3fb4acbe16a5f48072bcdf1265083089983d72ae07979f03bbdc82ff2535d0ec0af5d0e3bed138d3c7496b43155c839a7b761d15636fd53a285c557c750528845d24a94220e67fdb779f1f01da3cc92a64afe26b0fa8a614ff1f5956df713cce36376e0ffb7c1afe43f1236c139cff60b2c059e1fbbf28e5f7c297fadc2038ce77d2711d0942d277656e6625052634b99818a6d0a51bce598b4379c6d7d528cab9befd060307db0ec115ed691075ca1251875c2332743e4f8263626b1b5492e04477245b9dd04f7c65bd3bbcef2e631d9c560156e054a67e3e8ba5df2e06ba33ebc84f1f9b93a8ec523e075454b5e3db3f52cb3d434f0299383102cef6a7e7183456c466a840321599293814f0d29973b7f974197f3c419ce715feea560da8bb1ab526a1aba62f2324f09310b786d60f33b986a824ed797dcf2ade18dae564bb11d1ba5c677f13fda871b1d071af82fc1e3ad768730608239e7770c543d07ae457a20264f424ebc6f03f6005556886b1d32681bff8844b1f4d0d91d153f3cf1a133fca524bdd3eadb260e9febe3a535116f254d8fafcf47f6016446d860f40510a5635cbeff4dbb7292da68663a956e706b61ad59f5fa712e0499a95f217b903701efca74db5a7f3b1ccbe259f7ca3745d85e264697dc046031528c20cea88ec52545556e1926165aadc2281b78fe253337bb96916e73a7ce1211c0a07532f99a7015b21fcd65d441bfd2f5da4cb95a6b7c6ca33a31e3ec58530f1c409276051859cbfa375d103b236284b0522ad87ef3d416af535b113787c279432a3725e16e586aa66bbc08136c67c4ec8930c32e06da5f96c1c4d815248707829e33ee2b0f487d4edb2400191b2e93cbe34e27b5629e4633c8a06c028639aeb83f0bfbc8fd7ac8a251b97bea370bf88984bf9ba749dfd78ccc4f60ae718797b67a77ce00ac171aad75350528a195f37953f030cba5822f590e462e3f556c69c7b3c9807a3d3510f856cb1f3a90a2158a075b8dfb1e844b883a4303433e13c510844b8c9a3afbe0224338825ba76dfaab95275fe0c0b938f2f8644e83592a72e8ae043778fbf37b1b4eb51f6ed6e54c23e9de2f7b1cdd1e628a524cd9b32aa88de8995ce1270b43b458e40c21665256cdd31d0187da671c53e13c293</script>
+</div>
+<script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">
     </article>
     <!-- license  -->
     
@@ -580,7 +557,7 @@ top:50vh;
         <div class="toc-catalog">
             <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
         </div>
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#gdb-反汇编"><span class="toc-number">1.</span> <span class="toc-text">gdb  反汇编</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#使用方法"><span class="toc-number">1.1.</span> <span class="toc-text">使用方法</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#gcc"><span class="toc-number">2.</span> <span class="toc-text">gcc</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#编译过程"><span class="toc-number">2.1.</span> <span class="toc-text">编译过程</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#一步编译"><span class="toc-number">2.1.1.</span> <span class="toc-text">一步编译</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#分步编译"><span class="toc-number">2.1.2.</span> <span class="toc-text">分步编译</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#特殊编译选项"><span class="toc-number">2.2.</span> <span class="toc-text">特殊编译选项</span></a></li></ol></li></ol>
+        
     </div>
     
     <div class="back-top iconfont-archer">&#xe639;</div>
@@ -1241,91 +1218,9 @@ top:50vh;
     
     
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     <div class="total-and-search">
         <div class="total-archive">
-        Total : 50
+        Total : 44
         </div>
         <!-- search  -->
         
@@ -1380,17 +1275,7 @@ top:50vh;
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">03/04</span><a class="archive-post-title" href= "/2020/03/04/kali中使用mysql/" >kali中使用mysql</a>
-        </li>
-    
-    
-        <li class="archive-post-item">
             <span class="archive-post-date">03/04</span><a class="archive-post-title" href= "/2020/03/04/【漏洞复现】CVE-2018-7600-Drupal核心远程代码执行漏洞/" >【漏洞复现】CVE-2018-7600 Drupal核心远程代码执行漏洞</a>
-        </li>
-    
-    
-        <li class="archive-post-item">
-            <span class="archive-post-date">03/01</span><a class="archive-post-title" href= "/2020/03/01/【靶机】Stack-Overflows-for-Beginners/" >【靶机】Stack Overflows for Beginners</a>
         </li>
     
     
@@ -1400,22 +1285,17 @@ top:50vh;
     
     
         <li class="archive-post-item">
+            <span class="archive-post-date">03/01</span><a class="archive-post-title" href= "/2020/03/01/【靶机】Stack-Overflows-for-Beginners/" >【靶机】Stack Overflows for Beginners</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
             <span class="archive-post-date">02/28</span><a class="archive-post-title" href= "/2020/02/28/【漏洞复现】CVE-2019-19781/" >【漏洞复现】CVE-2019-19781</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">02/22</span><a class="archive-post-title" href= "/2020/02/22/VMware导入ovf虚拟机失败/" >VMware导入ovf虚拟机失败</a>
-        </li>
-    
-    
-        <li class="archive-post-item">
             <span class="archive-post-date">02/15</span><a class="archive-post-title" href= "/2020/02/15/【wp】攻防世界pwn新手练习区-1/" >【wp】攻防世界pwn新手练习区(1)</a>
-        </li>
-    
-    
-        <li class="archive-post-item">
-            <span class="archive-post-date">02/14</span><a class="archive-post-title" href= "/2020/02/14/Flask-Bootstrap的使用/" >Flask&Bootstrap的使用</a>
         </li>
     
     
@@ -1514,11 +1394,6 @@ top:50vh;
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">11/12</span><a class="archive-post-title" href= "/2019/11/12/接受生活的不确定/" >接受生活的不确定</a>
-        </li>
-    
-    
-        <li class="archive-post-item">
             <span class="archive-post-date">11/12</span><a class="archive-post-title" href= "/2019/11/12/软件框架与架构/" >软件框架与架构</a>
         </li>
     
@@ -1540,11 +1415,6 @@ top:50vh;
     
         <li class="archive-post-item">
             <span class="archive-post-date">10/28</span><a class="archive-post-title" href= "/2019/10/28/网络安全协议复习/" >网络安全协议复习</a>
-        </li>
-    
-    
-        <li class="archive-post-item">
-            <span class="archive-post-date">10/27</span><a class="archive-post-title" href= "/2019/10/27/没有真正的感同身受/" >没有真正的感同身受</a>
         </li>
     
     
@@ -1594,11 +1464,6 @@ top:50vh;
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">10/08</span><a class="archive-post-title" href= "/2019/10/08/几句话/" >几句话</a>
-        </li>
-    
-    
-        <li class="archive-post-item">
             <span class="archive-post-date">10/07</span><a class="archive-post-title" href= "/2019/10/07/Python实现SPN加解密/" >【转载】Python实现SPN加解密</a>
         </li>
     
@@ -1612,15 +1477,19 @@ top:50vh;
         <div class="sidebar-panel-tags">
     <div class="sidebar-tags-name">
     
+        <span class="sidebar-tag-name" data-tags="Blog里的胡言乱语"><span class="iconfont-archer">&#xe606;</span>Blog里的胡言乱语</span>
+    
         <span class="sidebar-tag-name" data-tags="web"><span class="iconfont-archer">&#xe606;</span>web</span>
     
         <span class="sidebar-tag-name" data-tags="开发"><span class="iconfont-archer">&#xe606;</span>开发</span>
     
-        <span class="sidebar-tag-name" data-tags="环境安装或问题解决办法"><span class="iconfont-archer">&#xe606;</span>环境安装或问题解决办法</span>
-    
-        <span class="sidebar-tag-name" data-tags="Blog里的胡言乱语"><span class="iconfont-archer">&#xe606;</span>Blog里的胡言乱语</span>
-    
         <span class="sidebar-tag-name" data-tags="linux"><span class="iconfont-archer">&#xe606;</span>linux</span>
+    
+        <span class="sidebar-tag-name" data-tags="PHP"><span class="iconfont-archer">&#xe606;</span>PHP</span>
+    
+        <span class="sidebar-tag-name" data-tags="CTF"><span class="iconfont-archer">&#xe606;</span>CTF</span>
+    
+        <span class="sidebar-tag-name" data-tags="环境安装或问题解决办法"><span class="iconfont-archer">&#xe606;</span>环境安装或问题解决办法</span>
     
         <span class="sidebar-tag-name" data-tags="docker"><span class="iconfont-archer">&#xe606;</span>docker</span>
     
@@ -1634,9 +1503,7 @@ top:50vh;
     
         <span class="sidebar-tag-name" data-tags="攻防世界"><span class="iconfont-archer">&#xe606;</span>攻防世界</span>
     
-        <span class="sidebar-tag-name" data-tags="CTF"><span class="iconfont-archer">&#xe606;</span>CTF</span>
-    
-        <span class="sidebar-tag-name" data-tags="PHP"><span class="iconfont-archer">&#xe606;</span>PHP</span>
+        <span class="sidebar-tag-name" data-tags="Java web"><span class="iconfont-archer">&#xe606;</span>Java web</span>
     
         <span class="sidebar-tag-name" data-tags="靶机"><span class="iconfont-archer">&#xe606;</span>靶机</span>
     
@@ -1651,8 +1518,6 @@ top:50vh;
         <span class="sidebar-tag-name" data-tags="tools"><span class="iconfont-archer">&#xe606;</span>tools</span>
     
         <span class="sidebar-tag-name" data-tags="内网渗透"><span class="iconfont-archer">&#xe606;</span>内网渗透</span>
-    
-        <span class="sidebar-tag-name" data-tags="Java web"><span class="iconfont-archer">&#xe606;</span>Java web</span>
     
         <span class="sidebar-tag-name" data-tags="Crypto"><span class="iconfont-archer">&#xe606;</span>Crypto</span>
     
@@ -1691,25 +1556,25 @@ jsonContent:
         <div class="sidebar-panel-categories">
     <div class="sidebar-categories-name">
     
+        <span class="sidebar-category-name" data-categories="日常生活的乱七八糟"><span class="iconfont-archer">&#xe60a;</span>日常生活的乱七八糟</span>
+    
         <span class="sidebar-category-name" data-categories="web"><span class="iconfont-archer">&#xe60a;</span>web</span>
     
         <span class="sidebar-category-name" data-categories="开发"><span class="iconfont-archer">&#xe60a;</span>开发</span>
     
-        <span class="sidebar-category-name" data-categories="环境安装或问题解决办法"><span class="iconfont-archer">&#xe60a;</span>环境安装或问题解决办法</span>
-    
-        <span class="sidebar-category-name" data-categories="日常生活的乱七八糟"><span class="iconfont-archer">&#xe60a;</span>日常生活的乱七八糟</span>
-    
         <span class="sidebar-category-name" data-categories="linux"><span class="iconfont-archer">&#xe60a;</span>linux</span>
     
+        <span class="sidebar-category-name" data-categories="环境安装或问题解决办法"><span class="iconfont-archer">&#xe60a;</span>环境安装或问题解决办法</span>
+    
         <span class="sidebar-category-name" data-categories="docker"><span class="iconfont-archer">&#xe60a;</span>docker</span>
+    
+        <span class="sidebar-category-name" data-categories="PHP"><span class="iconfont-archer">&#xe60a;</span>PHP</span>
     
         <span class="sidebar-category-name" data-categories="pwn"><span class="iconfont-archer">&#xe60a;</span>pwn</span>
     
         <span class="sidebar-category-name" data-categories="python"><span class="iconfont-archer">&#xe60a;</span>python</span>
     
         <span class="sidebar-category-name" data-categories="靶机"><span class="iconfont-archer">&#xe60a;</span>靶机</span>
-    
-        <span class="sidebar-category-name" data-categories="PHP"><span class="iconfont-archer">&#xe60a;</span>PHP</span>
     
         <span class="sidebar-category-name" data-categories="推荐"><span class="iconfont-archer">&#xe60a;</span>推荐</span>
     

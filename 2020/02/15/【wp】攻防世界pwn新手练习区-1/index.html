@@ -272,7 +272,7 @@ height:50vh;
                 
                 
                     <div class="post-intro-read">
-                        <span>Word count: <span class="post-count word-count">169</span>Reading time: <span class="post-count reading-time">1 min</span></span>
+                        <span>Word count: <span class="post-count word-count">5</span>Reading time: <span class="post-count reading-time">1 min</span></span>
                     </div>
                 
                 <div class="post-intro-meta">
@@ -401,20 +401,15 @@ height:50vh;
         <div class="container container-unloaded">
             <main class="main post-page">
     <article class="article-entry">
-        <h1 id="get-shell"><a href="#get-shell" class="headerlink" title="get shell"></a>get shell</h1><h1 id="hello-pwn"><a href="#hello-pwn" class="headerlink" title="hello pwn"></a>hello pwn</h1><p>system(‘cat flag.txt’) address  0x400686</p>
-<p>IDA f5:</p>
-<img src="/2020/02/15/【wp】攻防世界pwn新手练习区-1/0.png" title="xytk0x0">
-
-<p>使if中等式成立，能够执行cat flag.txt<br>在.bss段中</p>
-<p>read()函数</p>
-<p>原型：ssize_t read(int fd,void*buf,size_t count)<br>参数说明：<br>fd:      是文件描述符，对应0<br>buf:     为读出数据的缓冲区；<br>count:   为每次读取的字节数（是请求读取的字节数，读上来的数据保<br>         存在缓冲区buf中，同时文件的当前读写位置向后移）</p>
-<p>0x6e756161</p>
-<p>chmod u+x ***.sh 加上执行权限</p>
-<h1 id="CGfsb"><a href="#CGfsb" class="headerlink" title="CGfsb"></a>CGfsb</h1><p>格式化字符串漏洞</p>
-<p>pwnme  0x0804A068</p>
-<p>如果确定字符串的偏移量</p>
-<p>printf(‘AAAA %x,%x,%x,%x,%x,%x,%x,%x,%x,%x,%x,%x,%x,%x,%x,%x,%x,%x,%x,%x,%x,%x,%x’)</p>
-
+        <div id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
+  <div class="hbe-input-container">
+  <input type="password" id="hbePass" placeholder="输入密码：" />
+    <label for="hbePass">输入密码：</label>
+    <div class="bottom-line"></div>
+  </div>
+  <script id="hbeData" type="hbeData" data-hmacdigest="b033427525b860ded1203d62a5dbdc4a41515b56bfa817f45575d6029c1e1568">7bd23393274a680def2ca84e33b99e570421f4a8063308e126d3c6c1d9579e8eb77c341bc63c9419323615fe171c5956622d601be81855b8e9f27e5e23645e1f8fb10b71933ead5043d4ed6dd5dd6dc5028d911e03570d66269ce15c96b4f1430304a03697505abf500ec7e32b27e95862c295f0cd910810f9897143e7752e4b34fd38731c0822b728191b5602077f0209a6ed373828b5464ac409c3813893b13469ee5907554c825d1b9607a1503ed1be608438a1d6d0a2a31fea937ef48be9094840f15c3569a6cdc5fb0f24b314de9248f850ce1d7c2123bd931adf00975187693c4146b64486407088fde474e80bc0646f32df6e5a402219e40a29eee2c139e2a00f6d74390d4fc354c2cd119798f13046811ccf48685fdaea54d0fae89e97fc64dbb8a83e1adb57e4267b10d6a060ba6ba538d37e79515421b68342a9fc6533c888074721b9ec42d8ea71c4a6de2d7062defcf279f1ac2da4db2b0d1b1cf0e82c6b0a4a7607178ffa1b23c73925f7f0542fdf963c633fb2476c2e876aad47587c55e9fa094a689750a07035674fbc9dca35dbd46e349c247bfa0ce25956f479ee88760319930ee7de74245e14163602510a112dfb8e1547f8d2bf74dbe7fe11d64c58fc243c2e6d21a003ea12b0cf536466723c30e27fdff0a61c61401d8dbb75c996be6d47b26bb80a8d22fe8f28067a252a824b265f750d53633ae1dc09af87a5d0f996b82eb7f75bed97d29cad4ac3d7972890038062e84fb9e5aed401398d32b002d7da68d941d4800ea766acad7cc25391956585ea28f2a3b6e41d0c1cb67eeecdd994bde302ceb5f6b635bf5d19ab8147ee0f5e2988bb89b4eb3f208c0e01c1367822a59d36f855515b11fc90293df3f124bebfb366b624056089a5d07e1686b89964ac10b7c523c3adde8e790fc1aacdf228a45415c5110a20ff0949577755d9a483112ea6045013e68bd4caa20d0dc93343846878de44d993450129f40da712e4840d6f1d511175244ff3f91506eef6736b60ef2cb77881e5bd9f8e104c412fa0ddfc2adc0264490f41cc9deceeacfcbbaa88f5108fc8867a4c690b089b2fb32106718a0dc71db3083b1db53c704f698285ca38153ec07583073ebb71447382c251bbfa026bb478eb3e49c2f8ae690db808870e5527e0f13d908d677452370887e2117caac998fbf32cfbe4f183b561cadc6626bf2b7ec5dedc4b71747797e85ee9a3be24b34321a4840c015f309aa66a49e58494dbeb04743374f3fc2138606d70c809854379fdcab0e19cd20bc2cb4a50fc73a3d3143496520cd83ef7d8f4a3d9adf71c57d9ae649067da3c10325b836d4eee8d7f497dfa357d8cec0742f43debb4a60de32aab76db5315a2c33f6f13de60c140d964015b009a5915fa9373a28bfb8088fae353615ca45da123323bd4cbe7f4f91479f7b1f9d5d859fdf17c42a155623660f474fb167925b3cdd916f7dfc2f770d182d705848b87ce54b608acbdee37b0dc6f2586a53747499089ca5402443fc42cb3023538ad069ae6181ab6fd564e4336960cc2344848b9d68c58b0c035feb580426ac154</script>
+</div>
+<script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">
     </article>
     <!-- license  -->
     
@@ -423,16 +418,16 @@ height:50vh;
         <li class="next">
             
                 <div class="nextSlogan">Next Post</div>
-                <a href= "/2020/02/22/VMware导入ovf虚拟机失败/" title= "VMware导入ovf虚拟机失败">
-                    <div class="nextTitle">VMware导入ovf虚拟机失败</div>
+                <a href= "/2020/02/28/【漏洞复现】CVE-2019-19781/" title= "【漏洞复现】CVE-2019-19781">
+                    <div class="nextTitle">【漏洞复现】CVE-2019-19781</div>
                 </a>
             
         </li>
         <li class="previous">
             
                 <div class="prevSlogan">Previous Post</div>
-                <a href= "/2020/02/14/Flask-Bootstrap的使用/" title= "Flask&Bootstrap的使用">
-                    <div class="prevTitle">Flask&Bootstrap的使用</div>
+                <a href= "/2020/02/14/ROP/" title= "ROP">
+                    <div class="prevTitle">ROP</div>
                 </a>
             
         </li>
@@ -562,7 +557,7 @@ top:50vh;
         <div class="toc-catalog">
             <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
         </div>
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#get-shell"><span class="toc-number">1.</span> <span class="toc-text">get shell</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#hello-pwn"><span class="toc-number">2.</span> <span class="toc-text">hello pwn</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#CGfsb"><span class="toc-number">3.</span> <span class="toc-text">CGfsb</span></a></li></ol>
+        
     </div>
     
     <div class="back-top iconfont-archer">&#xe639;</div>
@@ -1223,91 +1218,9 @@ top:50vh;
     
     
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     <div class="total-and-search">
         <div class="total-archive">
-        Total : 50
+        Total : 44
         </div>
         <!-- search  -->
         
@@ -1362,17 +1275,7 @@ top:50vh;
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">03/04</span><a class="archive-post-title" href= "/2020/03/04/kali中使用mysql/" >kali中使用mysql</a>
-        </li>
-    
-    
-        <li class="archive-post-item">
             <span class="archive-post-date">03/04</span><a class="archive-post-title" href= "/2020/03/04/【漏洞复现】CVE-2018-7600-Drupal核心远程代码执行漏洞/" >【漏洞复现】CVE-2018-7600 Drupal核心远程代码执行漏洞</a>
-        </li>
-    
-    
-        <li class="archive-post-item">
-            <span class="archive-post-date">03/01</span><a class="archive-post-title" href= "/2020/03/01/【靶机】Stack-Overflows-for-Beginners/" >【靶机】Stack Overflows for Beginners</a>
         </li>
     
     
@@ -1382,22 +1285,17 @@ top:50vh;
     
     
         <li class="archive-post-item">
+            <span class="archive-post-date">03/01</span><a class="archive-post-title" href= "/2020/03/01/【靶机】Stack-Overflows-for-Beginners/" >【靶机】Stack Overflows for Beginners</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
             <span class="archive-post-date">02/28</span><a class="archive-post-title" href= "/2020/02/28/【漏洞复现】CVE-2019-19781/" >【漏洞复现】CVE-2019-19781</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">02/22</span><a class="archive-post-title" href= "/2020/02/22/VMware导入ovf虚拟机失败/" >VMware导入ovf虚拟机失败</a>
-        </li>
-    
-    
-        <li class="archive-post-item">
             <span class="archive-post-date">02/15</span><a class="archive-post-title" href= "/2020/02/15/【wp】攻防世界pwn新手练习区-1/" >【wp】攻防世界pwn新手练习区(1)</a>
-        </li>
-    
-    
-        <li class="archive-post-item">
-            <span class="archive-post-date">02/14</span><a class="archive-post-title" href= "/2020/02/14/Flask-Bootstrap的使用/" >Flask&Bootstrap的使用</a>
         </li>
     
     
@@ -1496,11 +1394,6 @@ top:50vh;
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">11/12</span><a class="archive-post-title" href= "/2019/11/12/接受生活的不确定/" >接受生活的不确定</a>
-        </li>
-    
-    
-        <li class="archive-post-item">
             <span class="archive-post-date">11/12</span><a class="archive-post-title" href= "/2019/11/12/软件框架与架构/" >软件框架与架构</a>
         </li>
     
@@ -1522,11 +1415,6 @@ top:50vh;
     
         <li class="archive-post-item">
             <span class="archive-post-date">10/28</span><a class="archive-post-title" href= "/2019/10/28/网络安全协议复习/" >网络安全协议复习</a>
-        </li>
-    
-    
-        <li class="archive-post-item">
-            <span class="archive-post-date">10/27</span><a class="archive-post-title" href= "/2019/10/27/没有真正的感同身受/" >没有真正的感同身受</a>
         </li>
     
     
@@ -1576,11 +1464,6 @@ top:50vh;
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">10/08</span><a class="archive-post-title" href= "/2019/10/08/几句话/" >几句话</a>
-        </li>
-    
-    
-        <li class="archive-post-item">
             <span class="archive-post-date">10/07</span><a class="archive-post-title" href= "/2019/10/07/Python实现SPN加解密/" >【转载】Python实现SPN加解密</a>
         </li>
     
@@ -1594,15 +1477,19 @@ top:50vh;
         <div class="sidebar-panel-tags">
     <div class="sidebar-tags-name">
     
+        <span class="sidebar-tag-name" data-tags="Blog里的胡言乱语"><span class="iconfont-archer">&#xe606;</span>Blog里的胡言乱语</span>
+    
         <span class="sidebar-tag-name" data-tags="web"><span class="iconfont-archer">&#xe606;</span>web</span>
     
         <span class="sidebar-tag-name" data-tags="开发"><span class="iconfont-archer">&#xe606;</span>开发</span>
     
-        <span class="sidebar-tag-name" data-tags="环境安装或问题解决办法"><span class="iconfont-archer">&#xe606;</span>环境安装或问题解决办法</span>
-    
-        <span class="sidebar-tag-name" data-tags="Blog里的胡言乱语"><span class="iconfont-archer">&#xe606;</span>Blog里的胡言乱语</span>
-    
         <span class="sidebar-tag-name" data-tags="linux"><span class="iconfont-archer">&#xe606;</span>linux</span>
+    
+        <span class="sidebar-tag-name" data-tags="PHP"><span class="iconfont-archer">&#xe606;</span>PHP</span>
+    
+        <span class="sidebar-tag-name" data-tags="CTF"><span class="iconfont-archer">&#xe606;</span>CTF</span>
+    
+        <span class="sidebar-tag-name" data-tags="环境安装或问题解决办法"><span class="iconfont-archer">&#xe606;</span>环境安装或问题解决办法</span>
     
         <span class="sidebar-tag-name" data-tags="docker"><span class="iconfont-archer">&#xe606;</span>docker</span>
     
@@ -1616,9 +1503,7 @@ top:50vh;
     
         <span class="sidebar-tag-name" data-tags="攻防世界"><span class="iconfont-archer">&#xe606;</span>攻防世界</span>
     
-        <span class="sidebar-tag-name" data-tags="CTF"><span class="iconfont-archer">&#xe606;</span>CTF</span>
-    
-        <span class="sidebar-tag-name" data-tags="PHP"><span class="iconfont-archer">&#xe606;</span>PHP</span>
+        <span class="sidebar-tag-name" data-tags="Java web"><span class="iconfont-archer">&#xe606;</span>Java web</span>
     
         <span class="sidebar-tag-name" data-tags="靶机"><span class="iconfont-archer">&#xe606;</span>靶机</span>
     
@@ -1633,8 +1518,6 @@ top:50vh;
         <span class="sidebar-tag-name" data-tags="tools"><span class="iconfont-archer">&#xe606;</span>tools</span>
     
         <span class="sidebar-tag-name" data-tags="内网渗透"><span class="iconfont-archer">&#xe606;</span>内网渗透</span>
-    
-        <span class="sidebar-tag-name" data-tags="Java web"><span class="iconfont-archer">&#xe606;</span>Java web</span>
     
         <span class="sidebar-tag-name" data-tags="Crypto"><span class="iconfont-archer">&#xe606;</span>Crypto</span>
     
@@ -1673,25 +1556,25 @@ jsonContent:
         <div class="sidebar-panel-categories">
     <div class="sidebar-categories-name">
     
+        <span class="sidebar-category-name" data-categories="日常生活的乱七八糟"><span class="iconfont-archer">&#xe60a;</span>日常生活的乱七八糟</span>
+    
         <span class="sidebar-category-name" data-categories="web"><span class="iconfont-archer">&#xe60a;</span>web</span>
     
         <span class="sidebar-category-name" data-categories="开发"><span class="iconfont-archer">&#xe60a;</span>开发</span>
     
-        <span class="sidebar-category-name" data-categories="环境安装或问题解决办法"><span class="iconfont-archer">&#xe60a;</span>环境安装或问题解决办法</span>
-    
-        <span class="sidebar-category-name" data-categories="日常生活的乱七八糟"><span class="iconfont-archer">&#xe60a;</span>日常生活的乱七八糟</span>
-    
         <span class="sidebar-category-name" data-categories="linux"><span class="iconfont-archer">&#xe60a;</span>linux</span>
     
+        <span class="sidebar-category-name" data-categories="环境安装或问题解决办法"><span class="iconfont-archer">&#xe60a;</span>环境安装或问题解决办法</span>
+    
         <span class="sidebar-category-name" data-categories="docker"><span class="iconfont-archer">&#xe60a;</span>docker</span>
+    
+        <span class="sidebar-category-name" data-categories="PHP"><span class="iconfont-archer">&#xe60a;</span>PHP</span>
     
         <span class="sidebar-category-name" data-categories="pwn"><span class="iconfont-archer">&#xe60a;</span>pwn</span>
     
         <span class="sidebar-category-name" data-categories="python"><span class="iconfont-archer">&#xe60a;</span>python</span>
     
         <span class="sidebar-category-name" data-categories="靶机"><span class="iconfont-archer">&#xe60a;</span>靶机</span>
-    
-        <span class="sidebar-category-name" data-categories="PHP"><span class="iconfont-archer">&#xe60a;</span>PHP</span>
     
         <span class="sidebar-category-name" data-categories="推荐"><span class="iconfont-archer">&#xe60a;</span>推荐</span>
     

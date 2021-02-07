@@ -351,7 +351,7 @@
                 <span>【漏洞复现】CVE-2019-19781</span>
         </a>
         <div class="abstract-content">
-            
+            这是一篇加密文章。
         </div>
         <div class="abstract-post-meta">
             <!-- date  -->
@@ -369,55 +369,12 @@
     
     
     <article class="index-post">
-        <a class="abstract-title" href = "/2020/02/22/VMware导入ovf虚拟机失败/" >
-            
-                <span>VMware导入ovf虚拟机失败</span>
-        </a>
-        <div class="abstract-content">
-            安装一个靶机显示
-
-
-需要更新ovftool,VMware workstation Pro默认内置的ovftool是1.0版本
-下载ovftool 4.1.0,安装后，替换WMware安装路径下的文件夹
-然后重新打开虚拟机即可(我导入后仍需要点击重试)
-
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2020/02/22</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "环境安装或问题解决办法">环境安装或问题解决办法</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
         <a class="abstract-title" href = "/2020/02/15/【wp】攻防世界pwn新手练习区-1/" >
             
                 <span>【wp】攻防世界pwn新手练习区(1)</span>
         </a>
         <div class="abstract-content">
-            get shellhello pwnsystem(‘cat flag.txt’) address  0x400686
-IDA f5:
-
-
-使if中等式成立，能够执行cat flag.txt在.bss段中
-read()函数
-原型：ssize_t read(int fd,void*buf,size_t count)参数说明：fd:      是文件描述符，对应0buf:     为读出数据的缓冲区；count:   为每次读取的字节数（是请求读取的字节数，读上来的数据保         存在缓冲区buf中，同时文件的当前读写位置向后移）
-0x6e756161
-chmod u+x ***.sh...
+            这是一篇加密文章。
         </div>
         <div class="abstract-post-meta">
             <!-- date  -->
@@ -441,48 +398,12 @@ chmod u+x ***.sh...
     
     
     <article class="index-post">
-        <a class="abstract-title" href = "/2020/02/14/Flask-Bootstrap的使用/" >
-            
-                <span>Flask&amp;Bootstrap的使用</span>
-        </a>
-        <div class="abstract-content">
-            写在前面目前的想法: 
-先使用bootstrap+flask+mysql实现完整的功能，然后使用java+vue.js重构一下   检验自己的java能力之后分析经典的java漏洞  包括s*系列  还有一个web服务器软件的漏洞
-Flask常规的目录结构:
-在已安装flask包的情况下，运行项目，仍显示no module named flask 
-在github上下载flask的源码进行安装。
-git clone https://github.com/pallets/flask2、对依赖库进行安装
-cd flaskpython setup.py install
-Bootstrapweb...
-        </div>
-        <div class="abstract-post-meta">
-            <!-- date  -->
-            <div class="abstract-date">
-                <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2020/02/14</span>
-            </div>
-            <!-- tags  -->
-            
-            <div class= abstract-tags >
-    
-        <a class="post-tag" href="javascript:void(0);" data-tags = "开发">开发</a>
-    
-</div>
-            
-        </div>
-    </article>
-    
-    
-    
-    
-    
-    
-    <article class="index-post">
         <a class="abstract-title" href = "/2020/02/14/ROP/" >
             
                 <span>ROP</span>
         </a>
         <div class="abstract-content">
-            
+            这是一篇加密文章。
         </div>
         <div class="abstract-post-meta">
             <!-- date  -->
@@ -505,12 +426,7 @@ Bootstrapweb...
                 <span>栈溢出及利用</span>
         </a>
         <div class="abstract-content">
-            写在前面栈溢出原理具体的不多说了
-具体利用canary
-pie
-alsr
-nx
-
+            这是一篇加密文章。
         </div>
         <div class="abstract-post-meta">
             <!-- date  -->
@@ -539,8 +455,7 @@ nx
                 <span>工具-gdb&amp;&amp;gcc</span>
         </a>
         <div class="abstract-content">
-            gdb  反汇编使用方法
-gdb 文件名disassemble main(对main函数反汇编)set disassemably-flavor intel  调整汇编的语法格式break *main 在主函数处设置断点run 运行程序至断点处continue 运行至下一个断点si 进入函数调用ni 应该是一步执行，不需要进入具体函数info reg  显示寄存器的值set $rax 0  可以更改寄存器的值bt/backtrace 显示栈中的所有信息    可以表示函数调用信息info f / frame  更为详细的栈层信息info functions 查看函数名vmmap  查看各段...
+            这是一篇加密文章。
         </div>
         <div class="abstract-post-meta">
             <!-- date  -->
@@ -569,15 +484,7 @@ gdb 文件名disassemble main(对main函数反汇编)set disassemably-flavor int
                 <span>格式化字符串漏洞</span>
         </a>
         <div class="abstract-content">
-            写在前面相关链接：
-ctf-wiki：https://ctf-wiki.github.io/ctf-wiki/pwn/linux/fmtstr/fmtstr_intro-zh/ (漏洞原理已经讲得很清楚了)
-原理格式化字符串函数多个参数  
-通常情况下，第一个参数为格式化字符串，后续参数被格式化字符串解析，例如printf()
-漏洞利用程序崩溃占用资源
-内存泄漏栈中的内存泄漏
-任意地址的内存泄漏
-难点在于：确定需要泄漏的地址
-内存覆盖Examples攻防世界–CGfsb
+            这是一篇加密文章。
         </div>
         <div class="abstract-post-meta">
             <!-- date  -->
@@ -1382,91 +1289,9 @@ ctf-wiki：https://ctf-wiki.github.io/ctf-wiki/pwn/linux/fmtstr/fmtstr_intro-zh/
     
     
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     <div class="total-and-search">
         <div class="total-archive">
-        Total : 50
+        Total : 44
         </div>
         <!-- search  -->
         
@@ -1521,17 +1346,7 @@ ctf-wiki：https://ctf-wiki.github.io/ctf-wiki/pwn/linux/fmtstr/fmtstr_intro-zh/
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">03/04</span><a class="archive-post-title" href= "/2020/03/04/kali中使用mysql/" >kali中使用mysql</a>
-        </li>
-    
-    
-        <li class="archive-post-item">
             <span class="archive-post-date">03/04</span><a class="archive-post-title" href= "/2020/03/04/【漏洞复现】CVE-2018-7600-Drupal核心远程代码执行漏洞/" >【漏洞复现】CVE-2018-7600 Drupal核心远程代码执行漏洞</a>
-        </li>
-    
-    
-        <li class="archive-post-item">
-            <span class="archive-post-date">03/01</span><a class="archive-post-title" href= "/2020/03/01/【靶机】Stack-Overflows-for-Beginners/" >【靶机】Stack Overflows for Beginners</a>
         </li>
     
     
@@ -1541,22 +1356,17 @@ ctf-wiki：https://ctf-wiki.github.io/ctf-wiki/pwn/linux/fmtstr/fmtstr_intro-zh/
     
     
         <li class="archive-post-item">
+            <span class="archive-post-date">03/01</span><a class="archive-post-title" href= "/2020/03/01/【靶机】Stack-Overflows-for-Beginners/" >【靶机】Stack Overflows for Beginners</a>
+        </li>
+    
+    
+        <li class="archive-post-item">
             <span class="archive-post-date">02/28</span><a class="archive-post-title" href= "/2020/02/28/【漏洞复现】CVE-2019-19781/" >【漏洞复现】CVE-2019-19781</a>
         </li>
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">02/22</span><a class="archive-post-title" href= "/2020/02/22/VMware导入ovf虚拟机失败/" >VMware导入ovf虚拟机失败</a>
-        </li>
-    
-    
-        <li class="archive-post-item">
             <span class="archive-post-date">02/15</span><a class="archive-post-title" href= "/2020/02/15/【wp】攻防世界pwn新手练习区-1/" >【wp】攻防世界pwn新手练习区(1)</a>
-        </li>
-    
-    
-        <li class="archive-post-item">
-            <span class="archive-post-date">02/14</span><a class="archive-post-title" href= "/2020/02/14/Flask-Bootstrap的使用/" >Flask&Bootstrap的使用</a>
         </li>
     
     
@@ -1655,11 +1465,6 @@ ctf-wiki：https://ctf-wiki.github.io/ctf-wiki/pwn/linux/fmtstr/fmtstr_intro-zh/
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">11/12</span><a class="archive-post-title" href= "/2019/11/12/接受生活的不确定/" >接受生活的不确定</a>
-        </li>
-    
-    
-        <li class="archive-post-item">
             <span class="archive-post-date">11/12</span><a class="archive-post-title" href= "/2019/11/12/软件框架与架构/" >软件框架与架构</a>
         </li>
     
@@ -1681,11 +1486,6 @@ ctf-wiki：https://ctf-wiki.github.io/ctf-wiki/pwn/linux/fmtstr/fmtstr_intro-zh/
     
         <li class="archive-post-item">
             <span class="archive-post-date">10/28</span><a class="archive-post-title" href= "/2019/10/28/网络安全协议复习/" >网络安全协议复习</a>
-        </li>
-    
-    
-        <li class="archive-post-item">
-            <span class="archive-post-date">10/27</span><a class="archive-post-title" href= "/2019/10/27/没有真正的感同身受/" >没有真正的感同身受</a>
         </li>
     
     
@@ -1735,11 +1535,6 @@ ctf-wiki：https://ctf-wiki.github.io/ctf-wiki/pwn/linux/fmtstr/fmtstr_intro-zh/
     
     
         <li class="archive-post-item">
-            <span class="archive-post-date">10/08</span><a class="archive-post-title" href= "/2019/10/08/几句话/" >几句话</a>
-        </li>
-    
-    
-        <li class="archive-post-item">
             <span class="archive-post-date">10/07</span><a class="archive-post-title" href= "/2019/10/07/Python实现SPN加解密/" >【转载】Python实现SPN加解密</a>
         </li>
     
@@ -1753,15 +1548,19 @@ ctf-wiki：https://ctf-wiki.github.io/ctf-wiki/pwn/linux/fmtstr/fmtstr_intro-zh/
         <div class="sidebar-panel-tags">
     <div class="sidebar-tags-name">
     
+        <span class="sidebar-tag-name" data-tags="Blog里的胡言乱语"><span class="iconfont-archer">&#xe606;</span>Blog里的胡言乱语</span>
+    
         <span class="sidebar-tag-name" data-tags="web"><span class="iconfont-archer">&#xe606;</span>web</span>
     
         <span class="sidebar-tag-name" data-tags="开发"><span class="iconfont-archer">&#xe606;</span>开发</span>
     
-        <span class="sidebar-tag-name" data-tags="环境安装或问题解决办法"><span class="iconfont-archer">&#xe606;</span>环境安装或问题解决办法</span>
-    
-        <span class="sidebar-tag-name" data-tags="Blog里的胡言乱语"><span class="iconfont-archer">&#xe606;</span>Blog里的胡言乱语</span>
-    
         <span class="sidebar-tag-name" data-tags="linux"><span class="iconfont-archer">&#xe606;</span>linux</span>
+    
+        <span class="sidebar-tag-name" data-tags="PHP"><span class="iconfont-archer">&#xe606;</span>PHP</span>
+    
+        <span class="sidebar-tag-name" data-tags="CTF"><span class="iconfont-archer">&#xe606;</span>CTF</span>
+    
+        <span class="sidebar-tag-name" data-tags="环境安装或问题解决办法"><span class="iconfont-archer">&#xe606;</span>环境安装或问题解决办法</span>
     
         <span class="sidebar-tag-name" data-tags="docker"><span class="iconfont-archer">&#xe606;</span>docker</span>
     
@@ -1775,9 +1574,7 @@ ctf-wiki：https://ctf-wiki.github.io/ctf-wiki/pwn/linux/fmtstr/fmtstr_intro-zh/
     
         <span class="sidebar-tag-name" data-tags="攻防世界"><span class="iconfont-archer">&#xe606;</span>攻防世界</span>
     
-        <span class="sidebar-tag-name" data-tags="CTF"><span class="iconfont-archer">&#xe606;</span>CTF</span>
-    
-        <span class="sidebar-tag-name" data-tags="PHP"><span class="iconfont-archer">&#xe606;</span>PHP</span>
+        <span class="sidebar-tag-name" data-tags="Java web"><span class="iconfont-archer">&#xe606;</span>Java web</span>
     
         <span class="sidebar-tag-name" data-tags="靶机"><span class="iconfont-archer">&#xe606;</span>靶机</span>
     
@@ -1792,8 +1589,6 @@ ctf-wiki：https://ctf-wiki.github.io/ctf-wiki/pwn/linux/fmtstr/fmtstr_intro-zh/
         <span class="sidebar-tag-name" data-tags="tools"><span class="iconfont-archer">&#xe606;</span>tools</span>
     
         <span class="sidebar-tag-name" data-tags="内网渗透"><span class="iconfont-archer">&#xe606;</span>内网渗透</span>
-    
-        <span class="sidebar-tag-name" data-tags="Java web"><span class="iconfont-archer">&#xe606;</span>Java web</span>
     
         <span class="sidebar-tag-name" data-tags="Crypto"><span class="iconfont-archer">&#xe606;</span>Crypto</span>
     
@@ -1832,25 +1627,25 @@ jsonContent:
         <div class="sidebar-panel-categories">
     <div class="sidebar-categories-name">
     
+        <span class="sidebar-category-name" data-categories="日常生活的乱七八糟"><span class="iconfont-archer">&#xe60a;</span>日常生活的乱七八糟</span>
+    
         <span class="sidebar-category-name" data-categories="web"><span class="iconfont-archer">&#xe60a;</span>web</span>
     
         <span class="sidebar-category-name" data-categories="开发"><span class="iconfont-archer">&#xe60a;</span>开发</span>
     
-        <span class="sidebar-category-name" data-categories="环境安装或问题解决办法"><span class="iconfont-archer">&#xe60a;</span>环境安装或问题解决办法</span>
-    
-        <span class="sidebar-category-name" data-categories="日常生活的乱七八糟"><span class="iconfont-archer">&#xe60a;</span>日常生活的乱七八糟</span>
-    
         <span class="sidebar-category-name" data-categories="linux"><span class="iconfont-archer">&#xe60a;</span>linux</span>
     
+        <span class="sidebar-category-name" data-categories="环境安装或问题解决办法"><span class="iconfont-archer">&#xe60a;</span>环境安装或问题解决办法</span>
+    
         <span class="sidebar-category-name" data-categories="docker"><span class="iconfont-archer">&#xe60a;</span>docker</span>
+    
+        <span class="sidebar-category-name" data-categories="PHP"><span class="iconfont-archer">&#xe60a;</span>PHP</span>
     
         <span class="sidebar-category-name" data-categories="pwn"><span class="iconfont-archer">&#xe60a;</span>pwn</span>
     
         <span class="sidebar-category-name" data-categories="python"><span class="iconfont-archer">&#xe60a;</span>python</span>
     
         <span class="sidebar-category-name" data-categories="靶机"><span class="iconfont-archer">&#xe60a;</span>靶机</span>
-    
-        <span class="sidebar-category-name" data-categories="PHP"><span class="iconfont-archer">&#xe60a;</span>PHP</span>
     
         <span class="sidebar-category-name" data-categories="推荐"><span class="iconfont-archer">&#xe60a;</span>推荐</span>
     
